@@ -1,0 +1,28 @@
+.box-form-adresse {
+  background-color: #402218;
+  padding: 1em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 130px;
+  width: 800px;
+
+  .form-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #d7b19d;
+    display: inline-block;
+  }
+  .form-adresse-input {
+    background-color: #d7b19d;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em 2em;
+    color: #402218;
+  }
+  .form-adresse-input::placeholder {
+    color: #402218;    
+  }
+}

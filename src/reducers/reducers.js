@@ -1,10 +1,11 @@
 import {
   CHANGE_INPUT_VALUE,
+  SEND_MESSAGE,
 } from '../actions/actions';
 
 const initialState = {
   inputMessage: '',
-  
+  message: '',
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -15,6 +16,11 @@ const inputReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         inputMessage: action.value,
+      };
+    case SEND_MESSAGE:
+      return {
+        ...state,
+        message: action.value,
       };
 
     default:

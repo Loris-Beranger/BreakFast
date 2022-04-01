@@ -1,13 +1,13 @@
 // == Import
 import './styles.scss';
-import Form from 'src/components/Form';
+import FormAdresse from 'src/components/FormAdresse';
 
 
 // == Composant
 const App = () => (
   <div className="app">
-    <h1>Composant : yoyoyoyoyo</h1>
-    <Form />
+    <h1>App</h1>
+    <FormAdresse />
   </div>
 );
 
