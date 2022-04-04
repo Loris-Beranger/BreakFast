@@ -1,0 +1,61 @@
+.bakery {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+
+  @media (min-width: 600px) {
+    width: 100%;
+  }
+
+  .bakery__img {
+    max-width: 100%;
+  }
+
+  .bakery-deliverytime {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    padding: 0.5em;
+    border-radius: 20px;
+    background-color: #996a23;
+    color: white;
+    font-size: 1em;
+    font-weight: 700px;
+  }
+
+  .bakery-name {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .bakery-deliverycost {
+    font-size: small;
+    text-align: left;
+  }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   // Star from: https://css-tricks.com/star-ratings/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: ltr;
+  text-align: center;
+  span {
+     font-size: 20pt;
+     display: inline-block;
+     position: relative;
+     width: 1.2em;
+     color: #ffa742;
+  }
+}
+    
+  }
+
