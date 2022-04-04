@@ -16,11 +16,11 @@
   height: 100%;
   text-align: center;
   background-image: url('images/background1.jpg');
-  background-size: 100% 120%;
+  background-size: 100% 100%;
   background-position: 0 -100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
