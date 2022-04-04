@@ -11,9 +11,8 @@ const App = () => (
   <div className="app">
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/yi" element={<CheckoutBasket />} />
+      <Route path="/basket" element={<CheckoutBasket />} />
     </Routes>
-    
   </div>
 );
 
