@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeInputValue, sendMessage } from 'src/actions/actions';
 
 // == Composant
-const FormAdresse = () => {
+const FormAdress = () => {
   const value = useSelector((state) => state.inputMessage);
   const message = useSelector((state) => state.message);
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const FormAdresse = () => {
 
   return (
     <div className="box-form-adresse">
-      <h2 className="form-title">Adresse: {message}</h2>
+      <h2 className="form-title">Dîtes nous où voulez vous votre petit déj</h2>
       <form
         className="form-adresse"
         onSubmit={(event) => {
@@ -38,4 +38,4 @@ const FormAdresse = () => {
 };
 
 // == Export
-export default FormAdresse;
+export default FormAdress;

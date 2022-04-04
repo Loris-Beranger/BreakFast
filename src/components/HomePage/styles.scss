@@ -1,0 +1,139 @@
+@use 'src/styles/vars.scss';
+
+.homepage::-webkit-scrollbar {
+  display: none;
+}
+
+.homepage {
+  height: 100%;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  .section-form-adress {
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/background1.jpg');
+    background-position: 0 0;
+    background-size: 100% 100%;
+    height: 100%;
+
+    .box-form-adresse {
+      background-color: vars.$principal-color;
+      padding: 1em;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 130px;
+      width: 90%;
+      margin: 50px 0;
+    
+      .form-title {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: vars.$second-color;
+        display: inline-block;
+      }
+      .form-adresse-input {
+        background-color: vars.$second-color;
+        width: 80%;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8em 2em;
+        color: vars.$principal-color;
+      }
+      .form-adresse-input::placeholder {
+        color: vars.$principal-color;    
+      }
+    }
+  }
+
+  .tags {
+    width: 100%;
+    background-color: vars.$principal-color;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+
+    .title-category {
+      color: vars.$second-color;
+      font-family: Gravity;
+      padding: 5px;
+      border: 1px solid vars.$second-color;
+      margin: 2px;
+      text-transform: uppercase;
+    }
+
+    .list-tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      
+      /* height: 200px; */
+      
+      
+      .tag {
+        width: 100%;
+        height: 150px;
+        margin: 5px 0;
+        /* border: 3px solid vars.$principal-color; */
+
+        .background-div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            color: white;
+            font-family: Gravity;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 0 0 2px black;
+          }
+        }
+
+        
+      }
+      
+    }
+    .list-tags .tag:nth-child(1) div {
+      background-image: url('./images/tags/amoureux.jpg');
+      background-position: 0 -50px;
+      background-size: 100% 150%;
+    }
+    .list-tags .tag:nth-child(2) div {
+      background-image: url('./images/tags/anniversaire.jpg');
+      background-position: 0 -50px;
+      background-size: 100% 150%;
+    }
+    .list-tags .tag:nth-child(3) div {
+      background-image: url('./images/tags/bio.jpg');
+      background-position: 0 -50px;
+      background-size: 100% 150%;
+    }
+    .list-tags .tag:nth-child(4) div {
+      background-image: url('./images/tags/vegan.jpg');
+      background-position: 0 -50px;
+      background-size: 100% 150%;
+    }
+    .list-tags .tag:nth-child(5) div {
+      background-image: url('./images/tags/entreprise.jpg');
+      background-position: 0 -50px;
+      background-size: 100% 150%;
+    }   
+    
+  }
+}
+
+
+
+

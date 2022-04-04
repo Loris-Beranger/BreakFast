@@ -1,4 +1,54 @@
+@use 'src/styles/vars.scss';
+
 .header {
-  background-color: #402218;
+  background-color: vars.$principal-color;
   width: 100vw;
+
+  .header-buttons {
+    display: flex;
+    background-color: vars.$principal-color;
+    justify-content: space-between;
+    
+  }
+
+  .header-buttons .box-img {
+    padding: 15px 0;
+    margin: 2px;
+
+    i {
+      color: vars.$second-color;
+      transform: scale(1.3);
+    }
+  }
+
+  .header-buttons .box-img:nth-child(1) {
+    width: 20%;
+
+    img {
+      width: 28px;
+    }
+  }
+  .header-buttons .box-img:nth-child(2) {
+    width: 60%;
+    background-image: url('./images/breakfast-logo-light.png');
+    background-position: 50% 50%;
+    background-size: 20% 70%;
+    background-repeat: no-repeat;
+  }
+  .header-buttons .box-img:nth-child(3) {
+    width: 20%;
+
+    img {
+      width: 25px;
+    }
+  }
+  
+  .slogan {
+    color: vars.$second-color;
+    font-family: Gravity;
+    padding: 5px;
+    border-top: 1px solid vars.$second-color;
+    margin: 2px;
+    text-transform: uppercase;
+  }
 }

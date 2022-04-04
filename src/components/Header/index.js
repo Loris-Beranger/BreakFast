@@ -1,27 +1,20 @@
 // == Import
 import './styles.scss';
 
-
 // == Composant
 const Header = () => (
   <header className="header">
-    <div className="headerbox">
-      <img />
-      <h1>Votre petit dek en un clic</h1>
-      <div className="box-buttons">
-        <img />
-        <img />
+    <div className="header-buttons">
+      <div className="box-img">
+      <i className="bars icon btn-menu-burger"></i>
       </div>
-      <nav className="menu-nav">
-        <ul className="nav-list">
-          <li><a>Accueil</a></li>
-          <li><a>Formules</a></li>
-          <li><a>Blog</a></li>
-          <li><a>A propos</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </nav>
+      <div className="box-img">
+      </div>
+      <div className="box-img">
+      <i className="shopping basket icon btn-basket"></i>
+        </div>
     </div>
+    <h1 className="slogan">Votre petit dej en un clic</h1>
   </header>
 );
 
