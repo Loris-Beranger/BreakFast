@@ -1,6 +1,8 @@
 // == Import
 import './style.scss';
 
+import StarRating from 'src/components/StarRating';
+
 import image from './images/coffee-img.jpg';
 
 const BakeryList = () => {
@@ -23,6 +25,7 @@ const BakeryList = () => {
         <h2 className="bakery-name">O'croissant</h2>
         <p className="bakery-deliverycost">Frais de livraison estimé : 2.50€</p>
       </div>
+      <StarRating />
     </div>
 
   );

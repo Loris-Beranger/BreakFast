@@ -43,7 +43,13 @@
       align-items: center;
     }
 
-   // Star from: https://css-tricks.com/star-ratings/
-   
+   // Star code from Eric Murphy on youtube
+   input[type="radio"] {
+     display: none;
+   }
+
+   .star {
+     cursor: pointed;
+   }
   }
 
