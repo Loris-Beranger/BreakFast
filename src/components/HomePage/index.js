@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeInputValue, sendMessage } from 'src/actions/actions';
 
 // == Composant
-const FormAdresse = () => {
+const HomePage = () => {
   const value = useSelector((state) => state.inputMessage);
   const message = useSelector((state) => state.message);
   const dispatch = useDispatch();
@@ -38,4 +38,4 @@ const FormAdresse = () => {
 };
 
 // == Export
-export default FormAdresse;
+export default HomePage;
