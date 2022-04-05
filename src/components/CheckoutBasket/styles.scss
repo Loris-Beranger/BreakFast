@@ -1,39 +1,39 @@
-html{
+body{
   background-color: #c68b59;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 374px) {
   .Basket{
     width: 100%;
     height: 100%;
   }
-  
+
   .product{
     display: flex;
     align-items: center;
   }
-  
+
   .imgProduit{
     padding: 1em;
     border-radius: 50px;
     height: 220px;
   }
   .quantity{
-    padding: 1em;
-    height: 20%;
+    padding: 0.5em;
     font-weight: 600;
-    font-size: 20px;  
+    font-size: 25px;  
   }
   .math{
     display: flex;
       .plus{
         padding: 0.1em;
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
       }
       .less{
         padding: 0.1em;
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
       }
   }
   .limite{
@@ -57,8 +57,7 @@ html{
   .limitePrice{
     border-bottom: 1px solid #000; 
     margin: 0.7em;
-    margin-left: 13em;
-
+    margin-left: 11em;
   }
   .paye{
     display: flex;
@@ -71,6 +70,7 @@ html{
     padding-top: 0.2em;
   }
   .btnPayé{
+    background-color: #865439;
     padding: 0.7em 1em;
     margin-bottom: 2em;
     margin-left: 10px;
@@ -80,7 +80,7 @@ html{
 
 
 
-@media (min-width: 374px) and (max-width: 1000px) {
+@media (min-width: 374px) and (max-width: 1024px) {
 .Basket{
   width: 100%;
   height: 100%;
@@ -97,7 +97,7 @@ html{
   height: 220px;
 }
 .quantity{
-  padding: 1.3em;
+  padding: 1.5em;
   height: 20%;
   font-weight: 600;
   font-size: 30px;  
@@ -136,7 +136,7 @@ html{
 .limitePrice{
   border-bottom: 1px solid #000; 
   margin: 0.7em;
-  margin-left: 16.5em;
+  margin-left: 15em;
 }
 .paye{
   display: flex;
@@ -149,6 +149,7 @@ html{
   padding-top: 0.2em;
 }
 .btnPayé{
+  background-color: #865439;
   padding: 0.7em 1em;
   margin-bottom: 2em;
   margin-left: 10px;
@@ -168,7 +169,7 @@ html{
     display: flex;
     padding: 7em;
     height: 600px;
-    width: 60%;
+    width: 62%;
     flex-wrap: wrap;
     .product{
       width: 200px;
@@ -192,14 +193,16 @@ html{
     display: flex;
     justify-content: center;
     .plus{
+      margin: 0em 0.5em;
       padding: 0.1em;
-      height: 25px;
-      width: 25px;
+      height: 30px;
+      width: 30px;
     }
     .less{
+      margin: 0em 0.5em;
       padding: 0.1em;
-      height: 25px;
-      width: 25px;
+      height: 30px;
+      width: 30px;
     }
   }
 
@@ -238,7 +241,7 @@ html{
   .limitePrice{
     border-bottom: 1px solid #000; 
     margin: 0.7em;
-    margin-right: 5em
+    margin-right: 1em
   }
   .paye{
     display: flex;
@@ -251,6 +254,7 @@ html{
     padding-top: 0.3em;
   }
   .btnPayé{
+    background-color: #865439;
     position: absolute;
     left: 80px;
     padding: 1em 2em;
@@ -258,3 +262,6 @@ html{
     margin-top: 1em;
   }
 }
+
+
+//Mathys
