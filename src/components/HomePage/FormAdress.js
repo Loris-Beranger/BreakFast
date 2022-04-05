@@ -13,7 +13,7 @@ const FormAdress = () => {
 
   return (
     <div className="box-form-adresse">
-      <h2 className="form-title">Dîtes nous où voulez vous votre petit déj</h2>
+      <h2 className="form-title">Où êtes vous ?</h2>
       <form
         className="form-adresse"
         onSubmit={(event) => {
