@@ -21,6 +21,9 @@ let blocProductPrice = [];
   for (let i = 0; i<ProductNumber; i++){
 
     const [count, setCount] = useState(0);
+    if (count <= -1){
+      count = 0
+    }
     
     blocProduct.push(
       <div className='product'>
