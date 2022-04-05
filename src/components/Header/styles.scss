@@ -1,11 +1,20 @@
 @use 'src/styles/vars.scss';
 
+
+
 .header {
   background-color: vars.$principal-color;
   width: 100vw;
   
   .header-laptop {
     display: none;
+  }
+
+  .navbar-mobile {
+    position: fixed;
+    background-color: vars.$principal-color;
+    height: 100vh;
+    width: 70%;
   }
 
   .header-buttons {
@@ -61,7 +70,9 @@
 @media screen and (min-width: 1024px)
 {
   .header{
-    
+    .nav-link:hover {
+      cursor: pointer
+    }
     .header-mobile {
       display: none;
     }
@@ -135,6 +146,10 @@
             padding: 15px 0;
             text-transform: uppercase;
           }
+          .nav-link:hover {
+            cursor: pointer;
+            color: #b4866d;
+          }
 
           .link-formulas {
             position: relative;
@@ -150,10 +165,6 @@
         
             &:hover {
               
-              .link-component {
-                color: #cba48f;
-              }
-
               .dropdown-content {
                 display: flex;
                 justify-content: center;
@@ -167,6 +178,10 @@
                   &:hover {
                     cursor: pointer;
                     color: #91694e;
+
+                    .link-component {
+                      color: #91694e;
+                    }
                   }
                 }
               }
@@ -175,13 +190,6 @@
           
         }
       }
-    }
-
-    
-    
-
-    .slogan {
-
     }
   } 
 }
