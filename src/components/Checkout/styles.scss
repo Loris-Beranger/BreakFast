@@ -1,0 +1,60 @@
+.Checkout{
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+
+.Checkout{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.infoPerso{
+  padding: 0em 0em 0em 5em;
+  margin-right: 40%;
+}
+.verif{
+  padding: 2em;
+}
+.checkbox{
+  padding-bottom: 2em;
+}
+.Total{
+  position: absolute;
+  margin-left: 60%;
+}
+.Total div{
+  padding-bottom: 2em;
+}
+.Totaux div{
+  padding-bottom: 2em;
+  padding-right: 4em;
+
+}
+.Finalprice{
+  margin-top: 5em;
+}
+.btnPayer2{
+  align-items: center;
+  background-color: #865439;
+  padding: 2em;
+  padding-bottom: 0em; 
+}
+.btnPayer2:hover{
+background-color: #4b3223bd;
+color: aliceblue;
+}
+.popup{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(31, 117, 117, 0.582);
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+}

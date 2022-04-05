@@ -2,6 +2,10 @@ body{
   background-color: #c68b59;
   font-family: 'Montserrat', sans-serif;
 }
+.btnPayer:hover{
+  background-color: #4b3223bd;
+  color: aliceblue;
+  }
 @media (max-width: 374px) {
   .Basket{
     width: 100%;
@@ -69,7 +73,7 @@ body{
     font-size: 23px;
     padding-top: 0.2em;
   }
-  .btnPayé{
+  .btnPayer{
     background-color: #865439;
     padding: 0.7em 1em;
     margin-bottom: 2em;
@@ -148,7 +152,7 @@ body{
   font-size: 23px;
   padding-top: 0.2em;
 }
-.btnPayé{
+.btnPayer{
   background-color: #865439;
   padding: 0.7em 1em;
   margin-bottom: 2em;
@@ -233,7 +237,7 @@ body{
   }
   .productPrice{
     position: absolute;
-    margin-left: 500px;
+    margin-left: 450px;
   }
   .productName{
     margin-right: 130px;
@@ -241,7 +245,6 @@ body{
   .limitePrice{
     border-bottom: 1px solid #000; 
     margin: 0.7em;
-    margin-right: 1em
   }
   .paye{
     display: flex;
@@ -249,11 +252,11 @@ body{
   }
   .totalPrice{
     position: absolute;
-    margin-left: 470px;
+    margin-left: 570px;
     font-size: 23px;
-    padding-top: 0.3em;
+    padding-top: 1.5em;
   }
-  .btnPayé{
+  .btnPayer{
     background-color: #865439;
     position: absolute;
     left: 80px;
