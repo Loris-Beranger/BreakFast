@@ -4,7 +4,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  margin: 5%;
 
   @media (min-width: 600px) {
     width: 100%;
@@ -12,11 +12,12 @@
 
   .bakery__img {
     max-width: 100%;
+    padding-bottom: 0.5em;
   }
 
   .bakery-deliverytime {
     position: absolute;
-    bottom: 80px;
+    bottom: 55px;
     right: 10px;
     padding: 0.5em;
     border-radius: 20px;
@@ -24,6 +25,10 @@
     color: white;
     font-size: 1em;
     font-weight: 700px;
+  }
+
+  .bakery_infos {
+    position: relative;
   }
 
   .bakery-name {
@@ -37,19 +42,15 @@
     text-align: left;
   }
 
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-   // Star code from Eric Murphy on youtube
-   input[type="radio"] {
-     display: none;
-   }
-
-   .star {
-     cursor: pointed;
-   }
+  .rating {
+    position: absolute;
+    right: 10px;
+    top: 85%;
   }
 
+ /*  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+}
