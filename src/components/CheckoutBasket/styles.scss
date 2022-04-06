@@ -36,9 +36,11 @@
         width: 30px;
       }
   }
-  .limite{
-    border-bottom: 2px solid #000; 
-    margin: 1em;
+
+  .trait{
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding-bottom: 1em;
+
   }
   .ligne{
     display: flex;
@@ -62,6 +64,7 @@
   .paye{
     display: flex;
     justify-content: center;
+    padding-top: 2em;
   }
   .totalPrice{
     position: absolute;
@@ -115,10 +118,6 @@
     width: 40px;
   }
 }
-.limite{
-  border-bottom: 2px solid #000; 
-  margin: 1em;
-}
 .ligne{
   display: flex;
   justify-content: center;
@@ -138,9 +137,14 @@
   margin: 0.7em;
   margin-left: 15em;
 }
+.trait{
+  border-bottom: 1px rgb(0, 0, 0) solid;
+  padding-bottom: 1em;
+}
 .paye{
   display: flex;
   justify-content: center;
+  padding-top: 2em;
 }
 .totalPrice{
   position: absolute;
@@ -156,8 +160,6 @@
 }
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .Basket{
     display: flex;
@@ -167,10 +169,12 @@
 
   .products{
     display: flex;
-    padding:  4em 5em 0em 5em;
+    margin-top: 5em;
+    padding:  2em 0em 0em 5em;
     height: 600px;
-    width: 62%;
+    width: 55%;
     flex-wrap: wrap;
+    border-right: 1px solid black;
     .product{
       width: 200px;
       height: 250px;
@@ -205,16 +209,6 @@
       width: 30px;
     }
   }
-
-  .limite{
-    position: absolute;
-    top: 0%;
-    border-left: 2px solid rgba(0, 0, 0, 0.486); 
-    height: 600px; 
-    display: inline-block;
-    right: 22em  
-  }
-
   .PriceListe{
     display: flex;
     position: absolute;

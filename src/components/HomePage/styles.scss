@@ -20,11 +20,11 @@
   overflow-y: scroll;
 
   .section-form-adress {
+    background-image: url('./images/background1.jpg');
     display: flex;
     justify-content: center;
-    background-image: url('./images/background1.jpg');
-    background-position: 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center ;
     height: 100%;
     width: 100%;
 
@@ -114,28 +114,28 @@
     }
     .list-tags .tag:nth-child(1) div {
       background-image: url('./images/tags/amoureux.jpg');
-      background-position: 0 -50px;
-      background-size: 100% 150%;
+      background-size: cover;
+      background-position: center ;
     }
     .list-tags .tag:nth-child(2) div {
       background-image: url('./images/tags/anniversaire.jpg');
-      background-position: 0 -50px;
-      background-size: 100% 150%;
+      background-size: cover;
+      background-position: center ;
     }
     .list-tags .tag:nth-child(3) div {
       background-image: url('./images/tags/bio.jpg');
-      background-position: 0 -50px;
-      background-size: 100% 150%;
+      background-size: cover;
+      background-position: center ;
     }
     .list-tags .tag:nth-child(4) div {
       background-image: url('./images/tags/vegan.jpg');
-      background-position: 0 -50px;
-      background-size: 100% 150%;
+      background-size: cover;
+      background-position: center ;
     }
     .list-tags .tag:nth-child(5) div {
       background-image: url('./images/tags/entreprise.jpg');
-      background-position: 0 -50px;
-      background-size: 100% 150%;
+      background-size: cover;
+      background-position: center ;
     }   
     
   }

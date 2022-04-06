@@ -57,16 +57,16 @@ let price = 16
       </div>
 
       <div className='PriceListe'>
-        <div className='limite'></div>
         <div>
+        <div className='trait'>
           {blocProductPrice}
+        </div>
           <div className='paye'>
             <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
             <div className='totalPrice'>{Totalàpayer}€</div>
           </div>
         </div>
       </div>
-      
     </div>
     
   );
