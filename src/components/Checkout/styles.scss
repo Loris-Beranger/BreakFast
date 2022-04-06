@@ -98,7 +98,7 @@
  @media screen and (min-width: 414px) and (max-width: 1024px){
   .Checkout{
     padding-top: 3em;
-    padding: 0em 1em;
+    padding:  1em;
   }
   .verif{
     padding: 1em;
@@ -159,13 +159,13 @@
     padding: 2.5em;
   }
   .btnEchap{
+    z-index: 3;
     cursor: pointer;
     font-size: 50px;
     position: absolute;
     transform: rotate(45deg);
     margin-left: 85%;
     margin-top: 1%;
-  
   }
   .etat{
     position: absolute;

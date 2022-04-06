@@ -57,11 +57,14 @@ let price = 16
 
       </div>
 
-      <div className='limite'></div>
 
-      <div className='PriceListe'><div>
+   
+        <div className='PriceListe'>
+        <div className='limite'></div>
 
+          <div>
           {blocProductPrice}
+     
 
         <div className='limitePrice'></div>
           <div className='paye'>
