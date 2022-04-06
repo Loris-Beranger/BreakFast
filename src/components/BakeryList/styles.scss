@@ -1,6 +1,6 @@
 .bakeries {
   max-width: 100%;
-  margin-top: 20em;
+  margin-top: 120em;
 
   .bakery {
     max-width: 100%;
@@ -18,7 +18,7 @@
 
   .bakery-deliverytime {
     position: absolute;
-    bottom: 55px;
+    bottom: 65px;
     right: 10px;
     padding: 0.5em;
     border-radius: 20px;
@@ -28,8 +28,10 @@
     font-weight: 700px;
   }
 
-  .bakery_infos {
-    position: relative;
+  .bakery-infos {
+    //position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
   .bakery-name {
@@ -44,13 +46,13 @@
   }
 
   .rating {
-    position: absolute;
+    //position: absolute;
+    text-align: left;
     top: 100%;
   }
 
   .like {
-    position: absolute;
-    bottom: 50em;
+    justify-content: space-between;
   }
 }
 
@@ -73,6 +75,10 @@
 }
 
 @media screen and (min-width: 900px) {
+  .bakeries {
+    margin-top: 10em;
+  }
+
   .column {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -91,6 +97,9 @@
 }
 
 @media screen and (min-device-width: 600px) {
+  .bakeries {
+    margin-top: 10em;
+  }
   .column {
     display: grid;
     grid-template-columns: repeat(3, 33%);
