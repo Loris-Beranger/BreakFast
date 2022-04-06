@@ -30,14 +30,15 @@ let price = 16
     
     blocProduct.push(
       <div className='product'>
-      <img className='imgProduit' src={imageCroissant} alt="img-croissant" />
+        <img className='imgProduit' src={imageCroissant} alt="img-croissant" />
         <div className='quantity'>{count}
             <div className='math'>
               <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
               <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
             </div>
-          </div>     
-    </div>)};
+        </div>     
+      </div>
+    )};
     
     for (let i = 0; i<ProductNumber; i++){
 
@@ -52,29 +53,20 @@ let price = 16
   return (
     <div className='Basket'>
       <div className='products'>
-
         {blocProduct}
-
       </div>
 
-
-   
-        <div className='PriceListe'>
+      <div className='PriceListe'>
         <div className='limite'></div>
-
-          <div>
-          {blocProductPrice}
-     
-
-        <div className='limitePrice'></div>
-          <div className='paye'>
-            <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
-            <div className='totalPrice'>{Totalàpayer}€</div>
-          </div>
-        </div>
+      <div>
+        {blocProductPrice}
+      <div className='paye'>
+        <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
+        <div className='totalPrice'>{Totalàpayer}€</div>
       </div>
-
       </div>
+      </div>
+    </div>
     
   );
 };
