@@ -74,7 +74,12 @@
         &:hover {
           background-color: vars.$principal-color;
           color: vars.$second-color;
-        }       
+        }   
+        
+        .icon-sidebar {
+          transform: translateY(3px);
+          margin-right: 10px;
+        }
       }
       
     }

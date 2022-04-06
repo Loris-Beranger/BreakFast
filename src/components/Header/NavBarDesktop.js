@@ -1,6 +1,5 @@
 // == Import
 import './styles.scss';
-import BreakFastLogo from './images/breakfast-logo-light.png';
 import { NavLink } from 'react-router-dom';
 
 // == Composant
