@@ -27,8 +27,7 @@ const Header = () => {
             dispatch(action);
           }}></i>
           </div>
-          <div className="box-img">
-          </div>
+          <NavLink to='/' className="box-img"></NavLink>
           <div className="box-img">
             <NavLink to='/basket'>
               <i className="shopping basket icon btn-basket"></i>
@@ -41,7 +40,9 @@ const Header = () => {
       <div className="header-laptop">
         <div className="header-buttons">
           <div className="box-logo-slogan">
-            <img src={BreakFastLogo} className="logo-breakfast"/>
+            <NavLink to='/'>
+              <img src={BreakFastLogo} className="logo-breakfast"/>
+            </NavLink>
             <h1 className="slogan">Votre petit dej en un clic</h1>
           </div>
           <div className="buttons-basket-log">
