@@ -51,9 +51,9 @@
 
   .popup{
     position: fixed;
-    height: 45%;
+    height: 40%;
     width: 85%;
-    top: 1em;    
+    top: 30%;    
     display: flex;
     outline: solid 2px black;
     background-color: rgb(255, 255, 255);
@@ -144,7 +144,7 @@
     position: fixed;
     height: 60%;
     width: 80%;
-    top: 1em;   
+    top: 20%;   
     margin-left: 1em;
     display: flex;
     outline: solid 2px black;
@@ -235,7 +235,7 @@ color: aliceblue;
 
 .popup{
   position: fixed;
-  height: 85%;
+  height: 70%;
   width: 50%;
   margin: 7.5% 25%;
   display: flex;

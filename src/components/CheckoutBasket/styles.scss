@@ -1,7 +1,3 @@
-body{
-  background-color: #c68b59;
-  font-family: 'Montserrat', sans-serif;
-}
 .btnPayer:hover{
   background-color: #4b3223bd;
   color: aliceblue;
@@ -171,7 +167,7 @@ body{
 
   .products{
     display: flex;
-    padding: 7em;
+    padding:  6.5em 5em 0em 5em;
     height: 600px;
     width: 62%;
     flex-wrap: wrap;
@@ -212,7 +208,7 @@ body{
 
   .limite{
     position: absolute;
-    top: 10%;
+    top: 30%;
     bottom: 10%;
     left: 800px;
     border-left: 2px solid rgba(0, 0, 0, 0.486); 

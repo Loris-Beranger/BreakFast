@@ -2,11 +2,13 @@
   font-family: Gravity;
   src: url("../../assets/fonts/Gravity-Regular.otf");
 }
-
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
+body{
+  background-color: #c68b59;
+  font-family: 'Montserrat', sans-serif;
+}
 #root {
   width: 100vw;
   height: 100vh;
