@@ -1,11 +1,13 @@
 import {
   CHANGE_INPUT_VALUE,
+  TOGGLE_SIDEBAR,
   SEND_MESSAGE,
 } from '../actions/actions';
 
 const initialState = {
   inputMessage: '',
   message: '',
+  sidebar: false,
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -21,6 +23,11 @@ const inputReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         message: action.value,
+      };
+    case TOGGLE_SIDEBAR:
+      return {
+        ...state,
+        sidebar: action.value,
       };
 
     default:
