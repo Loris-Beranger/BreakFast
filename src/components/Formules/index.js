@@ -1,6 +1,5 @@
 // == Import
 import './styles.scss';
-
 // == Composant
 const Formules = () => (
   <div className="formules">
