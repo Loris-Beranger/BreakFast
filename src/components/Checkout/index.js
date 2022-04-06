@@ -1,13 +1,19 @@
 // == Import
 import Field from 'src/components/Field';
-
+import React, { useState } from 'react';
+import remove from './images/remove.png';
+import verifie from './images/verifie.png';
 import './styles.scss';
 
 
 // == Composant
 const Checkout = () => {
 
+  let totalProduit = 30;
+  let shipping = 3.50;
+  let totalCommande = totalProduit + shipping;
 
+  const [popUp, setpopUp] = useState("nopopup");
 
   return (
   <div className='Checkout'>
@@ -34,21 +40,30 @@ const Checkout = () => {
       identifier="Nom"
       placeholder=""
       label="Nom" />
+
     </div>
       <div className='Total'>
         <div>Total de la commande</div> 
         <div>Shipping</div>
         <div className='Finalprice'>Total</div>
-        <div className='btnPayer2'>PAYER</div>
-
+        <div className='btnPayer2' onClick={() => setpopUp('popup')}>PAYER</div>
       </div>
+      
       <div className='Totaux'>
         <div>30</div>
         <div>3.50</div>
-        <div className='Finalprice'>33.50€</div>
+        <div className='Finalprice'>{totalCommande}€</div>
       </div>
 
-    <div className=''></div>
+    <div className={popUp}>
+      <div className='btnEchap' onClick={() => setpopUp('nopopup')}>+</div>
+      <div className='confirmation'>État de la commande : </div>
+      <div className='etat'>Confirmé !</div>
+      <div>
+      <img className='icone' src={verifie} alt="verifie" />
+      </div>
+      <div className='heure' >commande prête pour : heure</div>
+    </div>
 
       
   </div>
@@ -59,7 +74,6 @@ const Checkout = () => {
 export default Checkout;
 
 
-//au click, on toggle, le flase devient true
-// si c'est false,  pas de class, si c'est true, add class popup
+
 
 //Mathys
