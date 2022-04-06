@@ -1,6 +1,5 @@
 .bakeries {
   max-width: 100%;
-  margin-top: 120em;
 
   .bakery {
     max-width: 100%;
@@ -75,10 +74,6 @@
 }
 
 @media screen and (min-width: 900px) {
-  .bakeries {
-    margin-top: 10em;
-  }
-
   .column {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -97,12 +92,9 @@
 }
 
 @media screen and (min-device-width: 600px) {
-  .bakeries {
-    margin-top: 10em;
-  }
   .column {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(4, 33%);
     justify-content: space-between;
 
     .bakery-name {
