@@ -1,17 +1,25 @@
 .bakeries {
-  margin-top: 25em;
-}
-
-.bakery {
+  margin-top: 20em;
   max-width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
 
-  @media (min-width: 600px) {
-    width: 100%;
+  .bakery {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+
+    @media screen and (min-width: 1200px) {
+
+      width: calc(100% / 4);
+
+      .bakery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   .bakery__img {
@@ -51,10 +59,4 @@
     right: 10px;
     top: 85%;
   }
-
- /*  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 }
