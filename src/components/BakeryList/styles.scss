@@ -1,5 +1,4 @@
 .bakeries {
-  margin-top: 20em;
   max-width: 100%;
 
   .bakery {
@@ -8,18 +7,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 5%;
-
-    @media screen and (min-width: 1200px) {
-
-      width: calc(100% / 4);
-
-      .bakery {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    }
+    margin: 10% 5% 10% 5%;
   }
 
   .bakery__img {
@@ -44,7 +32,7 @@
   }
 
   .bakery-name {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     text-align: left;
   }
@@ -56,7 +44,48 @@
 
   .rating {
     position: absolute;
-    right: 10px;
-    top: 85%;
+    top: 100%;
+  }
+
+  .like {
+    position: absolute;
+    bottom: 0.8em;
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+
+    .bakery-name {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+
+  .bakery-name {
+    font-size: 15px;
+  }
+}
+}
+
+@media screen and (min-device-width: 600px) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+
+    .bakery-name {
+      font-size: 15px;
+    }
   }
 }
