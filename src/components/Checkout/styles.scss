@@ -4,6 +4,53 @@
   font-size: 22px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1014px){
+  .Checkout{
+    padding-top: 3em;
+    padding: 0em 1em;
+  }
+  .verif{
+    padding: 1em;
+  }
+  .checkbox{
+    padding: 1em;
+  }
+  .label{
+    font-size: 20px;
+  } 
+  .Total{
+    padding: 1em;
+  }
+  .Total div{
+    align-items: center;  
+    margin-right: 50%;
+    float: left;
+    padding: 1em;
+  }
+  .Totaux{
+    position: absolute;
+    padding-right: 2em;
+    padding-left: 50%;
+  }
+  .Totaux div{
+    align-items: center;  
+    margin-left: 50%;
+    float: right;
+    padding: 1em;
+  }
+  .btnPayer2{
+    align-items: center;
+    background-color: #865439;
+    padding: 2em;
+    padding-bottom: 0em; 
+  }
+  .btnPayer2:hover{
+  background-color: #4b3223bd;
+  color: aliceblue;
+  }
+
+ }
+
 @media screen and (min-width: 1024px) {
 
 .Checkout{
@@ -32,7 +79,9 @@
 .Totaux div{
   padding-bottom: 2em;
   padding-right: 4em;
-
+}
+.Totaux{
+  padding-bottom: 5em;
 }
 .Finalprice{
   margin-top: 5em;
@@ -56,5 +105,4 @@ color: aliceblue;
   justify-content: center;
   display: none;
 }
-
 }

@@ -12,9 +12,12 @@ const CheckoutBasket = () => {
 
   
 
-let ProductNumber = 6
+let ProductNumber = 8;
 let blocProduct = [];
 let blocProductPrice = [];
+let Totalàpayer = 30;
+// totalàpayer devrait etre une addition de tout les prix; suremnt plus simple avec l'API 100%
+let price = 16
   
   
 // pour chaque produit (different) on boucle l'etiquette; et les lignes de prix
@@ -41,7 +44,7 @@ let blocProductPrice = [];
       blocProductPrice.push(
       <div className='ligne'>
             <div className='productName'>petit croissant au beurre</div>
-            <div className='productPrice'>15</div>
+            <div className='productPrice'>{price}</div>
           </div>
       )};
 
@@ -63,7 +66,7 @@ let blocProductPrice = [];
         <div className='limitePrice'></div>
           <div className='paye'>
             <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
-            <div className='totalPrice'>30€</div>
+            <div className='totalPrice'>{Totalàpayer}€</div>
           </div>
         </div>
       </div>

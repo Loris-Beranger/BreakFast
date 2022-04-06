@@ -23,9 +23,9 @@
     
     
     &:focus {
-      font-weight: bolder;
+      
       & + .label {
-        font-weight: bold;
+        font-weight: bolder
       }
     }
   }
