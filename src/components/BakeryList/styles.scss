@@ -1,5 +1,6 @@
 .bakeries {
   max-width: 100%;
+  margin-top: 20em;
 
   .bakery {
     max-width: 100%;
@@ -49,8 +50,7 @@
 
   .like {
     position: absolute;
-    bottom: 0.8em;
-    right: 5px;
+    bottom: 50em;
   }
 }
 
@@ -63,6 +63,12 @@
     .bakery-name {
       font-size: 18px;
     }
+
+    .like {
+      position: absolute;
+      bottom: 0.8em;
+      right: 5px;
+    }
   }
 }
 
@@ -72,10 +78,16 @@
     grid-template-columns: repeat(4, 25%);
     justify-content: space-between;
 
-  .bakery-name {
-    font-size: 15px;
+    .bakery-name {
+      font-size: 15px;
+    }
+
+    .like {
+      position: absolute;
+      bottom: 0.8em;
+      right: 5px;
+    }
   }
-}
 }
 
 @media screen and (min-device-width: 600px) {
@@ -86,6 +98,12 @@
 
     .bakery-name {
       font-size: 15px;
+    }
+
+    .like {
+      position: absolute;
+      bottom: 0.8em;
+      right: 5px;
     }
   }
 }

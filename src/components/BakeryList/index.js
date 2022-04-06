@@ -42,7 +42,7 @@ const BakeryList = () => {
           <p className="bakery-deliverytime">20-30 min</p>
 
           <div className="bakery-infos">
-            <h2 className="bakery-name">Seigle et Son</h2>
+            <h2 className="bakery-name">Les pains d'Anth'O</h2>
             <p className="bakery-deliverycost">Frais de livraison estimé : 2.50€</p>
           </div>
           <div className="rating">
@@ -68,7 +68,7 @@ const BakeryList = () => {
           <p className="bakery-deliverytime">10-20 min</p>
 
           <div className="bakery-infos">
-            <h2 className="bakery-name">O'croissant</h2>
+            <h2 className="bakery-name">Bolos portugueses do Alexa</h2>
             <p className="bakery-deliverycost">Frais de livraison estimé : 1.50€</p>
           </div>
           <div className="rating">
