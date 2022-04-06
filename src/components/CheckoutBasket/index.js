@@ -45,27 +45,19 @@ let price = 16
       <div className='ligne'>
             <div className='productName'>petit croissant au beurre</div>
             <div className='productPrice'>{price}</div>
-          </div>
+      </div>
       )};
 
 
   return (
     <div className='Basket'>
       <div className='products'>
-
         {blocProduct}
-
       </div>
-
-
-   
         <div className='PriceListe'>
         <div className='limite'></div>
-
           <div>
           {blocProductPrice}
-     
-
         <div className='limitePrice'></div>
           <div className='paye'>
             <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
