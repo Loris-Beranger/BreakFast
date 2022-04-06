@@ -19,7 +19,6 @@ const BakeryList = () => {
       <div className="column">
 
         <div className="bakery">
-
           <img className="bakery__img" src={croissant} alt="croissant" />
           <p className="bakery-deliverytime">10-20 min</p>
 
@@ -38,15 +37,71 @@ const BakeryList = () => {
         </div>
 
         <div className="bakery">
+          <img className="bakery__img" src={pain} alt="pain" />
+          <p className="bakery-deliverytime">20-30 min</p>
+
+          <div className="bakery-infos">
+            <div>
+              <h2 className="bakery-name">Les pains d'Anth'O</h2>
+              <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
+            </div>
+            <div className="like">
+              <Heart />
+            </div>
+          </div>
+          <div className="rating">
+            <StarRating />
+          </div>
+        </div>
+
+        <div className="bakery">
+          <img className="bakery__img" src={cupcake} alt="cupcake" />
+          <p className="bakery-deliverytime">30-40 min</p>
+
+          <div className="bakery-infos">
+            <div>
+              <h2 className="bakery-name">Les délices de Karen</h2>
+              <p className="bakery-deliverycost">Frais de livraison : 3.50€</p>
+            </div>
+            <div className="like">
+              <Heart />
+            </div>
+          </div>
+          <div className="rating">
+            <StarRating />
+          </div>
+        </div>
+
+        <div className="bakery">
+          <img className="bakery__img" src={croissant} alt="croissant" />
+          <p className="bakery-deliverytime">10-20 min</p>
+
+          <div className="bakery-infos">
+            <div>
+              <h2 className="bakery-name">Bolos portugueses</h2>
+              <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
+            </div>
+            <div className="like">
+              <Heart />
+            </div>
+          </div>
+          <div className="rating">
+            <StarRating />
+          </div>
+        </div>
+
+        <div className="bakery">
+          <img className="bakery__img" src={pain} alt="pain" />
+          <p className="bakery-deliverytime">20-30 min</p>
+
+          <div className="bakery-infos">
+            <div>
+            <h2 className="bakery-name">Les petites douceurs</h2>
+            <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
+          </div>
           <div className="like">
             <Heart />
           </div>
-          <img className="bakery__img" src={pain} alt="pain" />
-          <p className="bakery-deliverytime">20-30 min</p>
-
-          <div className="bakery-infos">
-            <h2 className="bakery-name">Les pains d'Anth'O</h2>
-            <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
           </div>
           <div className="rating">
             <StarRating />
@@ -58,8 +113,13 @@ const BakeryList = () => {
           <p className="bakery-deliverytime">30-40 min</p>
 
           <div className="bakery-infos">
-            <h2 className="bakery-name">Les délices de Karen</h2>
+            <div>
+            <h2 className="bakery-name">Chez Mathys et Loris</h2>
             <p className="bakery-deliverycost">Frais de livraison : 3.50€</p>
+          </div>
+          <div className="like">
+            <Heart />
+          </div>
           </div>
           <div className="rating">
             <StarRating />
@@ -71,48 +131,14 @@ const BakeryList = () => {
           <p className="bakery-deliverytime">10-20 min</p>
 
           <div className="bakery-infos">
-            <h2 className="bakery-name">Bolos portugueses do Alexa</h2>
-            <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
-          </div>
-          <div className="rating">
-            <StarRating />
-          </div>
-        </div>
-
-        <div className="bakery">
-          <img className="bakery__img" src={pain} alt="pain" />
-          <p className="bakery-deliverytime">20-30 min</p>
-
-          <div className="bakery-infos">
-            <h2 className="bakery-name">Les petites douceurs de Loris</h2>
-            <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
-          </div>
-          <div className="rating">
-            <StarRating />
-          </div>
-        </div>
-
-        <div className="bakery">
-          <img className="bakery__img" src={cupcake} alt="cupcake" />
-          <p className="bakery-deliverytime">30-40 min</p>
-
-          <div className="bakery-infos">
-            <h2 className="bakery-name">Les pains cramés de Mathys</h2>
-            <p className="bakery-deliverycost">Frais de livraison : 3.50€</p>
-          </div>
-          <div className="rating">
-            <StarRating />
-          </div>
-        </div>
-
-        <div className="bakery">
-          <img className="bakery__img" src={croissant} alt="croissant" />
-          <p className="bakery-deliverytime">10-20 min</p>
-
-          <div className="bakery-infos">
+            <div>
             <h2 className="bakery-name">O'croissant</h2>
             <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
           </div>
+          <div className="like">
+            <Heart />
+          </div>
+          </div>
           <div className="rating">
             <StarRating />
           </div>
@@ -123,8 +149,13 @@ const BakeryList = () => {
           <p className="bakery-deliverytime">20-30 min</p>
 
           <div className="bakery-infos">
+            <div>
             <h2 className="bakery-name">Seigle et Son</h2>
             <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
+          </div>
+          <div className="like">
+            <Heart />
+          </div>
           </div>
           <div className="rating">
             <StarRating />
