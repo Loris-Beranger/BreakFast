@@ -37,6 +37,11 @@
       }
   }
 
+  .trait{
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding-bottom: 1em;
+
+  }
   .ligne{
     display: flex;
     justify-content: center;
@@ -59,6 +64,7 @@
   .paye{
     display: flex;
     justify-content: center;
+    padding-top: 2em;
   }
   .totalPrice{
     position: absolute;
@@ -131,9 +137,14 @@
   margin: 0.7em;
   margin-left: 15em;
 }
+.trait{
+  border-bottom: 1px rgb(0, 0, 0) solid;
+  padding-bottom: 1em;
+}
 .paye{
   display: flex;
   justify-content: center;
+  padding-top: 2em;
 }
 .totalPrice{
   position: absolute;

@@ -58,7 +58,9 @@ let price = 16
 
       <div className='PriceListe'>
         <div>
+        <div className='trait'>
           {blocProductPrice}
+        </div>
           <div className='paye'>
             <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
             <div className='totalPrice'>{Totalàpayer}€</div>
