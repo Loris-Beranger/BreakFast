@@ -43,10 +43,10 @@ let price = 16
     for (let i = 0; i<ProductNumber; i++){
 
       blocProductPrice.push(
-      <div className='ligne'>
-            <div className='productName'>petit croissant au beurre</div>
-            <div className='productPrice'>{price}</div>
-          </div>
+        <div className='ligne'>
+          <div className='productName'>petit croissant au beurre</div>
+          <div className='productPrice'>{price}</div>
+        </div>
       )};
 
 
@@ -58,14 +58,15 @@ let price = 16
 
       <div className='PriceListe'>
         <div className='limite'></div>
-      <div>
-        {blocProductPrice}
-      <div className='paye'>
-        <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
-        <div className='totalPrice'>{Totalàpayer}€</div>
+        <div>
+          {blocProductPrice}
+          <div className='paye'>
+            <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
+            <div className='totalPrice'>{Totalàpayer}€</div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
+      
     </div>
     
   );

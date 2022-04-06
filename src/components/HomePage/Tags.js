@@ -15,7 +15,7 @@ const Tags = () => {
       behavior: 'smooth'
     });
     // Focus la barre d'adresse 
-    document.querySelector('.form-adresse-input').focus();
+    /* document.querySelector('.form-adresse-input').focus(); */
   };
   
 
