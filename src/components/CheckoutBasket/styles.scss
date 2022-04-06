@@ -36,10 +36,7 @@
         width: 30px;
       }
   }
-  .limite{
-    border-bottom: 2px solid #000; 
-    margin: 1em;
-  }
+
   .ligne{
     display: flex;
     justify-content: center;
@@ -115,10 +112,6 @@
     width: 40px;
   }
 }
-.limite{
-  border-bottom: 2px solid #000; 
-  margin: 1em;
-}
 .ligne{
   display: flex;
   justify-content: center;
@@ -167,10 +160,12 @@
 
   .products{
     display: flex;
-    padding:  4em 5em 0em 5em;
+    margin-top: 5em;
+    padding:  2em 0em 0em 5em;
     height: 600px;
-    width: 62%;
+    width: 55%;
     flex-wrap: wrap;
+    border-right: 1px solid black;
     .product{
       width: 200px;
       height: 250px;
@@ -205,16 +200,6 @@
       width: 30px;
     }
   }
-
-  .limite{
-    position: absolute;
-    top: 0%;
-    border-left: 2px solid rgba(0, 0, 0, 0.486); 
-    height: 600px; 
-    display: inline-block;
-    right: 22em  
-  }
-
   .PriceListe{
     display: flex;
     position: absolute;
