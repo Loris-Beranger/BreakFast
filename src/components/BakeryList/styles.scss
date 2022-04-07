@@ -1,7 +1,19 @@
+.tags {
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin-top: 2em;
+}
+
+.tag {
+  
+}
+
 .bakeries {
-  max-width: 100%;
+  max-width: 80%;
   height: 100%;
   overflow-y: scroll;
+  float: right;
 
   .bakery {
     max-width: 100%;

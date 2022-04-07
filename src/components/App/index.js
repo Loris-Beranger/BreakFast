@@ -14,7 +14,7 @@ import Contact from '../Contact';
 import About from '../About';
 import Blog from '../Blog';
 import Formules from '../Formules';
-import Log from '../Log';
+import Log from 'src/components/Log';
 
 // == Composant
 const App = () => (
