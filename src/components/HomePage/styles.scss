@@ -29,6 +29,7 @@
     width: 100%;
 
     .box-form-adresse {
+      position: relative;
       background-color: vars.$principal-color;
       padding: 1em;
       border-radius: 15px;
@@ -55,6 +56,18 @@
       }
       .form-adresse-input::placeholder {
         color: vars.$principal-color;    
+      }
+
+      .listPropositions {
+        background-color: vars.$second-color;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        .proposedfield {
+          border: 1px solid black;
+        }
       }
     }
   }

@@ -2,14 +2,24 @@
 import './styles.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeInputValue, sendMessage } from 'src/actions/actions';
+import { useQuery } from 'react-query';
+import { searchCity } from './requete';
+import ProposedField from './ProposedField';
 
 // == Composant
 const FormAdress = () => {
-  const value = useSelector((state) => state.inputMessage);
+  const inputValue = useSelector((state) => state.inputMessage);
   const message = useSelector((state) => state.message);
   const dispatch = useDispatch();
-  // on récupère un raccourci vers la méthode store.dispatch => ici dispatch est
-  // donc une fonction, il faudra fournir une action en argument
+    
+  const queryKey = ['search', inputValue];
+  const {isLoading, data, error} = useQuery(queryKey, () => searchCity(inputValue), {
+    refetchOnWindowFocus: false,
+  })
+  const requete = data || false;
+
+  console.log(requete);
+  
 
   return (
     <div className="box-form-adresse">
@@ -18,7 +28,7 @@ const FormAdress = () => {
         className="form-adresse"
         onSubmit={(event) => {
           event.preventDefault();
-          const action  = sendMessage(value);
+          const action  = sendMessage(inputValue);
           dispatch(action);
         }}
       >
@@ -26,13 +36,22 @@ const FormAdress = () => {
           type="text"
           className="form-adresse-input"
           placeholder="Entrez votre adresse"
-          value={value}
+          value={inputValue}
           onChange={(event) => {
             const action  = changeInputValue(event.target.value);
             dispatch(action);
           }}
         />
       </form>
+      <ul className='listPropositions'>
+        {!isLoading && requete.data.map((item) => (
+          <ProposedField
+            key={item.code}
+            name={item.nom}
+          />
+        ))}
+      </ul>
+      
     </div>
   );
 };

@@ -3,11 +3,14 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import { BrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import store from 'src/store';
 // == Import : local
 // Composants
 import App from 'src/components/App';
+
+const queryClient = new QueryClient();
 
 // == Render
 // 1. Élément React racine (celui qui contient l'ensemble de l'app)
@@ -15,7 +18,9 @@ import App from 'src/components/App';
 const rootReactElement = (
   <BrowserRouter>
   <Provider store={store}>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>  
   </Provider>
   </BrowserRouter>
 );
