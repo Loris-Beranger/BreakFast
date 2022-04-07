@@ -67,6 +67,7 @@
     padding: 2em;
   }
   .btnEchap{
+    z-index: 3;
     cursor: pointer;
     font-size: 50px;
     position: absolute;
@@ -252,6 +253,7 @@ color: aliceblue;
   padding: 2em;
 }
 .btnEchap{
+  z-index: 3;
   cursor: pointer;
   font-size: 60px;
   position: absolute;

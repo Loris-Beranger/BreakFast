@@ -9,7 +9,6 @@ import HomePage from 'src/components/HomePage';
 import BakeryList from 'src/components/BakeryList';
 import CheckoutBasket from 'src/components/CheckoutBasket';
 import Checkout from 'src/components/Checkout';
-import reactDom from 'react-dom';
 import Contact from '../Contact';
 import About from '../About';
 import Blog from '../Blog';
