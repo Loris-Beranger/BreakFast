@@ -13,7 +13,7 @@ const FormAdress = () => {
 
   const inputValue = useSelector((state) => state.inputAdress);
   const currentAdress = useSelector((state) => state.currentAdress);
-  console.log(currentAdress)
+  /* console.log() */
   const dispatch = useDispatch();
     
   const queryKey = ['search', inputValue];
