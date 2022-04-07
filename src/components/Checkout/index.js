@@ -22,7 +22,7 @@ const Checkout = () => {
       <div className='checkbox'>
         <label>
           <input type="checkbox" />
-            Quick and collect
+            Click and collect
         </label>
       </div>
 
