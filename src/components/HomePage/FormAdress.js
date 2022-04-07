@@ -8,7 +8,7 @@ import ProposedField from './ProposedField';
 
 // == Composant
 const FormAdress = () => {
-  const inputValue = useSelector((state) => state.inputMessage);
+  const inputValue = useSelector((state) => state.inputAdresse);
   const message = useSelector((state) => state.message);
   const dispatch = useDispatch();
     
@@ -42,8 +42,7 @@ const FormAdress = () => {
             dispatch(action);
           }}
         />
-      </form>
-      <ul className='listPropositions'>
+        <ul className='listPropositions'>
         {!isLoading && requete.data.map((item) => (
           <ProposedField
             key={item.code}
@@ -51,6 +50,8 @@ const FormAdress = () => {
           />
         ))}
       </ul>
+      </form>
+      
       
     </div>
   );

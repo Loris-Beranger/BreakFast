@@ -29,7 +29,6 @@
     width: 100%;
 
     .box-form-adresse {
-      position: relative;
       background-color: vars.$principal-color;
       padding: 1em;
       border-radius: 15px;
@@ -39,36 +38,57 @@
       height: 130px;
       width: 90%;
       margin: 50px 0;
-    
+
       .form-title {
         font-size: 1.2em;
         text-transform: uppercase;
         color: vars.$second-color;
         display: inline-block;
       }
-      .form-adresse-input {
-        background-color: vars.$second-color;
-        width: 80%;
-        border: none;
-        border-radius: 10px;
-        padding: 0.8em 2em;
-        color: vars.$principal-color;
-      }
-      .form-adresse-input::placeholder {
-        color: vars.$principal-color;    
-      }
 
-      .listPropositions {
-        background-color: vars.$second-color;
-        position: absolute;
-        top: 80%;
-        left: 10%;
-        width: 80%;
+      .form-adresse {
+        position: relative;
 
-        .proposedfield {
-          border: 1px solid black;
+        
+        .form-adresse-input {
+          background-color: vars.$second-color;
+          width: 80%;
+          border: none;
+          font-size: 1.1em;
+          padding: 0.8em 2em;
+          font-family: Gravity;
+          color: vars.$principal-color;
+        }
+        .form-adresse-input::placeholder {
+          color: vars.$principal-color;    
+        }
+  
+        .listPropositions {
+          background-color: vars.$second-color;
+          margin-top: 15px;
+          position: absolute;
+          top: 80%;
+          left: 10%;
+          width: 80%;
+          box-shadow: 0 0 1px rgb(122, 122, 122);
+  
+          .proposedfield {
+            color: vars.$principal-color;
+            padding: 15px 15px;
+            font-size: 1.1em;
+            font-family: Gravity;
+            text-align: left;
+
+            &:hover {
+              background-color: vars.$principal-color;
+              color: vars.$second-color;
+              cursor: pointer;
+            }
+          }
         }
       }
+    
+      
     }
   }
 

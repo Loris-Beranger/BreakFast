@@ -5,7 +5,7 @@ import {
 } from '../actions/actions';
 
 const initialState = {
-  inputMessage: '',
+  inputAdresse: '',
   message: '',
   sidebar: false,
 };
@@ -17,7 +17,7 @@ const inputReducer = (state = initialState, action = {}) => {
     case CHANGE_INPUT_VALUE:
       return {
         ...state,
-        inputMessage: action.value,
+        inputAdresse: action.value,
       };
     case SEND_MESSAGE:
       return {
