@@ -47,14 +47,14 @@ const FormAdress = () => {
             dispatch(action);
           }}
         />
-        {document.querySelector('.form-adresse-input').focus() && <ul className='listPropositions'>
+        <ul className='listPropositions'>
           {!isLoading && requete.data.map((item) => (
             <ProposedField
               key={item.code}
               name={item.nom}
             />
           ))}
-        </ul>}
+        </ul>
       </form>
       
       
