@@ -3,9 +3,13 @@ import './styles.scss';
 import Field from 'src/components/Field';
 
 // == Composant
-const Log = () => (
+const Log = () => {
+
+  
+return (
   <div className="log">
     <div class="parent">
+
       <div class="connexion">
         Connexion
           <div className='mail' >
@@ -17,10 +21,11 @@ const Log = () => (
           <div className='mdp' >
             Mot de passe
             <div className='champ' >
-              <input className="input"/>
+              <input className="input" type='password'/>
             </div>
           </div>
         </div>
+
       <div class="inscription">
         Inscription
         <div className='mail' >
@@ -32,19 +37,23 @@ const Log = () => (
         <div className='mdp' >
           Mot de passe
           <div className='champ' >
-            <input className="input"/>
+            <input className="input" type='password'/>
           </div>
         </div>
         <div className='mdp' >
           Confirmation de mot de passe 
           <div className='champ' >
-            <input className="input"/>
+            <input className="input" type='password'/>
           </div>
         </div>
       </div>
     </div>
   </div>
 );
+
+
+};
+  
 
 // == Export
 export default Log;
