@@ -61,6 +61,11 @@
   margin: 1rem 0;
   position: relative;
 }
+
+.btnInvisible{
+  display: none;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -107,4 +112,9 @@ padding-top: 2em;
   margin: 2rem 0;
   position: relative;
 }
+
+.btnInvisible{
+  display: none;
+}
+
 }

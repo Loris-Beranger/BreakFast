@@ -43,4 +43,92 @@ export const data = [
       delivery_fees: 1.50,
       city: 'Lyon',
     },
+    {
+      id: 5,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Lyon',
+    },
+    {
+      id: 5,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Paris',
+    },
+    {
+      id: 6,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Paris',
+    },
+    {
+      id: 7,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Paris',
+    },
+    {
+      id: 8,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Paris',
+    },
+    {
+      id: 9,
+      img: croissant,
+      time: '10-20',
+      name: "O'lyon",
+      delivery_fees: 1.50,
+      city: 'Paris',
+    },
+  ]
+
+  export const productData = [
+    {
+      id: 1,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    {
+      id: 2,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    {
+      id: 3,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    {
+      id: 4,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    {
+      id: 5,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    {
+      id: 6,
+      img: croissant,
+      name: "pain au choco",
+      bakery: "O'lyon"
+    },
+    
   ]

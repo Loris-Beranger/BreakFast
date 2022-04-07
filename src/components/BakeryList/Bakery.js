@@ -4,7 +4,6 @@ import Heart from 'src/components/Heart/Heart';
 import StarRating from 'src/components/StarRating/StarRating';
 // == Composant
 const Bakery = ({ img, time, name, delivery_fees }) => {
-    console.log(img)
 
     return (
         <div className="bakery">
