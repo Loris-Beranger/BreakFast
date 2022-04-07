@@ -23,10 +23,24 @@ const BakeryList = () => {
           <h1>Filtrer par diététique</h1>
 
           <div className="tag">
-            <p> <SiLeaflet />Bio</p>
-            <p> <TiHeartFullOutline />Vegan</p>
-            <p> <RiLeafLine />Végétarien</p>
-            <p> <GiWheat /> Sans gluten</p>
+
+            <div className="tag_label">
+              <h2> <TiHeartFullOutline />Vegan</h2>
+            </div>
+
+            <div className="tag_label">
+              <h2> <GiWheat /> Sans gluten</h2>
+            </div>
+
+
+            <div className="tag_label">
+              <h2> <SiLeaflet />Bio</h2>
+            </div>
+
+            <div className="tag_label">
+              <h2> <RiLeafLine />Végétarien</h2>
+            </div>
+
           </div>
         </div>
       </div>
@@ -181,7 +195,7 @@ const BakeryList = () => {
 
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
