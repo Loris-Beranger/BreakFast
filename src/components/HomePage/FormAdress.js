@@ -34,7 +34,7 @@ const FormAdress = () => {
           event.preventDefault();
           const action  = setAdress(inputValue);
           dispatch(action);
-          navigate('/bakerylist')
+          navigate('/bakery/list')
         }}
       >
         <input 
