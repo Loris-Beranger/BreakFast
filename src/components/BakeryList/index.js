@@ -9,14 +9,12 @@ import { TiHeartFullOutline } from "react-icons/ti";
 
 import { useSelector, useDispatch } from 'react-redux';
 import Bakery from './Bakery';
-import { data } from '../../data/data';
+import { bakeryList } from '../../data/data';
 
 const BakeryList = () => {
   const currentAdress = useSelector((state) => state.currentAdress);
   console.log(currentAdress)
-  const datas = data;
-  console.log(datas)
-  const dataFilter = datas.filter(word => word.city === currentAdress);
+  const dataFilter = bakeryList.filter(word => word.adress === currentAdress);
 
 
   let test = [];
@@ -64,8 +62,8 @@ const BakeryList = () => {
           {dataFilter.map((item) => (
             <Bakery
               key={item.id}
-              img={item.img}
-              time={item.time}
+              img={item.profile_img}
+              time={item.delivery_time}
               name={item.name}
               delivery_fees={item.delivery_fees}
             />

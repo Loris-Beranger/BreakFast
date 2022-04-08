@@ -1,6 +1,8 @@
 
 .bakerylist {
   overflow-y: scroll;
+  width: 100%;
+  height: 100%;
 }
 
 .tags {
@@ -41,6 +43,7 @@
 
   .bakery__img {
     max-width: 100%;
+    height: 200px;
     padding-bottom: 0.5em;
   }
 
