@@ -13,14 +13,15 @@ const Bakery = ({ img, time, name, delivery_fees }) => {
                 <div>
                     <h2 className="bakery-name">{name}</h2>
                     <p className="bakery-deliverycost">Frais de livraison : {delivery_fees}€</p>
+                    <div className="rating">
+                        <StarRating />
+                    </div>
                 </div>
                 <div className="like">
                     <Heart />
                 </div>
             </div>
-            <div className="rating">
-                <StarRating />
-            </div>
+            
         </div>
     );
 }
