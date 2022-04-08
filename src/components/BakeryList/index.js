@@ -19,7 +19,7 @@ const BakeryList = () => {
   const dataFilter = datas.filter(word => word.city === currentAdress);
 
   return (
-    <div>
+    <div className='bakerylist'>
       <div className="tags">
         <div>
           <h1>Filtrer par diététique</h1>
