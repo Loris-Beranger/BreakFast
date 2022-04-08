@@ -7,6 +7,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import HomePage from 'src/components/HomePage';
 import BakeryList from 'src/components/BakeryList';
+import BakeryProducts from 'src/components/BakeryProducts';
 import CheckoutBasket from 'src/components/CheckoutBasket';
 import Checkout from 'src/components/Checkout';
 import Contact from '../Contact';
@@ -28,7 +29,8 @@ const App = () => (
       <Route path="/blog" element={<Blog />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/bakerylist" element={<BakeryList />} />
+      <Route path="/bakery/list" element={<BakeryList />} />
+      <Route path="/bakery/list/products" element={<BakeryProducts />} />
     </Routes>
   </div>
 );
