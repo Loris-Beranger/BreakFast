@@ -103,7 +103,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 5% 10% 5%;
+    margin: 0 5% 0 5%;
   }
 
   .bakery__img {
@@ -213,6 +213,18 @@
 
   .tag_label {
     margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .icon-tag {
+      position: absolute;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .column {

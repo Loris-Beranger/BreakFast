@@ -49,31 +49,20 @@ const BakeryList = () => {
               <h1 className='title-tags'>Filtrer par diététique</h1>
               <div className="tag">
                 <div className="tag_label">
-                  <h2>
-                    {" "}
-                    <TiHeartFullOutline />
-                    Vegan
-                  </h2>
+                  <TiHeartFullOutline className='icon-tag'/>
+                  <h2>Vegan</h2>
                 </div>
                 <div className="tag_label">
-                  <h2>
-                    {" "}
-                    <GiWheat /> Sans gluten
-                  </h2>
+                  <GiWheat />
+                  <h2>Sans gluten</h2>
                 </div>
                 <div className="tag_label">
-                  <h2>
-                    {" "}
-                    <SiLeaflet />
-                    Bio
-                  </h2>
+                  <SiLeaflet />
+                  <h2>Bio</h2>
                 </div>
                 <div className="tag_label">
-                  <h2>
-                    {" "}
-                    <RiLeafLine />
-                    Végétarien
-                  </h2>
+                  <RiLeafLine />
+                  <h2>Végétarien</h2>
                 </div>
               </div>
             </div>
