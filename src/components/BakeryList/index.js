@@ -31,7 +31,7 @@ const BakeryList = () => {
   }
 
   return (
-    <div>
+    <div className='bakerylist'>
       <div className="tags">
         <div>
           <h1>Filtrer par diététique</h1>
