@@ -29,9 +29,9 @@ let price = 16
     }
     
     blocProduct.push(
-      <div className='product'>
-        <img className='imgProduit' src={imageCroissant} alt="img-croissant" />
-        <div className='quantity'>{count}
+      <div className='Basket-product'>
+        <img className='Basket-imgProduit' src={imageCroissant} alt="img-croissant" />
+        <div className='Basket-quantity'>{count}
             <div className='math'>
               <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
               <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
@@ -43,27 +43,27 @@ let price = 16
     for (let i = 0; i<ProductNumber; i++){
 
       blocProductPrice.push(
-        <div className='ligne'>
-          <div className='productName'>petit croissant au beurre</div>
-          <div className='productPrice'>{price}</div>
+        <div className='Basket-ligne'>
+          <div className='Basket-productName'>petit croissant au beurre</div>
+          <div className='Basket-productPrice'>{price}</div>
         </div>
       )};
 
 
   return (
-    <div className='Basket'>
-      <div className='products'>
+    <div className='Basket-Basket'>
+      <div className='Basket-products'>
         {blocProduct}
       </div>
 
-      <div className='PriceListe'>
+      <div className='Basket-PriceListe'>
         <div>
-        <div className='trait'>
+        <div className='Basket-trait'>
           {blocProductPrice}
         </div>
-          <div className='paye'>
-            <NavLink to="/checkout" className='btnPayer'>PAYER</NavLink>
-            <div className='totalPrice'>{Totalàpayer}€</div>
+          <div className='Basket-paye'>
+            <NavLink to="/checkout" className='Basket-btnPayer'>PAYER</NavLink>
+            <div className='Basket-totalPrice'>{Totalàpayer}€</div>
           </div>
         </div>
       </div>

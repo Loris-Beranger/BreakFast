@@ -3,6 +3,8 @@ import Field from 'src/components/Field';
 import React, { useState } from 'react';
 import remove from './images/remove.png';
 import verifie from './images/verifie.png';
+import { NavLink } from "react-router-dom";
+
 import './styles.scss';
 
 
@@ -56,7 +58,7 @@ const Checkout = () => {
       </div>
 
     <div className={popUp}>
-      <div className='btnEchap' onClick={() => setpopUp('nopopup')}>+</div>
+      <NavLink to="/" className='btnEchap' onClick={() => setpopUp('nopopup')}>+</NavLink>
       <div className='confirmation'>État de la commande : </div>
       <div className='etat'>Confirmé !</div>
       <div>

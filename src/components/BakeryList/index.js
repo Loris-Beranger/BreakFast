@@ -18,6 +18,18 @@ const BakeryList = () => {
   console.log(datas)
   const dataFilter = datas.filter(word => word.city === currentAdress);
 
+
+  let test = [];
+
+  if(currentAdress === ''){
+    console.log('rien')
+    test.push(
+      <div className='no-bakery' >
+          vous n'avez pas mis de boulangeries
+      </div>
+    )
+  }
+
   return (
     <div>
       <div className="tags">
@@ -46,9 +58,9 @@ const BakeryList = () => {
           </div>
         </div>
       </div>
-
+      {test}
       <div className="bakeries">
-        <ul className="column">
+        <ul className="column" >
           {dataFilter.map((item) => (
             <Bakery
               key={item.id}

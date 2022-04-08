@@ -6,6 +6,7 @@ import Field from 'src/components/Field';
 const Log = () => {
 
   
+  
 return (
   <div className="log">
     <div className="parent">

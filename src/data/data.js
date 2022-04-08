@@ -103,31 +103,31 @@ export const data = [
     {
       id: 2,
       img: croissant,
-      name: "pain au choco",
+      name: "croissant",
       bakery: "O'lyon"
     },
     {
       id: 3,
       img: croissant,
-      name: "pain au choco",
+      name: "pizza",
       bakery: "O'lyon"
     },
     {
       id: 4,
       img: croissant,
-      name: "pain au choco",
+      name: "café",
       bakery: "O'lyon"
     },
     {
       id: 5,
       img: croissant,
-      name: "pain au choco",
+      name: "tartine au nutella",
       bakery: "O'lyon"
     },
     {
       id: 6,
       img: croissant,
-      name: "pain au choco",
+      name: "pepsi max 0% sucre",
       bakery: "O'lyon"
     },
     

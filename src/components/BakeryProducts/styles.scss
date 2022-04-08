@@ -1,0 +1,21 @@
+.productpage {
+    width: 100%;
+    height: 100%;
+
+    .bakery-info {
+    }
+    .products-list {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .btn-to-basket{
+        background-color: #865439;
+        padding: 1em 2em;
+        background-color: aqua;
+    }
+}
+
