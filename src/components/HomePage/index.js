@@ -1,7 +1,7 @@
 // == Import
 import FormAdress from './FormAdress';
 import './styles.scss';
-import Tags from './Tags';
+import Categories from './Categories';
 
 
 // == Composant
@@ -10,7 +10,7 @@ const HomePage = () => (
     <div className="section-form-adress">
       <FormAdress />
     </div>
-    <Tags />
+    <Categories />
   </div>
 );
 

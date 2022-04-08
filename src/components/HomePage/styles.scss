@@ -92,7 +92,7 @@
     }
   }
 
-  .tags {
+  .categories {
     width: 100%;
     background-color: vars.$principal-color;
     display: flex;
@@ -108,7 +108,7 @@
       text-transform: uppercase;
     }
 
-    .list-tags {
+    .list-categories {
       padding: 10px;
       display: flex;
       justify-content: center;
@@ -119,7 +119,7 @@
       /* height: 200px; */
       
       
-      .tag {
+      .category {
         width: 100%;
         height: 200px;
         margin: 5px 0;
@@ -145,28 +145,28 @@
       }
       
     }
-    .list-tags .tag:nth-child(1) div {
-      background-image: url('./images/tags/amoureux.jpg');
+    .list-categories .category:nth-child(1) div {
+      background-image: url('./images/categories/amoureux.jpg');
       background-size: cover;
       background-position: center ;
     }
-    .list-tags .tag:nth-child(2) div {
-      background-image: url('./images/tags/anniversaire.jpg');
+    .list-categories .category:nth-child(2) div {
+      background-image: url('./images/categories/anniversaire.jpg');
       background-size: cover;
       background-position: center ;
     }
-    .list-tags .tag:nth-child(3) div {
-      background-image: url('./images/tags/bio.jpg');
+    .list-categories .category:nth-child(3) div {
+      background-image: url('./images/categories/bio.jpg');
       background-size: cover;
       background-position: center ;
     }
-    .list-tags .tag:nth-child(4) div {
-      background-image: url('./images/tags/vegan.jpg');
+    .list-categories .category:nth-child(4) div {
+      background-image: url('./images/categories/vegan.jpg');
       background-size: cover;
       background-position: center ;
     }
-    .list-tags .tag:nth-child(5) div {
-      background-image: url('./images/tags/entreprise.jpg');
+    .list-categories .category:nth-child(5) div {
+      background-image: url('./images/categories/entreprise.jpg');
       background-size: cover;
       background-position: center ;
     }   
@@ -187,14 +187,14 @@
       }
     }
 
-    .tags {
+    .categories {
       /* transform: translateY(170px); */
       .title-category {
         /* background-color: vars.$principal-color; */
       }
-      .list-tags {
+      .list-categories {
         
-        .tag {
+        .category {
           width: 45%;
           height: 200px;
           margin: 10px;
@@ -223,14 +223,14 @@
       }
     }
 
-    .tags {
+    .categories {
       /* transform: translateY(170px); */
       .title-category {
         /* background-color: vars.$principal-color; */
       }
-      .list-tags {
+      .list-categories {
         
-        .tag {
+        .category {
           width: 48%;
           height: 250px;
           margin: 10px;
@@ -255,14 +255,14 @@
       }
     }
 
-    .tags {
+    .categories {
       /* transform: translateY(170px); */
       .title-category {
         /* background-color: vars.$principal-color; */
       }
-      .list-tags {
+      .list-categories {
         
-        .tag {
+        .category {
           width: 30%;
           height: 250px;
           margin: 10px;

@@ -1,13 +1,13 @@
 // == Import
 import './styles.scss';
-import ImgAmoureux from './images/tags/amoureux.jpg'
-import ImgAnniversaire from './images/tags/anniversaire.jpg'
-import ImgBio from './images/tags/bio.jpg'
-import ImgVegan from './images/tags/vegan.jpg'
-import ImgEntreprise from './images/tags/entreprise.jpg'
+import ImgAmoureux from './images/categories/amoureux.jpg'
+import ImgAnniversaire from './images/categories/anniversaire.jpg'
+import ImgBio from './images/categories/bio.jpg'
+import ImgVegan from './images/categories/vegan.jpg'
+import ImgEntreprise from './images/categories/entreprise.jpg'
 
 // == Composant
-const Tags = () => {
+const Categories = () => {
   const scrollToTop = () =>{
     // Remonter scroll de la page au clic sur une catégorie
     document.querySelector('.homepage').scrollTo({
@@ -20,30 +20,30 @@ const Tags = () => {
   
 
   return (
-    <div className="tags">
+    <div className="categories">
       <h2 className="title-category">Catégories</h2>
-      <ul className="list-tags">
-        <li className="tag" onClick={scrollToTop}>
+      <ul className="list-categories">
+        <li className="category" onClick={scrollToTop}>
           <div className="background-div">
             <p>Amoureux</p>
           </div>
         </li>
-        <li className="tag" onClick={scrollToTop}>
+        <li className="category" onClick={scrollToTop}>
           <div className="background-div">
             <p>Anniversaire</p>
           </div>
           </li>
-        <li className="tag" onClick={scrollToTop}>
+        <li className="category" onClick={scrollToTop}>
           <div className="background-div">
             <p>Bio</p>
           </div>
         </li>
-        <li className="tag" onClick={scrollToTop}>
+        <li className="category" onClick={scrollToTop}>
           <div className="background-div">
             <p>Vegan</p>
           </div>
           </li>
-        <li className="tag" onClick={scrollToTop}>
+        <li className="category" onClick={scrollToTop}>
           <div className="background-div">
             <p>Entreprise</p>
           </div>
@@ -55,4 +55,4 @@ const Tags = () => {
 };
 
 // == Export
-export default Tags;
+export default Categories;
