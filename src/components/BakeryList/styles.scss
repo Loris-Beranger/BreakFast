@@ -1,6 +1,10 @@
+.page-bakery {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
 
 .bakerylist {
-  overflow-y: scroll;
   width: 100%;
   height: 100%;
   display: flex;  
@@ -10,6 +14,7 @@
 .wrapper-city {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 
 .wrapper-bakerylist-tags {
@@ -30,7 +35,13 @@
   border-radius: 20px;
   display: flex;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
   border: none;
+
+  .icon-location {
+    width: 20px;
+    height: 20px;
+  }
 
   span {
     margin: 0 5px;
@@ -53,7 +64,7 @@
 }
 
 .tags {
-  padding-top: 35px;
+  /* padding-top: 10px; */
 }
 
 .tag {
@@ -61,6 +72,10 @@
   display: flex;
   justify-content: space-between;
   margin: 5% 5% 0% 5%;
+}
+
+.title-tags {
+  font-size: 1.2em;
 }
 
 .tag_label {
@@ -86,7 +101,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 10% 5% 10% 5%;
+    margin: 0 5% 10% 5%;
   }
 
   .bakery__img {
@@ -122,12 +137,14 @@
   .bakery-deliverycost {
     font-size: small;
     text-align: left;
+    margin-top: 3px;
   }
 
   .rating {
     //position: absolute;
     text-align: left;
     top: 100%;
+    margin-top: 3px;
   }
 
   .like {
@@ -141,6 +158,44 @@
 .no-bakery{
   padding: 10em;
 }
+
+.bakery-notfound {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .btn-change-city {
+      background-color: #d3b07b;
+      padding: 13px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      border: none;
+      margin-top: 30px;
+
+      &:hover {
+        color: white;
+        background-color: #996a23;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
 
   .tags {
