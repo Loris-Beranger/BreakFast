@@ -2,19 +2,21 @@
 //import { AiOutlineHeart } from "react-icons/ai";
 import './styles.scss';
 
-import StarRating from 'src/components/StarRating/StarRating';
-import Heart from 'src/components/Heart/Heart';
-//import Tags from 'src/components/Tags/Tags'
 import { GiWheat } from "react-icons/gi";
 import { RiLeafLine } from "react-icons/ri";
 import { SiLeaflet } from "react-icons/si";
 import { TiHeartFullOutline } from "react-icons/ti";
 
-import croissant from './images/croissant.jpg';
-import pain from './images/pain.jpg';
-import cupcake from './images/cupcake.jpg';
+import { useSelector, useDispatch } from 'react-redux';
+import Bakery from './Bakery';
+import { data } from '../../data/data';
 
 const BakeryList = () => {
+  const currentAdress = useSelector((state) => state.currentAdress);
+  console.log(currentAdress)
+  const datas = data;
+  console.log(datas)
+  const dataFilter = datas.filter(word => word.city === currentAdress);
 
   return (
     <div>
@@ -46,156 +48,19 @@ const BakeryList = () => {
       </div>
 
       <div className="bakeries">
-
-        <div className="column">
-
-          <div className="bakery">
-            <img className="bakery__img" src={croissant} alt="croissant" />
-            <p className="bakery-deliverytime">10-20 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">O'croissant</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={pain} alt="pain" />
-            <p className="bakery-deliverytime">20-30 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Les pains d'Anth'O</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={cupcake} alt="cupcake" />
-            <p className="bakery-deliverytime">30-40 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Les délices de Karen</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 3.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={croissant} alt="croissant" />
-            <p className="bakery-deliverytime">10-20 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Bolos portugueses</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={pain} alt="pain" />
-            <p className="bakery-deliverytime">20-30 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Les petites douceurs</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={cupcake} alt="cupcake" />
-            <p className="bakery-deliverytime">30-40 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Chez Mathys et Loris</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 3.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={croissant} alt="croissant" />
-            <p className="bakery-deliverytime">10-20 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">O'croissant</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 1.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-          <div className="bakery">
-            <img className="bakery__img" src={pain} alt="pain" />
-            <p className="bakery-deliverytime">20-30 min</p>
-
-            <div className="bakery-infos">
-              <div>
-                <h2 className="bakery-name">Seigle et Son</h2>
-                <p className="bakery-deliverycost">Frais de livraison : 2.50€</p>
-              </div>
-              <div className="like">
-                <Heart />
-              </div>
-            </div>
-            <div className="rating">
-              <StarRating />
-            </div>
-          </div>
-
-        </div>
+        <ul className="column">
+          {dataFilter.map((item) => (
+            <Bakery
+              key={item.id}
+              img={item.img}
+              time={item.time}
+              name={item.name}
+              delivery_fees={item.delivery_fees}
+            />
+          ))}
+        </ul>
       </div>
-    </div >
+    </div>
   );
 }
 

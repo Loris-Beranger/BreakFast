@@ -1,15 +1,19 @@
 // == Import
 import './styles.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeInputValue, sendMessage } from 'src/actions/actions';
+import { changeInputValue, setAdress } from 'src/actions/actions';
 import { useQuery } from 'react-query';
 import { searchCity } from './requete';
 import ProposedField from './ProposedField';
+import { useNavigate } from 'react-router-dom';
 
 // == Composant
 const FormAdress = () => {
-  const inputValue = useSelector((state) => state.inputAdresse);
-  const message = useSelector((state) => state.message);
+  const navigate = useNavigate();
+
+  const inputValue = useSelector((state) => state.inputAdress);
+  const currentAdress = useSelector((state) => state.currentAdress);
+  /* console.log() */
   const dispatch = useDispatch();
     
   const queryKey = ['search', inputValue];
@@ -28,8 +32,9 @@ const FormAdress = () => {
         className="form-adresse"
         onSubmit={(event) => {
           event.preventDefault();
-          const action  = sendMessage(inputValue);
+          const action  = setAdress(inputValue);
           dispatch(action);
+          navigate('/bakerylist')
         }}
       >
         <input 
@@ -43,13 +48,13 @@ const FormAdress = () => {
           }}
         />
         <ul className='listPropositions'>
-        {!isLoading && requete.data.map((item) => (
-          <ProposedField
-            key={item.code}
-            name={item.nom}
-          />
-        ))}
-      </ul>
+          {!isLoading && requete.data.map((item) => (
+            <ProposedField
+              key={item.code}
+              name={item.nom}
+            />
+          ))}
+        </ul>
       </form>
       
       

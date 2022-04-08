@@ -1,12 +1,12 @@
 import {
   CHANGE_INPUT_VALUE,
   TOGGLE_SIDEBAR,
-  SEND_MESSAGE,
+  SET_ADRESS,
 } from '../actions/actions';
 
 const initialState = {
-  inputAdresse: '',
-  message: '',
+  inputAdress: '',
+  currentAdress: '',
   sidebar: false,
 };
 
@@ -17,12 +17,12 @@ const inputReducer = (state = initialState, action = {}) => {
     case CHANGE_INPUT_VALUE:
       return {
         ...state,
-        inputAdresse: action.value,
+        inputAdress: action.value,
       };
-    case SEND_MESSAGE:
+    case SET_ADRESS:
       return {
         ...state,
-        message: action.value,
+        currentAdress: action.value,
       };
     case TOGGLE_SIDEBAR:
       return {

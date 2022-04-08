@@ -10,7 +10,6 @@ const Heart = () => {
         <input
           type="radio"
           name="like"
-          onClick={(console.log("test"))}
         />
         <BsSuitHeart className="heart" />
       </label>

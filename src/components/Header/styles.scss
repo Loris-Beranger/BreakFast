@@ -1,7 +1,6 @@
 @use 'src/styles/vars.scss';
 
 
-
 .header {
   background-color: vars.$principal-color;
   width: 100vw;
@@ -269,6 +268,7 @@
               .dropdown-content {
                 display: flex;
                 justify-content: center;
+                z-index: 5;
 
                 li {
                   color: #603b28;
