@@ -4,42 +4,44 @@ import { NavLink } from "react-router-dom";
 import StarsRating from 'react-stars-rating/build/components/StarsRating';
 import Product from './Product/Product';
 import Heart from 'src/components/Heart/Heart';
-//import { productData } from 'src/data/data';
-
-
-
+import croissant from './images/croissant.jpg';
 
 const BakeryProducts = () => {
 
   return (
 
-    <div className='productpage'>
-      <div className='bakery-info'>
-        <div className='info'>
+    <div>
+
+      <div className='bakery'>
+        <div className='bakery_infos'>
           <div>
-            <h2>O'Lyon</h2>
+            <img className="bakery__img" src={croissant} alt="croissant" />
+            <h2 className="bakery__name">O'Lyon</h2>
             <StarsRating />
           </div>
           <input type='text' />
         </div>
-        <div className='bakery-image'>
+        <div className='bakery__like'>
           <Heart />
         </div>
       </div>
 
-      <ul className='products-list'>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <NavLink to="/basket" className='btn-to-basket'>acceder au panier</NavLink>
-      </ul>
-      
-      
+      <div>
+        <div className='products'>
+          <h2 className="all-products">Nos produits</h2>
+          <ul className='products-list'>
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+          </ul>
+          <div>
+            <NavLink to="/basket" className='btn-to-basket'>Voir le panier</NavLink>
+          </div>
+        </div>
+      </div>
+
     </div>
-    
-
-
   );
 }
 

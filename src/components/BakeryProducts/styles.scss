@@ -1,21 +1,44 @@
-.productpage {
-    width: 100%;
+.bakery {
+  .bakery_infos {
+  }
+
+  .bakery__img {
+    height: 50%;
+    width: 50%;
+    float: left;
+  }
+
+  .bakery_name {
+  }
+
+  .bakery__like {
+  }
+}
+
+.products {
+  margin-top: 20%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  .all-products {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .products-list {
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+  }
 
-    .bakery-info {
-    }
-    .products-list {
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .btn-to-basket{
-        background-color: #865439;
-        padding: 1em 2em;
-        background-color: aqua;
-    }
+  .btn-to-basket {
+    background-color: #865439;
+    padding: 1em 2em;
+    background-color: aqua;
+  }
 }
 
