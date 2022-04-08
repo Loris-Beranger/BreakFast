@@ -15,25 +15,32 @@ import About from '../About';
 import Blog from '../Blog';
 import Formules from '../Formules';
 import Log from 'src/components/Log';
+import { useSelector, useDispatch } from 'react-redux';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <Header />
-    <Routes>
-      <Route path="/login" element={<Log />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/basket" element={<CheckoutBasket />} />
-      <Route path="/formules" element={<Formules />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/bakery/list" element={<BakeryList />} />
-      <Route path="/bakery/list/products" element={<BakeryProducts />} />
-    </Routes>
-  </div>
-);
+const App = () => {
+  const currentAdress = useSelector((state) => state.currentAdress);
+  console.log(currentAdress)
+
+
+  return (
+    <div className="app">
+      <Header />
+      <Routes>
+        <Route path="/login" element={<Log />} />
+        <Route path="/" element={!currentAdress ? <HomePage /> : <BakeryList />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/basket" element={<CheckoutBasket />} />
+        <Route path="/formules" element={<Formules />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/bakery/list" element={<BakeryList />} /> */}
+        <Route path="/bakery/list/products" element={<BakeryProducts />} />
+      </Routes>
+    </div>
+  );
+}
 
 // == Export
 export default App;
