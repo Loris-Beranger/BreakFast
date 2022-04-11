@@ -29,6 +29,12 @@
     border-radius: 20px;
   }
 
+  .product-quantity{
+    padding: 0.1em;
+    padding-left: 0em;
+    font-weight: 600;
+    font-size: 20px;  
+
   .math{
     display: flex;
     justify-content: center;
@@ -45,4 +51,6 @@
       width: 30px;
           }
         }
+      }
 }
+
