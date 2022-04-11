@@ -17,16 +17,16 @@ const Product = () => {
 
     <li className="product">
       <img className="product_img" src={croissant} alt="croissant" />
-      <div className='Basket-quantity'>{count}
-      <div className='math'>
-              <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-              <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
-            </div>
       <div className='product-info'>
         <div>
           <h2 className="product_name">Pain au chocolat</h2>
           <p className="product_price">1.10€</p>
         </div>
+        <div className='product-quantity'>{count}
+      <div className='math'>
+              <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
+              <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
+            </div>
       </div>
       </div>
       
