@@ -19,7 +19,7 @@
     /* padding-top: 20px; */
     flex-direction: column;
     justify-content: space-between;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     transition: 700ms;
     border-right: 1px solid vars.$principal-color;
     
@@ -109,7 +109,7 @@
 
   .navbar-mobile.active {
     display: flex;
-    transform: translateX(0);
+    transform: translateX(-99%);
     transition: 300ms;
     
   }

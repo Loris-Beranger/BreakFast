@@ -21,10 +21,11 @@ import { useSelector, useDispatch } from 'react-redux';
 const App = () => {
   const currentAdress = useSelector((state) => state.currentAdress);
   console.log(currentAdress)
+  const sidebar = useSelector((state) => state.sidebar);
 
 
   return (
-    <div className="app">
+    <div className={!sidebar ? "app" : "app menu-active"}>
       <Header />
       <Routes>
         <Route path="/login" element={<Log />} />

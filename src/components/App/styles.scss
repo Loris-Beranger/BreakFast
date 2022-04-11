@@ -22,3 +22,7 @@ body{
   align-items: center;
 }
 
+.app.menu-active {
+  transform: translateX(59%);
+}
+
