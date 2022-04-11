@@ -28,4 +28,21 @@
     color: white;
     border-radius: 20px;
   }
+
+  .math{
+    display: flex;
+    justify-content: center;
+    .plus{
+      margin: 0em 0.5em;
+      padding: 0.1em;
+      height: 30px;
+      width: 30px;
+    }
+    .less{
+      margin: 0em 0.5em;
+      padding: 0.1em;
+      height: 30px;
+      width: 30px;
+          }
+        }
 }
