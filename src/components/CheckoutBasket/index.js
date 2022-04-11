@@ -3,7 +3,7 @@ import './styles.scss';
 
 import IndividualProduct from 'src/components/IndividualProduct'
 import { NavLink } from "react-router-dom";
-import React, {useEffect} from 'react';
+//import React, {useEffect} from 'react';
 import { productData } from 'src/data/data';
 import { useSelector, useDispatch } from 'react-redux'; 
 

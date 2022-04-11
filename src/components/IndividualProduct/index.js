@@ -31,9 +31,7 @@ const IndividualProduct = ({ img,  name, prix}) => {
   const action = setTotalBasket(TotalIndividuel);
   dispatch(action);
 
-  useEffect(() => {
-
-  }, []);
+  //useEffect(() => {}, []);
 
 
   return (
