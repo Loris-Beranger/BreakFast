@@ -2,120 +2,27 @@
 
 
 .log {
-  height: 100%; 
-  width: 100%;
-  color: black;
-  font-size: 1.6em;
-  margin-top: 30px;
-  font-family: Gravity;
-  font-weight: 600;
-  display: flex;
-}
-.parent {
-  width: 100%;
+  background-image: url('./images/background1.jpg');
+  background-size: cover;background-position: center ;
   height: 100%;
-  padding-bottom: 27em;
-}
-@media screen and (min-width: 320px) and (max-width: 1024px){
-
-.log {
-  font-size: 1em;
-  margin-top: 30px;
-}
-.parent {
   width: 100%;
-  height: 100%;
-}
-.connexion {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-  margin: 0.1em 1.5em 3em 1.5em;
-}
-.inscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-  margin: 0.1em 1.5em 1em 1.5em;
-}
-.mail{
-  padding-top: 2em;
-}
-.mdp{
-  padding-top: 1em;
-}
 
-.input {
-  padding: 0.5rem 1em;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid black;
-  font-size: 0.8em;
-}
-.champ {
-  margin: 1rem 0;
-  position: relative;
-}
+  .input-form {
+    
+  }
 
-.btnInvisible{
-  display: none;
-}
+  .wrapper-signup {
+    background-color: #8f6f4adc;
+    width: 80%;
+    height: 80%;
 
-}
-
-@media screen and (min-width: 1024px) {
-
-.inscription { 
-  position: absolute;
-  margin: 5% 5% 5% 55%;
- }
-.connexion {
-  position: absolute;
-  margin: 5% 55% 5% 5%;
- }
-.connexion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-}
-.inscription {
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-}
-.mail{
-  padding-top: 2em;
-}
-.mdp{
-  padding-top: 1em;
-}
-.bloc-connexion{
-padding-top: 2em;
-}
-
-.input {
-  padding: 0.5rem 1em;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid black;
-  font-size: 1.2em;
-}
-.champ {
-  margin: 2rem 0;
-  position: relative;
-}
-
-.btnInvisible{
-  display: none;
-}
-
+    .signup {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+  }
 }

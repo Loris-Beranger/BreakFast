@@ -3,7 +3,7 @@ import './styles.scss';
 
 import Header from '../Header';
 import { Routes, Route, Link } from 'react-router-dom';
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import HomePage from 'src/components/HomePage';
 import BakeryList from 'src/components/BakeryList';
@@ -16,13 +16,31 @@ import Blog from '../Blog';
 import Formules from '../Formules';
 import Log from 'src/components/Log';
 import { useSelector, useDispatch } from 'react-redux';
+import { setBakeryList } from '../../actions/actions';
+
+
 
 // == Composant
 const App = () => {
   const currentAdress = useSelector((state) => state.currentAdress);
   console.log(currentAdress)
   const sidebar = useSelector((state) => state.sidebar);
+  const axios = require('axios');
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
+    .then(function (response) {
+     console.log(response);
+     const action = setBakeryList(response.data);
+     dispatch(action);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+   
+  }, [])
 
   return (
     <div className={!sidebar ? "app" : "app menu-active"}>

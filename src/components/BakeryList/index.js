@@ -17,11 +17,13 @@ import { setAdress } from '../../actions/actions';
 import croissant from './Images/croissant.png';
 
 const BakeryList = () => {
-  const currentAdress = useSelector((state) => state.currentAdress);
-  console.log(currentAdress)
-  const dataFilter = bakeryList.filter(word => word.adress === currentAdress);
   const dispatch = useDispatch();
-  console.log(dataFilter)
+  const currentAdress = useSelector((state) => state.currentAdress);
+  /* const bakeryList = useSelector((state) => state.bakeryList); */
+  const dataFilter = bakeryList.filter(word => word.address === currentAdress);
+  
+
+
 
   return (
     <div className='page-bakery'>
