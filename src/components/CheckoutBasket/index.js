@@ -1,52 +1,48 @@
 // == Import
 import './styles.scss';
-import imageCroissant from './images/image-croisasatn.png';
-import less from './images/minus.png';
-import plus from './images/plus.png';
+
+import IndividualProduct from 'src/components/IndividualProduct'
 import { NavLink } from "react-router-dom";
-import React, { useState } from 'react';
+import React, {useEffect} from 'react';
+import { productData } from 'src/data/data';
+import { useSelector, useDispatch } from 'react-redux'; 
+
 
 
 // == Composant
 const CheckoutBasket = () => {
-
-    const [count, setCount] = useState(0);
-    if(count < 0){
-      setCount(0)
-    }  
-
+  const totalBasket = useSelector((state) => state.totalBasket);
+  console.log(totalBasket)
+ 
+  
   return (
     <div className='Basket-Basket'>
       <div className='Basket-products'>
 
-        <div className='Basket-product'>
-          <img className='Basket-imgProduit' src={imageCroissant} alt="img-croissant" />
-          <div className='Basket-boite' >
-            <div className='Basket-product-name' >croissant</div>
-              <div className='Basket-quantity'>{count}
-                <div className='math'>
-                  <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-                  <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
-                </div>
-              </div>  
-          </div>
-             
-        </div>
-
+            {productData.map((item) => (
+            <IndividualProduct
+              key={item.id}
+              img={item.img}
+              prix={item.prix}
+              name={item.name}
+            />
+          ))}
 
       </div>
 
       <div className='Basket-PriceListe'>
         <div>
-        <div className='Basket-trait'>
-          <div className='Basket-ligne'>
-            <div className='Basket-productName'>petit croissant au beurre</div>
-            <div className='Basket-productPrice'>8</div>
+          <div className='Basket-trait'>
+            {productData.map((item) => (
+              <div className='Basket-ligne'>
+                <div className='Basket-productName'>{item.name}</div>
+                <div className='Basket-productPrice'>{item.prix}</div>
+              </div>
+              ))}
           </div>
-        </div>
           <div className='Basket-paye'>
             <NavLink to="/checkout" className='Basket-btnPayer'>PAYER</NavLink>
-            <div className='Basket-totalPrice'>18€</div>
+            <div className='Basket-totalPrice'>{totalBasket}€</div>
           </div>
         </div>
       </div>

@@ -12,23 +12,35 @@
 .Basket-product{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  .Basket-product-name{
+  
+  .Basket-individual-product-total-price{
     padding-top: 1em;
+  }
+  
+  .Basket-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .Basket-imgProduit{
     padding: 1em;
-    border-radius: 50px;
-    height: 220px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center ;
+    height: 180px;
+    width: 180px;
   }
 
   .Basket-quantity{
-    padding: 0.5em 1.5em 1.5em 1.5em;
+    padding: 0.5em 0.3em 0.5em 0.3em;
+    margin-right: 0.2em;
     height: 20%;
     font-weight: 600;
     font-size: 30px; 
-    
+
     .math{
       display: flex;
       .plus{

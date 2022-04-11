@@ -98,36 +98,42 @@ export const data = [
       id: 1,
       img: croissant,
       name: "pain au choco",
+      prix : 1,
       bakery: "O'lyon"
     },
     {
       id: 2,
       img: croissant,
       name: "croissant",
+      prix : 0.8,
       bakery: "O'lyon"
     },
     {
       id: 3,
       img: croissant,
       name: "pizza",
+      prix : 3,
       bakery: "O'lyon"
     },
     {
       id: 4,
       img: croissant,
       name: "café",
+      prix : 1,
       bakery: "O'lyon"
     },
     {
       id: 5,
       img: croissant,
       name: "tartine au nutella",
+      prix : 1.3,
       bakery: "O'lyon"
     },
     {
       id: 6,
       img: croissant,
       name: "pepsi max 0% sucre",
+      prix : 2,
       bakery: "O'lyon"
     },
     

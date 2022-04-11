@@ -2,12 +2,14 @@ import {
   CHANGE_INPUT_VALUE,
   TOGGLE_SIDEBAR,
   SET_ADRESS,
+  SET_TOTAL_BASKET,
 } from '../actions/actions';
 
 const initialState = {
   inputAdress: '',
   currentAdress: '',
   sidebar: false,
+  totalBasket: 0,
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -28,6 +30,11 @@ const inputReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         sidebar: action.value,
+      };
+    case SET_TOTAL_BASKET:
+      return {
+        ...state,
+        totalBasket: state.totalBasket += action.value,
       };
 
     default:
