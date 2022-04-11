@@ -9,24 +9,23 @@ import croissant from './images/croissant.jpg';
 const BakeryProducts = () => {
 
   return (
+<div>
+  <div>
+      <div className="bakery-part">
+        <div className='left-side'>
+          <img className="bakery_img" src={croissant} alt="croissant" />
+        </div>
 
-    <div className="bakery-part">
-
-      <div className='bakery'>
-        <div className='bakery_infos'>
-          <div>
-            <img className="bakery_img" src={croissant} alt="croissant" />
-            <h2 className="bakery__name">O'Lyon</h2>
-            <StarsRating />
-          </div>
+        <div className='right_side'>
+          <h2 className="bakery__name">O'Lyon</h2>
+          <StarsRating />
           <input type='text' />
+          <div className='bakery__like'>
+            <Heart />
+          </div>
         </div>
-        <div className='bakery__like'>
-          <Heart />
         </div>
-      </div>
-
-      <div>
+   
         <div className='products'>
           <h2 className="all-products">Nos produits</h2>
           <ul className='products-list'>
@@ -39,9 +38,8 @@ const BakeryProducts = () => {
             <NavLink to="/basket" className='btn-to-basket'>Voir le panier</NavLink>
           </div>
         </div>
-      </div>
-
-    </div>
+   </div>
+   </div>
   );
 }
 

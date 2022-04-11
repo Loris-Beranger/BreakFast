@@ -1,30 +1,29 @@
-.bakery-part {
-  width: 100%;
+.left-side, .right-side {
+  width: 50vh;
+  height: 50vh;
+}
+
+.left-side {
 
   .bakery_img {
-    width: 50%;
     float: left;
   }
+}
 
-  .bakery_name {
-    float: right;
+
+@media screen and (min-width: 600px) {
+  .bakery {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
   }
 
-  @media screen and (min-width: 600px) {
-    .bakery {
-      display: grid;
-      justify-content: space-between;
-    }
-
-    .bakery_infos {
-      float: right;
-    }
+  .bakery_infos {
+    float: right;
   }
 }
 
 .products {
-  height: 100%;
-    width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,11 +31,10 @@
   .all-products {
     text-transform: uppercase;
     font-weight: bold;
-    margin: 10% 0px;
+    margin: 5% 0px;
   }
 
   .products-list {
-  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,9 +46,3 @@
     padding: 1em 2em;
   }
 }
-
-
-
-  
-  
-  
