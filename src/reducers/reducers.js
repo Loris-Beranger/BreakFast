@@ -2,12 +2,14 @@ import {
   CHANGE_INPUT_VALUE,
   TOGGLE_SIDEBAR,
   SET_ADRESS,
+  SET_BAKERY_LIST,
 } from '../actions/actions';
 
 const initialState = {
   inputAdress: '',
   currentAdress: '',
   sidebar: false,
+  bakeryList: [],
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -29,6 +31,11 @@ const inputReducer = (state = initialState, action = {}) => {
         ...state,
         sidebar: action.value,
       };
+    case SET_BAKERY_LIST:
+    return {
+      ...state,
+      bakeryList: action.value,
+    };
 
     default:
       return state;

@@ -10,9 +10,19 @@
   justify-content: center;
   align-items: center;
 
-  .wrapper-login {
+  .input-form {
+    
+  }
+
+  .wrapper-signup {
     background-color: #8f6f4adc;
     width: 80%;
     height: 80%;
+
+    .signup {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
   }
 }

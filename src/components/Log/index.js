@@ -9,14 +9,14 @@ const Log = () => {
   
 return (
   <div className="log">
-    <div className='wrapper-login'>
-      <form className='login'>
+    <div className='wrapper-signup'>
+      <form className='signup'>
         <h3>Inscription</h3>
         <p>Inscrivez vous balblabla</p>
-        <input type='text' />
-        <input type='email' />
-        <input type='password' />
-        <input type='password' />
+        <input type='text' className='input-form'/>
+        <input type='email' className='input-form'/>
+        <input type='password' className='input-form'/>
+        <input type='password' className='input-form'/>
       </form>
     </div>
     
