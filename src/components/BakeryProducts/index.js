@@ -15,7 +15,7 @@ const BakeryProducts = () => {
       <div className='bakery'>
         <div className='bakery_infos'>
           <div>
-            <img className="bakery__img" src={croissant} alt="croissant" />
+            <img className="bakery_img" src={croissant} alt="croissant" />
             <h2 className="bakery__name">O'Lyon</h2>
             <StarsRating />
           </div>
