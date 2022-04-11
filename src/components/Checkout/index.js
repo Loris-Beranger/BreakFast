@@ -29,10 +29,11 @@ const Checkout = () => {
   const [popUp, setpopUp] = useState("nopopup");
 
   return (
-  <div className='Checkout'>
-    <div className='infoPerso'>
-      <div className='verif'>vérification d'adresse : ici l'adresse</div>
-      <div className='checkbox'>
+  <div className='Checkout-Checkout'>
+    <div className='Checkout-infoPerso'>
+      <div className='Checkout-verif'>vérification d'adresse : </div>
+      <div className='Checkout-ville' >ici l'adresse</div>
+      <div className='Checkout-checkbox'>
         <label>
           <input type="checkbox" />
             Click and collect
@@ -55,27 +56,34 @@ const Checkout = () => {
       label="Nom" />
 
     </div>
-      <div className='Total'>
-        <div>Total de la commande</div> 
-        <div>Shipping</div>
-        <div className='Finalprice'>Total</div>
-        <div className='btnPayer2' onClick={() => setpopUp('popup')}>PAYER</div>
-      </div>
-      
-      <div className='Totaux'>
-        <div>30</div>
-        <div>3.50</div>
-        <div className='Finalprice'>{totalCommande}€</div>
-      </div>
 
-    <div className={popUp}>
-      <NavLink to="/" className='btnEchap' onClick={() => setpopUp('nopopup')}>+</NavLink>
-      <div className='confirmation'>État de la commande : </div>
-      <div className='etat'>Confirmé !</div>
-      <div>
-      <img className='icone' src={verifie} alt="verifie" />
+    <div className='Checkout-droite' >
+      <div className='Checkout-Total'>
+        <div className='Checkout-ligne' >Commande</div> 
+        <div className='Checkout-ligne' >Shipping</div>
+        <div className='Checkout-Finalprice'>Total</div>
+        <div className='Checkout-btnPayer' onClick={() => setpopUp('popup')}>PAYER</div>
       </div>
-      <div className='heure' >commande prête pour : {heure} : {minutes} h</div>
+        
+      <div className='Checkout-Totaux'>
+        <div className='Checkout-ligne' >30</div>
+        <div className='Checkout-ligne' >3.50</div>
+        <div className='Checkout-Finalprice'>{totalCommande}€</div>
+      </div>
+    </div>
+    
+    <div className='lapopup' >
+    <div className={popUp}>
+
+        <div className='Checkout-btnEchap' ><NavLink to="/checkout" onClick={() => setpopUp('nopopup')}>x</NavLink></div>
+        <div className='Checkout-confirmation'>État de la commande : </div>
+        <div className='Checkout-etat'>Confirmé !</div>
+        <div>
+        <img className='Checkout-icone' src={verifie} alt="verifie" />
+        </div>
+        <div className='Checkout-heure' >commande prête pour :</div>
+        <div className='Checkout-time' >{heure} : {minutes} h</div>
+      </div>
     </div>
 
       
