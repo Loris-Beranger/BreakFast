@@ -10,10 +10,9 @@ import { setTotalBasket } from 'src/actions/actions';
 
 // == Composant
 const IndividualProduct = ({ img,  name, prix}) => {
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
 
   const [count, setCount] = useState(0);
-  const [total, setTotal] = useState(0);
 
   
   if(count < 0){
@@ -28,8 +27,8 @@ const IndividualProduct = ({ img,  name, prix}) => {
   
   //let total = la somme de tout les TOtalIndividuel
   
-  const action = setTotalBasket(TotalIndividuel);
-  dispatch(action);
+  //const action = setTotalBasket(TotalIndividuel);
+  //dispatch(action);
 
   //useEffect(() => {}, []);
 
@@ -45,7 +44,7 @@ const IndividualProduct = ({ img,  name, prix}) => {
     <div className='Basket-quantity'>{count}
       <div className='math'>
         <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-        <img onClick={() => setCount(count + 1) & setTotal(total + prix)} className='plus' src={plus} alt="signe plus" />
+        <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
       </div>
     </div>  
   </div>

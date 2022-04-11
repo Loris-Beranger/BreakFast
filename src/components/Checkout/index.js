@@ -11,6 +11,17 @@ import './styles.scss';
 // == Composant
 const Checkout = () => {
 
+
+  let tempsdattente = 25
+  var now = new Date();
+  let heure = now.getHours();
+  let minutes = now.getMinutes() + tempsdattente;
+  if(minutes > 60){
+    heure = heure + 1;
+    minutes = (tempsdattente + now.getMinutes()) - 60
+  }
+  
+
   let totalProduit = 30;
   let shipping = 3.50;
   let totalCommande = totalProduit + shipping;
@@ -64,7 +75,7 @@ const Checkout = () => {
       <div>
       <img className='icone' src={verifie} alt="verifie" />
       </div>
-      <div className='heure' >commande prête pour : heure</div>
+      <div className='heure' >commande prête pour : {heure} : {minutes} h</div>
     </div>
 
       
