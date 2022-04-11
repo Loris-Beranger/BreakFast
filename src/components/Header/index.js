@@ -5,7 +5,7 @@ import { toggleSidebar } from 'src/actions/actions';
 import { NavLink } from 'react-router-dom';
 // Images
 import BreakFastLogo from './images/breakfast-logo-light.png'
-import ShoppingBasket from './images/basket-icon-light.png'
+import ShoppingBasket from './images/painier-original-color-breakfast.png'
 import CupLog from './images/cup-empty-notconnected.png'
 // Composants
 import NavBarDesktop from './NavBarDesktop';
