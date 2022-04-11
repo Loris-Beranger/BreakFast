@@ -10,7 +10,7 @@ const BakeryProducts = () => {
 
   return (
 
-    <div>
+    <div className="bakery-part">
 
       <div className='bakery'>
         <div className='bakery_infos'>

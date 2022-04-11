@@ -1,56 +1,56 @@
 .product {
   width: 40%;
-  height: 15em;
   text-align: center;
-  margin: 1em;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5em;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 
-  .product_img {
-    height: 200px;
-  }
+  .product_img {}
+
   .product-info {
-    margin-bottom: 15px;
     padding: 15px;
 
     .product_name {
       font-weight: bolder;
     }
 
-    .product_price {
-    }
-  }
+    .product_price {}
 
+    .math {
+      display: flex;
+      justify-content: center;
+
+      .plus {
+        margin: 0em 0.5em;
+        padding: 0.1em;
+        height: 30px;
+        width: 30px;
+      }
+
+      .less {
+        margin: 0em 0.5em;
+        padding: 0.1em;
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    .product-quantity {
+      padding: 0.1em;
+      padding-left: 0em;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+  }
   .add-to-basket {
+    width: 100%;
     padding: 0.5em;
     background-color: #996a23;
     color: white;
     border-radius: 20px;
+    margin-bottom: 50em;
   }
-
-  .product-quantity{
-    padding: 0.1em;
-    padding-left: 0em;
-    font-weight: 600;
-    font-size: 20px;  
-
-  .math{
-    display: flex;
-    justify-content: center;
-    .plus{
-      margin: 0em 0.5em;
-      padding: 0.1em;
-      height: 30px;
-      width: 30px;
-    }
-    .less{
-      margin: 0em 0.5em;
-      padding: 0.1em;
-      height: 30px;
-      width: 30px;
-          }
-        }
-      }
 }
-
