@@ -2,7 +2,7 @@
 export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE';
 export const SET_ADRESS = 'SET_ADRESS';
 export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';
-export const SET_TOTAL_BASKET = 'SET_TOTAL_BASKET';
+export const SET_BAKERY_LIST = 'SET_BAKERY_LIST';
 
 export const changeInputValue = (newValue) => ({
   type: CHANGE_INPUT_VALUE,
@@ -19,8 +19,8 @@ export const toggleSidebar = (newValue) => ({
   value: newValue,
 });
 
-export const setTotalBasket = (newValue) => ({
-  type: SET_TOTAL_BASKET,
+export const setBakeryList = (newValue) => ({
+  type: SET_BAKERY_LIST,
   value: newValue,
 });
 
