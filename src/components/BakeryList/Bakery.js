@@ -3,7 +3,8 @@ import './styles.scss';
 import Heart from 'src/components/Heart/Heart';
 import StarRating from 'src/components/StarRating/StarRating';
 // == Composant
-const Bakery = ({ img, time, name, delivery_fees }) => {
+const Bakery = ({ img, time, name, delivery_fees, rating }) => {
+    console.log(rating);
 
     return (
         <div className="bakery">
@@ -14,7 +15,7 @@ const Bakery = ({ img, time, name, delivery_fees }) => {
                     <h2 className="bakery-name">{name}</h2>
                     <p className="bakery-deliverycost">Frais de livraison : {delivery_fees}€</p>
                     <div className="rating">
-                        <StarRating />
+                        <StarRating value={rating}/>
                     </div>
                 </div>
                 <div className="like">
