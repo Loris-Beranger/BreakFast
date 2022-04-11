@@ -76,6 +76,7 @@ const BakeryList = () => {
                   time={item.delivery_time}
                   name={item.name}
                   delivery_fees={item.delivery_fees}
+                  rating={item.rating}
                 />
               ))}
             </ul>

@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 
 import './styles.scss';
 
-const StarRating = () => {
+const StarRating = ({value}) => {
   const [rating, setRating] = useState(null);
+  console.log(value)
+  
+  useEffect(() => {
+    setRating(value)
+  }, [])
 
   return (
     <div>
@@ -19,7 +24,7 @@ const StarRating = () => {
               name="rating"
               // TODO key="test", faire boucle dans l'index
               value={ratingValue}
-              onClick={() => setRating(ratingValue)}
+              /* onClick={() => setRating(ratingValue)} */
             />
             <FaStar className="star" color={ratingValue <= rating ? "#402218" : "#C68B59"} />
           </label>
