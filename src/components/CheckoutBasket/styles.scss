@@ -28,8 +28,7 @@
   .Basket-imgProduit{
     padding: 1em;
     border-radius: 40px;
-    background-size: cover;
-    background-position: center ;
+    object-fit: cover;    
     height: 180px;
     width: 180px;
   }
@@ -77,25 +76,24 @@
     }
   }
 }
-.Basket-paye{
-  display: flex;
-  justify-content: center;
-  padding-top: 2em;
+  .Basket-paye{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
 
-  .Basket-totalPrice{
-    position: absolute;
-    right: 35px;
-    font-size: 23px;
-    padding-top: 0.2em;
+    .Basket-totalPrice{
+      position: absolute;
+      right: 35px;
+      font-size: 23px;
+      padding-top: 0.2em;
+    }
+    .Basket-btnPayer{
+      background-color: #865439;
+      padding: 0.7em 1em;
+      margin-bottom: 2em;
+      margin-left: 10px;
+    }
   }
-  .Basket-btnPayer{
-    background-color: #865439;
-    padding: 0.7em 1em;
-    margin-bottom: 2em;
-    margin-left: 10px;
-  }
-}
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -108,7 +106,7 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 5em;
-      padding:  2em 0em 0em 5em;
+      padding:  2em 0em 0em 2em;
       height: 600px;
       width: 55%;
       border-right: 1px solid black;
@@ -149,6 +147,8 @@
         padding: 1em;
         border-radius: 50px;
         height: 200px;
+        object-fit: cover;    
+
       }
     }
   }

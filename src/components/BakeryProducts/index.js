@@ -10,36 +10,40 @@ const BakeryProducts = () => {
 
   return (
 
-    <div>
+    <div className='bakery-page' >
 
-      <div className='bakery'>
-        <div className='bakery_infos'>
+      <div className='bakery-bakery'>
+        <div className='bakery-infos'>
           <div>
-            <img className="bakery_img" src={croissant} alt="croissant" />
-            <h2 className="bakery__name">O'Lyon</h2>
+            <img className="bakery-img" src={croissant} alt="croissant" />
+            <h2 className="bakery-name">O'Lyon</h2>
             <StarsRating />
           </div>
           <input type='text' />
         </div>
-        <div className='bakery__like'>
+        <div className='bakery-like'>
           <Heart />
         </div>
       </div>
-
-      <div>
-        <div className='products'>
-          <h2 className="all-products">Nos produits</h2>
-          <ul className='products-list'>
+      <h2 className="bakery-all-products">Nos produits</h2>
+          <ul className='bakery-products-list'>
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
             <Product />
             <Product />
             <Product />
             <Product />
           </ul>
-          <div>
-            <NavLink to="/basket" className='btn-to-basket'>Voir le panier</NavLink>
-          </div>
+        <div>
+          <NavLink to="/basket" className='bakery-btn-to-basket'>Accéder au panier</NavLink>
         </div>
-      </div>
+      
 
     </div>
   );

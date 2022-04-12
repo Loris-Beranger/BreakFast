@@ -1,41 +1,40 @@
-.product {
-  width: 40%;
-  height: 15em;
-  text-align: center;
-  margin: 1em;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5em;
 
-  .product_img {
-    height: 200px;
+.bakery-product {
+  width: 20%;
+  text-align: center;
+  margin: 0.5em;
+  margin-top: 2em;
+
+  .bakery-product_img {
+    width: 250px ;  
+    object-fit: cover;    
   }
-  .product-info {
+  .bakery-product-info {
     margin-bottom: 15px;
     padding: 15px;
 
-    .product_name {
+    .bakery-product_name {
       font-weight: bolder;
     }
-
-    .product_price {
+    .bakery-product_price {
+      padding: 1em 1em 0.5em 1em;
     }
   }
 
-  .add-to-basket {
+  .bakery-add-to-basket {
     padding: 0.5em;
     background-color: #996a23;
     color: white;
     border-radius: 20px;
   }
 
-  .product-quantity{
+  .bakery-product-quantity{
     padding: 0.1em;
     padding-left: 0em;
     font-weight: 600;
     font-size: 20px;  
 
-  .math{
+  .bakery-math{
     display: flex;
     justify-content: center;
     .plus{

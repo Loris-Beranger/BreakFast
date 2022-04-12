@@ -4,9 +4,7 @@ import './styles.scss';
 import less from './images/minus.png';
 import plus from './images/plus.png';
 import React, { useState } from 'react';
-import { productData } from 'src/data/data';
-import { useDispatch } from 'react-redux'; 
-import { setTotalBasket } from 'src/actions/actions';
+
 
 // == Composant
 const IndividualProduct = ({ img,  name, prix}) => {
@@ -19,7 +17,7 @@ const IndividualProduct = ({ img,  name, prix}) => {
     setCount(0)
   } 
 
-  console.log('count: ' + count)
+  //console.log('count: ' + count)
 
   //OBJECTIF? TROUVE UN MIOYEN D4AVOIR LA MOYENNE? LE TOTAL 
   
