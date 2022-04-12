@@ -1,223 +1,23 @@
+@media screen and (min-width: 1024px) {
 
-.page-bakery {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-
-.bakerylist {
-  width: 100%;
-  height: 100%;
-  display: flex;  
-  flex-direction: column;
-}
-
-.wrapper-city {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.wrapper-bakerylist-tags {
-  display: flex;
-}
-
-.wrapper-button {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-.adress-button {
-  background-color: #d3b07b;
-  padding: 13px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  border: none;
-
-  .icon-location {
-    width: 20px;
-    height: 20px;
-  }
-
-  span {
-    margin: 0 5px;
-  }
-
-  &:hover {
-    color: white;
-    background-color: #996a23;
-    cursor: pointer;
-  }
-}
-
-.title-bakerylist {
-  text-align: left;
-  padding: 10px 40px;
-  font-size: 1.4em;
-  font-weight: 600;
-  font-family: Gravity;
-  width: 85%;
-}
-
-.tags {
-  /* padding-top: 10px; */
-
-.tag {
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  margin: 5% 5% 0% 5%;
-}
-
-.title-tags {
-  font-size: 1.2em;
-}
-
-.tag_label {
-  padding: 0.5em;
-  border-radius: 20px;
-  background-color: #d3b07b;
-}
-
-.tag_label:hover {
-  background-color: #996a23;
-  color: white;
-  cursor: pointer;
-}
-}
-
-.bakeries {
-  width: 100%;
-  height: 100%;
-  //float: right;
-  
-.bakery {
-    max-width: 100%;
-    height: 80%;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 5% 0 5%;
-  }
-
-  .bakery__img {
-    max-width: 100%;
-    height: 80%;
-    padding-bottom: 0.5em;
-  }
-
-  .bakery-deliverytime {
-    position: absolute;
-    bottom: 25%;
-    right: 10px;
-    padding: 0.5em;
-    border-radius: 20px;
-    background-color: #996a23;
-    color: white;
-    font-size: 1em;
-    font-weight: 700px;
-  }
-
-  .bakery-infos {
-    //position: relative;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .bakery-name {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: left;
-  }
-
-  .bakery-deliverycost {
-    font-size: small;
-    text-align: left;
-    margin-top: 3px;
-  }
-
-  .rating {
-    //position: absolute;
-    text-align: left;
-    top: 100%;
-    margin-top: 3px;
-  }
-
-  .like {
-    justify-content: space-between;
-  }
-
-  .label {
-    justify-content: space-between;
-  }
-}
-.no-bakery{
-  padding: 10em;
-}
-
-.bakery-notfound {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      font-size: 1.2em;
-      font-weight: 600;
-      margin-top: 30px;
-    }
-    .btn-change-city {
-      background-color: #d3b07b;
-      padding: 13px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      font-family: 'Montserrat', sans-serif;
-      border: none;
-      margin-top: 30px;
-
-      &:hover {
-        color: white;
-        background-color: #996a23;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-
-  .tags {
+  .bakery-list-tags {
     float: left;
-    width: 20%;
+    width: 25%;
     height: 100%;
   }
 
-  .tag {
+  .bakery-list-tag {
     font-size: 15px;
     display: inline-block;
   }
 
-  .tag_label {
+  .bakery-list-tag_label {
     margin: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 
-    .icon-tag {
+    .bakery-list-icon-tag {
       position: absolute;
     }
 
@@ -227,56 +27,590 @@
     }
   }
 
-  .column {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-content: space-between;
+  .bakery-list-page-bakery {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
 
-    .bakery-name {
-      font-size: 18px;
+    .bakery-list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+
+      .bakery-list-wrapper-city {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .bakery-list-wrapper-button {
+          width: 20%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+
+          .bakery-list-adress-button {
+            background-color: #d3b07b;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+
+            .bakery-list-icon-location {
+              width: 20px;
+              height: 20px;
+            }
+
+            span {
+              margin: 0 5px;
+            }
+
+            &:hover {
+              color: white;
+              background-color: #996a23;
+              cursor: pointer;
+            }
+          }
+        }
+
+      }
+
+      .bakery-list-title {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 1.4em;
+        font-weight: 600;
+        font-family: Gravity;
+        width: 85%;
+      }
+    }
+  }
+
+  .bakery-list-wrapper-tags {
+    display: flex;
+
+    .bakery-list-tags {
+      display: flex;
+      justify-content: center;
+
+      .bakery-list-title-tags {
+        font-size: 1.2em;
+        padding-bottom: 1em;
+      }
+
+      .bakery-list-tag {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+        width: 80%;
+
+        .bakery-list-tag_label {
+          padding: 0.5em;
+          margin: 0.3em;
+          border-radius: 20px;
+          background-color: #d3b07b;
+          align-items: center;
+        }
+
+        .bakery-list-tag_label:hover {
+          background-color: #996a23;
+          color: white;
+          cursor: pointer;
+        }
+      }
     }
 
-    .like {
-      position: absolute;
-      bottom: 0.8em;
-      right: 5px;
+    .bakery-list-bakeries {
+      width: 100%;
+      height: 100%;
+      //float: right;
+
+      .bakery-list-bakery {
+        max-width: 100%;
+        height: 80%;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 5% 0 5%;
+
+        .bakery-list-bakery__img {
+          max-width: 100%;
+          height: 80%;
+          padding-bottom: 0.5em;
+        }
+
+        .bakery-list-bakery-deliverytime {
+          position: absolute;
+          bottom: 25%;
+          right: 10px;
+          padding: 0.5em;
+          border-radius: 20px;
+          background-color: #996a23;
+          color: white;
+          font-size: 0.8em;
+          font-weight: 700px;
+        }
+
+        .bakery-list-bakery-infos {
+          //position: relative;
+          display: flex;
+          justify-content: space-between;
+
+          .bakery-list-bakery-name {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+          }
+
+          .bakery-list-bakery-deliverycost {
+            font-size: small;
+            text-align: left;
+            margin-top: 3px;
+          }
+
+          .bakery-list-rating {
+            //position: absolute;
+            text-align: left;
+            top: 100%;
+            margin-top: 3px;
+          }
+
+          .bakery-list-like {
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .bakery-list-label {
+        justify-content: space-between;
+      }
+    }
+  }
+
+
+
+  .bakery-list-bakery-notfound {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bakery-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 30px;
+      }
+
+      .bakery-list-btn-change-city {
+        background-color: #d3b07b;
+        padding: 13px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        margin-top: 30px;
+
+        &:hover {
+          color: white;
+          background-color: #996a23;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width: 900px) {
-  .column {
+.bakery-list-column {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: space-between;
+
+  .bakery-list-bakery-name {
+    font-size: 15px;
+  }
+
+  .bakery-list-like {
+    position: absolute;
+    bottom: 0.8em;
+    right: 5px;
+  }
+}
+
+
+
+
+@media screen and (max-device-width: 1024px) {
+  .bakery-list-column {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(2, 50%);
     justify-content: space-between;
 
-    .bakery-name {
+    .bakery-list-bakery-name {
       font-size: 15px;
     }
 
-    .like {
+    .bakery-list-like {
       position: absolute;
       bottom: 0.8em;
       right: 5px;
+    }
+  }
+
+  .bakery-list-tags {
+    float: left;
+    width: 20%;
+    height: 100%;
+  }
+
+  .bakery-list-tag {
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  .bakery-list-tag_label {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .bakery-list-icon-tag {
+      position: absolute;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .bakery-list-page-bakery {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+    .bakery-list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+
+      .bakery-list-wrapper-city {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .bakery-list-wrapper-button {
+          width: 15%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+
+          .bakery-list-adress-button {
+            background-color: #d3b07b;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+
+            .bakery-list-icon-location {
+              width: 20px;
+              height: 20px;
+            }
+
+            span {
+              margin: 0 5px;
+            }
+
+            &:hover {
+              color: white;
+              background-color: #996a23;
+              cursor: pointer;
+            }
+          }
+        }
+
+      }
+
+      .bakery-list-title {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 1.4em;
+        font-weight: 500;
+        font-family: Gravity;
+        width: 85%;
+      }
+    }
+  }
+
+  .bakery-list-wrapper-tags {
+    display: flex;
+
+    .bakery-list-tags {
+      display: flex;
+      justify-content: center;
+
+      .bakery-list-title-tags {
+        font-size: 1.2em;
+        padding-bottom: 1em;
+      }
+
+      .bakery-list-tag {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+        width: 80%;
+
+        .bakery-list-tag_label {
+          padding: 0.5em;
+          margin: 0.3em;
+          border-radius: 20px;
+          background-color: #d3b07b;
+          align-items: center;
+        }
+
+        .bakery-list-tag_label:hover {
+          background-color: #996a23;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .bakery-list-bakeries {
+      width: 100%;
+      height: 100%;
+      //float: right;
+
+      .bakery-list-bakery {
+        max-width: 100%;
+        height: 80%;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 5% 0 5%;
+
+        .bakery-list-bakery__img {
+          max-width: 100%;
+          height: 80%;
+          padding-bottom: 0.5em;
+        }
+
+        .bakery-list-bakery-deliverytime {
+          position: absolute;
+          bottom: 25%;
+          right: 10px;
+          padding: 0.5em;
+          border-radius: 20px;
+          background-color: #996a23;
+          color: white;
+          font-size: 0.8em;
+          font-weight: 700px;
+        }
+
+        .bakery-list-bakery-infos {
+          //position: relative;
+          display: flex;
+          justify-content: space-between;
+
+          .bakery-list-bakery-name {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+          }
+
+          .bakery-list-bakery-deliverycost {
+            font-size: small;
+            text-align: left;
+            margin-top: 3px;
+          }
+
+          .bakery-list-rating {
+            //position: absolute;
+            text-align: left;
+            top: 100%;
+            margin-top: 3px;
+          }
+
+          .bakery-list-like {
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .bakery-list-label {
+        justify-content: space-between;
+      }
     }
   }
 }
 
-@media screen and (min-device-width: 600px) {
-  .column {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    justify-content: space-between;
+@media screen and (max-device-width: 1024px) {
 
-    .bakery-name {
-      font-size: 15px;
+  // VERSION MOBILE //
+  // LOCALISATION 
+  .bakery-list-page-bakery {
+  
+    .bakery-list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .bakery-list-wrapper-city {
+        width: 100%;
+        margin-left: 25%;
+  
+        .bakery-list-wrapper-button {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: right;
+          justify-content: center;
+          padding: 10px;
+  
+          .bakery-list-adress-button {
+            background-color: #d3b07b;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+  
+            .bakery-list-icon-location {
+              width: 20px;
+              height: 20px;
+            }
+  
+            span {
+              margin: 0 5px;
+            }
+  
+            &:hover {
+              color: white;
+              background-color: #996a23;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .bakery-list-title {
+          visibility: hidden;
+          padding: none;
+        }
+      }
+  }
+
+//FILTRE PAR TAGS
+.bakery-list-wrapper-tags {
+  display: flex;
+
+  .bakery-list-tags {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    .bakery-list-title-tags {
+      font-size: 1.2em;
+      padding-bottom: 1em;
     }
 
-    .like {
-      position: absolute;
-      bottom: 0.8em;
-      right: 5px;
+    .bakery-list-tag {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1em;
+      width: 80%;
+
+      .bakery-list-tag_label {
+        padding: 0.5em;
+        margin: 0.3em;
+        border-radius: 20px;
+        background-color: #d3b07b;
+        align-items: center;
+      }
+
+      .bakery-list-tag_label:hover {
+        background-color: #996a23;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .bakery-list-tags {
+      width: 30%;
+      height: 100%;
+    }
+
+    .bakery-list-tag {
+      font-size: 15px;
+      display: inline-block;
+    }
+
+    .bakery-list-tag_label {
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .bakery-list-icon-tag {
+        position: absolute;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
+}
+
+// LISTE DES BOULANGERIES
+.bakery-list-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .bakery-list-bakery-name {
+    font-size: 15px;
+  }
+
+  .bakery-list-like {
+    position: absolute;
+    bottom: 0.8em;
+    right: 5px;
+  }
+}
 }
 }

@@ -7,18 +7,18 @@ const Bakery = ({ img, time, name, delivery_fees, rating }) => {
     console.log(rating);
 
     return (
-        <div className="bakery">
-            <img className="bakery__img" src={img} alt="croissant" />
-            <p className="bakery-deliverytime">{time} min</p>
-            <div className="bakery-infos">
+        <div className="bakery-list-bakery">
+            <img className="bakery-list-bakery__img" src={img} alt="croissant" />
+            <p className="bakery-list-bakery-deliverytime">{time} min</p>
+            <div className="bakery-list-bakery-infos">
                 <div>
-                    <h2 className="bakery-name">{name}</h2>
-                    <p className="bakery-deliverycost">Frais de livraison : {delivery_fees}€</p>
-                    <div className="rating">
+                    <h2 className="bakery-list-bakery-name">{name}</h2>
+                    <p className="bakery-list-bakery-deliverycost">Frais de livraison : {delivery_fees}€</p>
+                    <div className="bakery-list-rating">
                         <StarRating value={rating}/>
                     </div>
                 </div>
-                <div className="like">
+                <div className="bakery-list-like">
                     <Heart />
                 </div>
             </div>
