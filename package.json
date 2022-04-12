@@ -62,6 +62,7 @@
     "react-router-dom": "^6.3.0",
     "react-star-rating-component-new": "^1.0.6",
     "react-stars-rating": "^0.0.5",
+    "react-toastify": "^8.2.0",
     "redux": "^4.1.2",
     "styled-components": "^5.3.5"
   },
