@@ -1,41 +1,57 @@
-.bakery-page{
+.bakery-page {
   height: 100%;
   width: 100%;
 
   .bakery-bakery {
     width: 100%;
-    height: 20%;
+    height: 40%;
 
-    .bakery-infos{
+    .bakery-infos {
 
+      .bakery-img {
+        width: 55%;
+        height: 300px;
+        float: left;
+        object-fit: cover;
+      }
 
-    .bakery-img {
-      width: 55%;
-      height: 300px;
-      float: left;
-      object-fit: cover;
-    }
-
-    .bakery-name{
-      width: 45%;
-      float: right;
-      padding: 1em;
-      font-size: 30px;
-    }
+      .bakery-name {
+        width: 45%;
+        float: right;
+        padding: 1em;
+        font-size: 30px;
+      }
     }
   }
+}
 
+.bakery-all-products {
+
+  .bakery-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    
     .bakery-products-list {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-
+    
     }
-
-.bakery-btn-to-basket {
-  background-color: #865439;
-  font-style: white;
-  padding: 1em 2em;
-}
-  }
+    
+    .bakery-btn-to-basket {
+      background-color: #865439;
+      font-style: white;
+      padding: 1em 2em;
+    }
+    
+    @media screen and (max-device-width: 900px) {
+    
+      .bakery-products-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    }

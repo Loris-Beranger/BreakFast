@@ -26,26 +26,27 @@ const BakeryProducts = () => {
           </div>
         </div>
       </div>
-      
-          <ul className='bakery-products-list'>
-          <h2 className="bakery-all-products">Nos produits</h2>
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-          </ul>
+     
+      <div className='bakery-all-products'>
+      <h2 className="bakery-products">Nos produits</h2>
+        <ul className='bakery-products-list'>
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </ul>
         <div>
           <NavLink to="/basket" className='bakery-btn-to-basket'>Accéder au panier</NavLink>
         </div>
-      
+      </div>
     </div>
   );
 }
