@@ -55,8 +55,6 @@ const FormAdress = () => {
           ))}
         </ul>
       </form>
-      
-      
     </div>
   );
 };

@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 
 // == Composant
 const IndividualProduct = ({ img,  name, prix}) => {
-  //const dispatch = useDispatch();
 
   const [count, setCount] = useState(0);
 
@@ -17,18 +16,7 @@ const IndividualProduct = ({ img,  name, prix}) => {
     setCount(0)
   } 
 
-  //console.log('count: ' + count)
-
-  //OBJECTIF? TROUVE UN MIOYEN D4AVOIR LA MOYENNE? LE TOTAL 
-  
   let TotalIndividuel = Math.round((count * prix) * 100) / 100;
-  
-  //let total = la somme de tout les TOtalIndividuel
-  
-  //const action = setTotalBasket(TotalIndividuel);
-  //dispatch(action);
-
-  //useEffect(() => {}, []);
 
 
   return (
