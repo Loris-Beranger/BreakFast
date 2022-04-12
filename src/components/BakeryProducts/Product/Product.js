@@ -15,26 +15,25 @@ const Product = () => {
 
   return (
 
-    <li className="product">
-      <img className="product_img" src={croissant} alt="croissant" />
-      <div className='product-info'>
-        <div>
-          <h2 className="product_name">Pain au chocolat</h2>
-          <p className="product_price">1.10€</p>
-        </div>
-        <div className='product-quantity'>{count}
-          <div className='math'>
-            <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-            <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
+      <li className="bakery-product">
+        <img className="bakery-product_img" src={croissant} alt="croissant" />
+        <div className='bakery-product-info'>
+          <div>
+            <h2 className="bakery-product_name">Pain au chocolat</h2>
+            <p className="bakery-product_price">1.10€</p>
           </div>
+          <div className='bakery-product-quantity'>{count}
+        <div className='bakery-math'>
+                <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
+                <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
+              </div>
+        </div>
         </div>
         
-      </div>
-      <div>
-          <NavLink to="/basket" className='add-to-basket'>Ajouter au panier</NavLink>
+        <div>
+          <NavLink to="/basket" className='bakery-add-to-basket'>Ajouter au panier</NavLink>
         </div>
-
-    </li>
+      </li>
   );
 }
 

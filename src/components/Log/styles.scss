@@ -2,120 +2,122 @@
 
 
 .log {
-  height: 100%; 
-  width: 100%;
-  color: black;
-  font-size: 1.6em;
-  margin-top: 30px;
-  font-family: Gravity;
-  font-weight: 600;
-  display: flex;
-}
-.parent {
-  width: 100%;
+  background-image: url('./images/background1.jpg');
+  background-size: cover;
+  background-position: center ;
   height: 100%;
-  padding-bottom: 27em;
-}
-@media screen and (min-width: 320px) and (max-width: 1024px){
-
-.log {
-  font-size: 1em;
-  margin-top: 30px;
-}
-.parent {
   width: 100%;
-  height: 100%;
-}
-.connexion {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-  margin: 0.1em 1.5em 3em 1.5em;
-}
-.inscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-  margin: 0.1em 1.5em 1em 1.5em;
-}
-.mail{
-  padding-top: 2em;
-}
-.mdp{
-  padding-top: 1em;
-}
 
-.input {
-  padding: 0.5rem 1em;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid black;
-  font-size: 0.8em;
-}
-.champ {
-  margin: 1rem 0;
-  position: relative;
-}
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 0px 1000px #8f6f4adc inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 
-.btnInvisible{
-  display: none;
-}
+  h3 {
+    color: white;
+    font-family: Gravity;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Gravity;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+  }
+  .error-text {
+    color: rgb(119, 29, 29);
+    text-shadow: 0 0 1px black;
+  }
 
-}
+  .btn-form {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #8f6f4adc;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
 
-@media screen and (min-width: 1024px) {
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
+  }
 
-.inscription { 
-  position: absolute;
-  margin: 5% 5% 5% 55%;
- }
-.connexion {
-  position: absolute;
-  margin: 5% 55% 5% 5%;
- }
-.connexion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-}
-.inscription {
-  outline: solid black 1px;
-  background-color: vars.$second-color;
-  padding: 1em;
-}
-.mail{
-  padding-top: 2em;
-}
-.mdp{
-  padding-top: 1em;
-}
-.bloc-connexion{
-padding-top: 2em;
-}
+  .input-form {
+    font-family: Gravity;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+    color: white;
+    padding: 10px 0;
+    margin-top: 15px;
 
-.input {
-  padding: 0.5rem 1em;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid black;
-  font-size: 1.2em;
-}
-.champ {
-  margin: 2rem 0;
-  position: relative;
-}
+    &:focus {
+      border-bottom: 2px solid white;
 
-.btnInvisible{
-  display: none;
-}
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  .input-form::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
 
+  .wrapper-signup {
+    background-color: #8f6f4adc;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    
+
+    .signup {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-right: 1px solid rgba(255, 255, 255, 0.692);
+      
+
+      .wrapper-input {
+        width: 60%;
+      }
+    }
+
+    .signin {
+      padding: 100px 0 100px 150px;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .wrapper-input {
+        width: 60%;
+      }
+    }
+  }
 }

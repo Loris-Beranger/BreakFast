@@ -1,15 +1,13 @@
 .product {
-  width: 40%;
+  width: 45%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
 
   .product_img {}
 
   .product-info {
+    margin-bottom: 15px;
     padding: 15px;
 
     .product_name {
@@ -42,15 +40,14 @@
       padding-left: 0em;
       font-weight: 600;
       font-size: 20px;
+      margin-bottom: 20px;
     }
 
-  }
-  .add-to-basket {
-    width: 100%;
-    padding: 0.5em;
-    background-color: #996a23;
-    color: white;
-    border-radius: 20px;
-    margin-bottom: 50em;
+    .add-to-basket {
+      padding: 0.5em;
+      background-color: #996a23;
+      color: white;
+      border-radius: 20px;
+    }
   }
 }

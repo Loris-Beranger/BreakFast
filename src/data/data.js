@@ -47,7 +47,7 @@ export const bakeryList = [
   {
     id: 16,
     name: "Dameon Robel Sr.",
-    adress: "Paris",
+    address: "Paris",
     profile_img: "https://static.actu.fr/uploads/2021/12/25697-211214185946977-1.jpg",
     phone_number: 847670674,
     rating: 3,
@@ -62,7 +62,7 @@ export const bakeryList = [
   {
     id: 17,
     name: "Charles Murphy",
-    adress: "Paris",
+    address: "Paris",
     profile_img: 'https://media-cdn.tripadvisor.com/media/photo-s/11/69/f9/a4/renard-bakery.jpg',
     phone_number: 622886991,
     rating: 5,
@@ -77,7 +77,7 @@ export const bakeryList = [
   {
     id: 18,
     name: "Marlee Bernhard",
-    adress: "Paris",
+    address: "Paris",
     profile_img: "https://media-cdn.tripadvisor.com/media/photo-s/17/54/89/b5/photo1jpg.jpg",
     phone_number: 599176251,
     rating: 3,
@@ -92,7 +92,7 @@ export const bakeryList = [
   {
     id: 19,
     name: "Prof. Dolly Rice",
-    adress: "Paris",
+    address: "Paris",
     profile_img: "https://media-cdn.tripadvisor.com/media/photo-s/0a/6b/87/9c/connell-s-bakery-wonthaggi.jpg",
     phone_number: 245262725,
     rating: 2,
@@ -107,7 +107,7 @@ export const bakeryList = [
   {
     id: 20,
     name: "Mossie Rutherford",
-    adress: "Paris",
+    address: "Paris",
     profile_img: "https://st2.depositphotos.com/1518767/12396/i/600/depositphotos_123962598-stock-photo-various-sweet-foods-in-bakery.jpg",
     phone_number: 969041050,
     rating: 0,
@@ -122,7 +122,7 @@ export const bakeryList = [
   {
     id: 21,
     name: "Miss Duane Pagac",
-    adress: "Lyon",
+    address: "Lyon",
     profile_img: "https://www.symbeohealth.com/wp-content/uploads/2020/03/Bakery-shop.jpg",
     phone_number: 623488407,
     rating: 2,
@@ -137,7 +137,7 @@ export const bakeryList = [
   {
     id: 22,
     name: "Florian Kuphal",
-    adress: "Lyon",
+    address: "Lyon",
     profile_img: "https://www.businessvaani.com/wp-content/uploads/2017/08/bakery-min.jpg",
     phone_number: 143257878,
     rating: 4,
@@ -152,7 +152,7 @@ export const bakeryList = [
   {
     id: 23,
     name: "Daisha Blick",
-    adress: "Lyon",
+    address: "Lyon",
     profile_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66DS5nBXcY9xxQW7QldtEx4PjsIUuBdFgAg&usqp=CAU",
     phone_number: 346888525,
     rating: 5,
@@ -167,7 +167,7 @@ export const bakeryList = [
   {
     id: 24,
     name: "Dr. Meredith Cormier V",
-    adress: "Dijon",
+    address: "Dijon",
     profile_img: "https://images0.persgroep.net/rcs/om3A_Ra3e13xOSgDp_th8Vw3p9M/diocontent/180547644/_fill/1350/900/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9",
     phone_number: 674189798,
     rating: 2,
@@ -182,7 +182,7 @@ export const bakeryList = [
   {
     id: 25,
     name: "Freddie Gibson",
-    adress: "Dijon",
+    address: "Dijon",
     profile_img: "https://images.assetsdelivery.com/compings_v2/ampersandphoto/ampersandphoto1601/ampersandphoto160100006.jpg",
     phone_number: 213514755,
     rating: 3,
@@ -197,7 +197,7 @@ export const bakeryList = [
   {
     id: 26,
     name: "Sharon Yost",
-    adress: "Dijon",
+    address: "Dijon",
     profile_img: "https://www.leberry.fr/photoSRC/Gw--/pouillard-vend-ses-boulangeries_4344009.jpeg",
     phone_number: 281190475,
     rating: 5,
@@ -212,7 +212,7 @@ export const bakeryList = [
   {
     id: 27,
     name: "Ramiro Walter PhD",
-    adress: "Marseille",
+    address: "Marseille",
     profile_img: "https://www.wedgesbakery.co.uk/wp-content/uploads/2019/09/hh-bread-display3000-2048x982.jpg",
     phone_number: 308370136,
     rating: 5,
@@ -227,7 +227,7 @@ export const bakeryList = [
   {
     id: 28,
     name: "Prof. Faye Brown",
-    adress: "Marseille",
+    address: "Marseille",
     profile_img: "https://media.istockphoto.com/photos/coffee-shop-picture-id1279333349?k=20&m=1279333349&s=612x612&w=0&h=gyY2OHY0Xr0dxrjQgY2kntRV49LLGLtXpm-WZOg31NA=",
     phone_number: 356269297,
     rating: 3,
@@ -242,7 +242,7 @@ export const bakeryList = [
   {
     id: 29,
     name: "Danial Schuster",
-    adress: "Marseille",
+    address: "Marseille",
     profile_img: "https://tartine-et-boterham.be/wp-content/uploads/2016/10/renard_bakery1-1024x600.jpg",
     phone_number: 129048113,
     rating: 1,
@@ -257,7 +257,7 @@ export const bakeryList = [
   {
     id: 30,
     name: "Easton Goldner",
-    adress: "Marseille",
+    address: "Marseille",
     profile_img: "https://media-cdn.tripadvisor.com/media/photo-s/17/41/2d/44/photo0jpg.jpg",
     phone_number: 234948553,
     rating: 1,
