@@ -102,6 +102,25 @@
 
 .bakery-all-products {
 
+  .bakery-search {
+    display: flex;
+    justify-content: space-between;
+
+    .bakery-products {
+      width: 50%;
+      
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  
+    .bakery-location {
+      width: 50%;
+      font-size: 30px;
+    }
+  }
+
   .bakery-products {
     font-weight: bold;
     width: 100%;
