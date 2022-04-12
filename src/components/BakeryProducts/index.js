@@ -25,12 +25,10 @@ const BakeryProducts = () => {
             <Heart />
           </div>
         </div>
-        <div className='bakery-like'>
-          <Heart />
-        </div>
       </div>
-      <h2 className="bakery-all-products">Nos produits</h2>
+      
           <ul className='bakery-products-list'>
+          <h2 className="bakery-all-products">Nos produits</h2>
             <Product />
             <Product />
             <Product />

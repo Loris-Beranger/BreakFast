@@ -1,53 +1,58 @@
-.product {
-  width: 45%;
+.bakery-product {
+  width: 20%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  margin: 0.5em;
+  margin-top: 2em;
 
-  .product_img {}
-
-  .product-info {
+  .bakery-product_img {
+    width: 250px ;
+    object-fit: cover;
+  }
+  .bakery-product-info {
     margin-bottom: 15px;
     padding: 15px;
 
-    .product_name {
+    .bakery-product_name {
       font-weight: bolder;
     }
-
-    .product_price {}
-
-    .math {
-      display: flex;
-      justify-content: center;
-
-      .plus {
-        margin: 0em 0.5em;
-        padding: 0.1em;
-        height: 30px;
-        width: 30px;
-      }
-
-      .less {
-        margin: 0em 0.5em;
-        padding: 0.1em;
-        height: 30px;
-        width: 30px;
-      }
-    }
-
-    .product-quantity {
-      padding: 0.1em;
-      padding-left: 0em;
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-
-    .add-to-basket {
-      padding: 0.5em;
-      background-color: #996a23;
-      color: white;
-      border-radius: 20px;
+    .bakery-product_price {
+      padding: 1em 1em 0.5em 1em;
     }
   }
+
+  .bakery-add-to-basket {
+    padding: 0.5em;
+    background-color: #996a23;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .bakery-product-quantity{
+    padding: 0.1em;
+    padding-left: 0em;
+    font-weight: 600;
+    font-size: 20px;
+
+  .bakery-math{
+    display: flex;
+    justify-content: center;
+    .plus{
+      margin: 0em 0.5em;
+      padding: 0.1em;
+      height: 30px;
+      width: 30px;
+    }
+    .less{
+      margin: 0em 0.5em;
+      padding: 0.1em;
+      height: 30px;
+      width: 30px;
+          }
+        }
+      }
+
+      @media screen and (min-device-width: 300px) {
+        
+    }
+
 }
