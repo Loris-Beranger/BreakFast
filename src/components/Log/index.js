@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // == Composant
 const Log = () => {  
+  const url = 'http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php';
   const axios = require('axios');
   const notifySuccess = () => toast.success('Vous êtes maintenant inscrit !', {
     position: "top-center",
@@ -30,6 +31,10 @@ const Log = () => {
     draggable: true,
     progress: undefined,
     });  
+    
+  const [emailLogin, setEmailLogin] = useState('');  
+  const [passwordLogin, setPasswordLogin] = useState('');
+  const [errorMessageLogin, setErrorMessageLogin] = useState('');
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -39,6 +44,10 @@ const Log = () => {
   const [zipcode, setZipcode] = useState('');
 
   const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmitLogin = (event) => {
+    event.preventDefault();
+  }
 
   const handleSubmit = (event) => {
     setErrorMessage('');
@@ -55,7 +64,7 @@ const Log = () => {
     
     else{
       console.log('envoie requete inscription')
-      axios.post('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/user', JSON.stringify(
+      axios.post(url + '/api/user', JSON.stringify(
         {
             "name": name,
             "email": email,
@@ -150,13 +159,23 @@ return (
 
       <form className="signin">
         <h3>Connexion</h3>
-        <p>Connectez vous a votre compte</p>
+        <p>Connectez vous à votre compte</p>
         <div className="wrapper-input">
-          <input type="email" className="input-form" placeholder="Email" />
+          <input
+            type="email"
+            className="input-form"
+            placeholder="Email"
+            onChange={(event) => {
+              setEmailLogin(event.target.value);
+            }}
+          />
           <input
             type="password"
             className="input-form"
             placeholder="Mot de passe"
+            onChange={(event) => {
+              setPasswordLogin(event.target.value);
+            }}
           />
         </div>
         <input
@@ -164,6 +183,7 @@ return (
           value="Se connecter"
           className="btn-form"
         />
+        <span className='error-text-login'>{errorMessageLogin}</span>
       </form>
     </div>
   </div>

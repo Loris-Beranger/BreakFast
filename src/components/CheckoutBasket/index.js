@@ -5,32 +5,12 @@ import IndividualProduct from 'src/components/IndividualProduct'
 import { NavLink } from "react-router-dom";
 //import React, {useEffect} from 'react';
 import { productData } from 'src/data/data';
-import axios from 'axios';
 
 
 
 // == Composant
 const CheckoutBasket = () => {
 
-  const axios = require('axios');
-
-
-  
-   axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery/15/products')
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
-  .then(function () {
-  });
-
-  const sweeterArray = productData.map((item) => {
-    return item.price
-})
-
-console.log(sweeterArray)
 
 
   return (
