@@ -17,6 +17,8 @@ import { setAdress } from '../../actions/actions';
 import croissant from './Images/croissant.png';
 
 const BakeryList = () => {
+
+  
   const dispatch = useDispatch();
   const currentAdress = useSelector((state) => state.currentAdress);
   /* const bakeryList = useSelector((state) => state.bakeryList); */

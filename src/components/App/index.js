@@ -29,7 +29,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
+    /* axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
     .then(function (response) {
      console.log(response);
      const action = setBakeryList(response.data);
@@ -38,7 +38,24 @@ const App = () => {
     .catch(function (error) {
       // handle error
       console.log(error);
-    })
+    }) */
+
+    
+
+    axios
+      .post("http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/login_check", {
+        headers:{
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "username": "admin@breakfast.com",
+	          "password": "admin"
+          })
+      })
+      .then((response) => {
+        console.log(response); // ici l'api me répond directement un object contenant le jeton dans une propriété token
+      });
    
   }, [])
 

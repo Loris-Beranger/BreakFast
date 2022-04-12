@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import remove from './images/remove.png';
 import verifie from './images/verifie.png';
 import { NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 import './styles.scss';
 
 
 // == Composant
 const Checkout = () => {
-
+  const currentAdress = useSelector((state) => state.currentAdress);
 
   let tempsdattente = 25
   var now = new Date();
@@ -32,7 +33,7 @@ const Checkout = () => {
   <div className='Checkout-Checkout'>
     <div className='Checkout-infoPerso'>
       <div className='Checkout-verif'>vérification d'adresse : </div>
-      <div className='Checkout-ville' >ici l'adresse</div>
+      <div className='Checkout-ville' >{currentAdress}</div>
       <div className='Checkout-checkbox'>
         <label>
           <input type="checkbox" />

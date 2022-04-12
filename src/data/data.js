@@ -10,36 +10,42 @@ export const productData = [
     img: croissant,
     name: "pain au choco",
     bakery: "O'lyon",
+    price: "1",
   },
   {
     id: 2,
     img: croissant,
     name: "croissant",
     bakery: "O'lyon",
+    price: "0.8",
   },
   {
     id: 3,
     img: croissant,
     name: "pizza",
     bakery: "O'lyon",
+    price: "3",
   },
   {
     id: 4,
     img: croissant,
     name: "café",
     bakery: "O'lyon",
+    price: "0.5",
   },
   {
     id: 5,
     img: croissant,
     name: "tartine au nutella",
     bakery: "O'lyon",
+    price: "1",
   },
   {
     id: 6,
     img: croissant,
     name: "pepsi max 0% sucre",
     bakery: "O'lyon",
+    price: "2",
   },
 ];
 
