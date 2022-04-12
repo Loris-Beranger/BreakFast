@@ -28,51 +28,51 @@ const BakeryList = () => {
 
 
   return (
-    <div className='page-bakery'>
+    <div className='bakery-list-page-bakery'>
       {dataFilter.length !== 0 ?
-      <div className="bakerylist">
-        <div className='wrapper-city'>
-          <div className='wrapper-button'>
-            <button className="adress-button" onClick={() => {
+      <div className="bakery-list">
+        <div className='bakery-list-wrapper-city'>
+          <div className='bakery-list-wrapper-button'>
+            <button className="bakery-list-adress-button" onClick={() => {
               const action = setAdress('');
               dispatch(action);
             }}>
-              <TiLocation className='icon-location'/>
+              <TiLocation className='bakery-list-icon-location'/>
               <span>{currentAdress}</span>
               <span>Maintenant</span>
               </button>
           </div>
-          <h2 className="title-bakerylist">
+          <h2 className="bakery-list-title">
             Livraison dans la ville de {currentAdress}
           </h2>
         </div>
       
-        <div className='wrapper-bakerylist-tags'>
-          <div className="tags">
+        <div className='bakery-list-wrapper-tags'>
+          <div className="bakery-list-tags">
             <div>
-              <h1 className='title-tags'>Filtrer par diététique</h1>
-              <div className="tag">
-                <div className="tag_label">
-                  <TiHeartFullOutline className='icon-tag'/>
+              <h1 className='bakery-list-title-tags'>Filtrer par diététique</h1>
+              <div className="bakery-list-tag">
+                <div className="bakery-list-tag_label">
+                  <TiHeartFullOutline />
                   <h2>Vegan</h2>
                 </div>
-                <div className="tag_label">
-                  <GiWheat />
+                <div className="bakery-list-tag_label">
+                  <GiWheat/>
                   <h2>Sans gluten</h2>
-                </div>
-                <div className="tag_label">
+                </div> 
+                <div className="bakery-list-tag_label">
                   <SiLeaflet />
                   <h2>Bio</h2>
                 </div>
-                <div className="tag_label">
+                <div className="bakery-list-tag_label">
                   <RiLeafLine />
                   <h2>Végétarien</h2>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bakeries">
-            <ul className="column">
+          <div className="bakery-list-bakeries">
+            <ul className="bakery-list-column">
               {dataFilter.map((item) => (
                 <Bakery
                   key={item.id}
@@ -88,12 +88,12 @@ const BakeryList = () => {
         </div>
       </div>
       :
-      <div className='bakery-notfound'>
-        <div className='wrapper'>
+      <div className='bakery-list-bakery-notfound'>
+        <div className='bakery-list-wrapper'>
           <img src={croissant} />
           <h2>Aucune boulangerie trouvée</h2>
           <p>Nos services ne sont pas disponibles dans cette ville</p>
-          <button className='btn-change-city' onClick={() => {
+          <button className='bakery-list-btn-change-city' onClick={() => {
             const action = setAdress('');
             dispatch(action);
           }}>Changer de ville</button>
