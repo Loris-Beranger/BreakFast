@@ -85,6 +85,12 @@ const Log = () => {
     })
     }
   }
+
+  const [connexion, setconnexion] = useState(false);
+
+  const classToggle = () => {
+    setconnexion(!connexion)
+  }
   
 return (
   <div className="log">
@@ -99,11 +105,15 @@ return (
       draggable
       pauseOnHover
     />
+
+    <div className={`${connexion ? 'Inscription' : 'Connexion'}`} >
+    <button className='btn-toggles' onClick={classToggle} >{`${connexion ? 'Inscription' : 'Connexion'}`}</button>
+
     <div className="wrapper-signup">
       <form className="signup" onSubmit={handleSubmit}>
         <h3>Inscription</h3>
         <p>Inscrivez vous pour recevoir votre petit dej chez vous</p>
-        <div className="wrapper-input">
+        <div className="wrapper-inputs">
           <input
             type="text"
             className="input-form"
@@ -185,6 +195,7 @@ return (
         />
         <span className='error-text-login'>{errorMessageLogin}</span>
       </form>
+    </div>
     </div>
   </div>
 );
