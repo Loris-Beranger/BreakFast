@@ -142,10 +142,11 @@
     }
   }
   .header-buttons .box-img:nth-child(2) {
-    width: 60%;
+    width: 58px;
     background-image: url('./images/breakfast-logo-light.png');
-    background-position: 50% 50%;
-    background-size: 20% 70%;
+    background-position: center;
+    background-size: cover;
+    
     background-repeat: no-repeat;
   }
   .header-buttons .box-img:nth-child(3) {
