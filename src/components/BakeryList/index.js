@@ -14,7 +14,7 @@ import { bakeryList } from '../../data/data';
 import { NavLink } from 'react-router-dom';
 import { setAdress } from '../../actions/actions';
 
-import croissant from './Images/croissant.png';
+import croissant from './Images/croissant.PNG';
 
 const BakeryList = () => {
 
@@ -49,7 +49,7 @@ const BakeryList = () => {
       
         <div className='bakery-list-wrapper-tags'>
           <div className="bakery-list-tags">
-            <div>
+            <div className='bakery-list-filtres' >
               <h1 className='bakery-list-title-tags'>Filtrer par diététique</h1>
               <div className="bakery-list-tag">
                 <div className="bakery-list-tag_label">
