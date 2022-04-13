@@ -3,6 +3,7 @@ import {
   TOGGLE_SIDEBAR,
   SET_ADRESS,
   SET_BAKERY_LIST,
+  REFRESH_BASKET,
 } from '../actions/actions';
 
 const initialState = {
@@ -10,6 +11,7 @@ const initialState = {
   currentAdress: '',
   sidebar: false,
   bakeryList: [],
+  shoppingBasket: [],
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -35,6 +37,11 @@ const inputReducer = (state = initialState, action = {}) => {
     return {
       ...state,
       bakeryList: action.value,
+    };
+    case REFRESH_BASKET:
+    return {
+      ...state,
+      shoppingBasket: action.value,
     };
 
     default:
