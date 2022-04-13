@@ -112,7 +112,7 @@
       border-right: 1px solid black;
 
       .Basket-product{
-        width: 280px;
+        width: 260px;
         height: 350px;
         flex-direction: column;
         justify-content: center;
@@ -145,10 +145,10 @@
       }
       .Basket-imgProduit{
         padding: 1em;
-        border-radius: 50px;
-        height: 200px;
+        border-radius: 40px;
         object-fit: cover;    
-
+        height: 180px;
+        width: 180px;
       }
     }
   }
@@ -190,7 +190,7 @@
 
       .Basket-productPrice{
         position: absolute;
-        margin-left: 450px;
+        margin-left: 400px;
       }
       .Basket-productName{
         margin-right: 130px;

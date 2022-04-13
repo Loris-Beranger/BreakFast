@@ -4,19 +4,30 @@ import './styles.scss';
 import less from './images/minus.png';
 import plus from './images/plus.png';
 import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { changeCountBasket, refreshBasket } from '../../actions/actions';
+import { addToBasket, findProduct, getBasket, removeFromBasket } from '../../basketFunctions';
+
 
 
 // == Composant
-const IndividualProduct = ({ img,  name, prix}) => {
-
-  const [count, setCount] = useState(0);
+const IndividualProduct = ({id, img,  name, prix, count}) => {
+  const dispatch = useDispatch();
 
   
-  if(count < 0){
+  /* if(count < 0){
     setCount(0)
-  } 
+  }  */
 
   let TotalIndividuel = Math.round((count * prix) * 100) / 100;
+  
+  //let total = la somme de tout les TOtalIndividuel
+  
+  //const action = setTotalBasket(TotalIndividuel);
+  //dispatch(action);
+
+  const currentProduct = findProduct(id);
+  console.log(count)
 
 
   return (
@@ -29,8 +40,16 @@ const IndividualProduct = ({ img,  name, prix}) => {
     </div>
     <div className='Basket-quantity'>{count}
       <div className='math'>
-        <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-        <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
+        <img onClick={() => {
+          removeFromBasket(currentProduct);
+          let basket = getBasket();
+          dispatch(refreshBasket(basket));
+        }} className='less' src={less} alt="signe moins" />
+        <img onClick={() => {
+          addToBasket(currentProduct);
+          let basket = getBasket();
+          dispatch(refreshBasket(basket));
+        }} className='plus' src={plus} alt="signe plus" />
       </div>
     </div>  
   </div>

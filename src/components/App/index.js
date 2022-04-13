@@ -16,17 +16,30 @@ import Blog from '../Blog';
 import Formules from '../Formules';
 import Log from 'src/components/Log';
 import { useSelector, useDispatch } from 'react-redux';
-import { setBakeryList } from '../../actions/actions';
+import { addToBasket, getBasket } from '../../basketFunctions';
+import { refreshBasket } from '../../actions/actions';
 
 
 
 // == Composant
 const App = () => {
   const currentAdress = useSelector((state) => state.currentAdress);
-  console.log(currentAdress)
   const sidebar = useSelector((state) => state.sidebar);
   const axios = require('axios');
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log('ajout du panier local storage au reducer')
+    const basket = getBasket();
+    dispatch(refreshBasket(basket));
+  }, []);
+
+  /* PANIER */
+ 
+  /*   addToBasket(tab) */
+  
+  
+  /* ------- */
 
   useEffect(() => {
     /* axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
@@ -40,9 +53,7 @@ const App = () => {
       console.log(error);
     }) */
 
-    
-
-    axios
+    /* axios
       .post("http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/login_check", {
         headers:{
           'Accept': 'application/json',
@@ -55,7 +66,8 @@ const App = () => {
       })
       .then((response) => {
         console.log(response); // ici l'api me répond directement un object contenant le jeton dans une propriété token
-      });
+      }); */
+      
    
   }, [])
 

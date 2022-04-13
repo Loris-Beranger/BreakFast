@@ -367,3 +367,666 @@ export const bakeryList = [
     },
   },
 ];
+
+export const productBakery15 = [
+	{
+		"id": 1,
+		"name": "autem",
+		"price": 3.43,
+		"description": "How I wonder who will put on your shoes and stockings for you now, dears? I'm sure I don't like it, yer honour, at all, as the Caterpillar took the.",
+		"picture": "https:\/\/picsum.photos\/id\/1\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 2,
+		"name": "fugiat",
+		"price": 4,
+		"description": "I hadn't to bring but one; Bill's got the other--Bill! fetch it back!' 'And who are THESE?' said the King, 'and don't be nervous, or I'll have you.",
+		"picture": "https:\/\/picsum.photos\/id\/2\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 3,
+		"name": "alias",
+		"price": 0.17,
+		"description": "Said the mouse to the beginning of the bill, \"French, music, AND WASHING--extra.\"' 'You couldn't have wanted it much,' said Alice; 'you needn't be.",
+		"picture": "https:\/\/picsum.photos\/id\/3\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 4,
+		"name": "repudiandae",
+		"price": 2.04,
+		"description": "I could shut up like telescopes: this time she heard a little timidly, 'why you are very dull!' 'You ought to be no use denying it. I suppose you'll.",
+		"picture": "https:\/\/picsum.photos\/id\/4\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 5,
+		"name": "animi",
+		"price": 2.24,
+		"description": "Soo--oop! Soo--oop of the accident, all except the Lizard, who seemed to have finished,' said the Caterpillar. 'Is that the best cat in the wood,'.",
+		"picture": "https:\/\/picsum.photos\/id\/5\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 6,
+		"name": "veniam",
+		"price": 8.65,
+		"description": "So she began thinking over all the first to speak. 'What size do you mean by that?' said the Queen said--' 'Get to your little boy, And beat him.",
+		"picture": "https:\/\/picsum.photos\/id\/6\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 7,
+		"name": "debitis",
+		"price": 5.96,
+		"description": "King said to the Gryphon. 'Then, you know,' the Hatter instead!' CHAPTER VII. A Mad Tea-Party There was a table, with a great hurry. An enormous.",
+		"picture": "https:\/\/picsum.photos\/id\/7\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 8,
+		"name": "facilis",
+		"price": 6.8,
+		"description": "Last came a little girl or a watch to take MORE than nothing.' 'Nobody asked YOUR opinion,' said Alice. 'Why?' 'IT DOES THE BOOTS AND SHOES.' the.",
+		"picture": "https:\/\/picsum.photos\/id\/8\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 9,
+		"name": "reprehenderit",
+		"price": 1,
+		"description": "Yet you turned a corner, 'Oh my ears and whiskers, how late it's getting!' She was close behind us, and he's treading on my tail. See how eagerly.",
+		"picture": "https:\/\/picsum.photos\/id\/9\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 10,
+		"name": "vel",
+		"price": 7.22,
+		"description": "MINE.' The Queen turned angrily away from her as she had asked it aloud; and in a tone of this was not going to leave the court; but on the second.",
+		"picture": "https:\/\/picsum.photos\/id\/10\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 11,
+		"name": "modi",
+		"price": 4.78,
+		"description": "Was kindly permitted to pocket the spoon: While the Panther received knife and fork with a great crash, as if it wasn't very civil of you to learn?'.",
+		"picture": "https:\/\/picsum.photos\/id\/11\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 12,
+		"name": "sed",
+		"price": 1.77,
+		"description": "So you see, as they used to it in large letters. It was as much right,' said the Cat, 'if you only walk long enough.' Alice felt a little recovered.",
+		"picture": "https:\/\/picsum.photos\/id\/12\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 13,
+		"name": "esse",
+		"price": 0.05,
+		"description": "March Hare will be When they take us up and down, and nobody spoke for some while in silence. Alice was beginning to end,' said the Rabbit coming to.",
+		"picture": "https:\/\/picsum.photos\/id\/13\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 14,
+		"name": "in",
+		"price": 6.59,
+		"description": "It's high time to go, for the rest of it had gone. 'Well! I've often seen a rabbit with either a waistcoat-pocket, or a watch to take MORE than.",
+		"picture": "https:\/\/picsum.photos\/id\/14\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 15,
+		"name": "blanditiis",
+		"price": 0.89,
+		"description": "ME, and told me you had been found and handed them round as prizes. There was a good opportunity for making her escape; so she went on. Her.",
+		"picture": "https:\/\/picsum.photos\/id\/15\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 16,
+		"name": "sapiente",
+		"price": 0.49,
+		"description": "Alice loudly. 'The idea of having nothing to what I could not even room for her. 'I can hardly breathe.' 'I can't explain it,' said Alice, rather.",
+		"picture": "https:\/\/picsum.photos\/id\/16\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 17,
+		"name": "nemo",
+		"price": 7.91,
+		"description": "Queen: so she began looking at Alice as she swam lazily about in a minute, trying to make herself useful, and looking at it again: but he now.",
+		"picture": "https:\/\/picsum.photos\/id\/17\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 18,
+		"name": "consequuntur",
+		"price": 7.03,
+		"description": "Alice, looking down with her arms folded, quietly smoking a long hookah, and taking not the smallest idea how confusing it is all the other side.",
+		"picture": "https:\/\/picsum.photos\/id\/18\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 19,
+		"name": "reiciendis",
+		"price": 9.79,
+		"description": "Alice said to the whiting,' said the Duchess: 'flamingoes and mustard both bite. And the muscular strength, which it gave to my right size: the next.",
+		"picture": "https:\/\/picsum.photos\/id\/19\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 20,
+		"name": "voluptatibus",
+		"price": 5.04,
+		"description": "Alice; 'living at the bottom of the way wherever she wanted to send the hedgehog a blow with its mouth again, and put back into the air, I'm afraid.",
+		"picture": "https:\/\/picsum.photos\/id\/20\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 21,
+		"name": "ut",
+		"price": 4.64,
+		"description": "But at any rate a book written about me, that there ought! And when I find a number of cucumber-frames there must be!' thought Alice. One of the.",
+		"picture": "https:\/\/picsum.photos\/id\/21\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 22,
+		"name": "esse",
+		"price": 6.03,
+		"description": "Duck and a scroll of parchment in the distance. 'And yet what a wonderful dream it had come back again, and Alice called out to the Knave was.",
+		"picture": "https:\/\/picsum.photos\/id\/22\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 23,
+		"name": "quae",
+		"price": 0.93,
+		"description": "Queen's ears--' the Rabbit just under the sea--' ('I haven't,' said Alice)--'and perhaps you were down here till I'm somebody else\"--but, oh dear!'.",
+		"picture": "https:\/\/picsum.photos\/id\/23\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 24,
+		"name": "officia",
+		"price": 5.68,
+		"description": "His voice has a timid and tremulous sound.] 'That's different from what I like\"!' 'You might just as she listened, or seemed to be no use in talking.",
+		"picture": "https:\/\/picsum.photos\/id\/24\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 25,
+		"name": "nisi",
+		"price": 0.98,
+		"description": "Alice cautiously replied, not feeling at all fairly,' Alice began, in a whisper, half afraid that it was looking down at them, and he checked.",
+		"picture": "https:\/\/picsum.photos\/id\/25\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 26,
+		"name": "ducimus",
+		"price": 6.02,
+		"description": "White Rabbit, with a melancholy air, and, after folding his arms and legs in all directions, 'just like a frog; and both the hedgehogs were out of.",
+		"picture": "https:\/\/picsum.photos\/id\/26\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 27,
+		"name": "totam",
+		"price": 3.24,
+		"description": "Why, she'll eat a bat?' when suddenly, thump! thump! down she came upon a little glass table. 'Now, I'll manage better this time,' she said, as.",
+		"picture": "https:\/\/picsum.photos\/id\/27\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 28,
+		"name": "dolor",
+		"price": 6.71,
+		"description": "Duchess's voice died away, even in the air. This time there were a Duck and a large rabbit-hole under the window, I only wish people knew that: then.",
+		"picture": "https:\/\/picsum.photos\/id\/28\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 29,
+		"name": "hic",
+		"price": 9.7,
+		"description": "Oh, how I wish you wouldn't have come here.' Alice didn't think that very few things indeed were really impossible. There seemed to Alice severely.",
+		"picture": "https:\/\/picsum.photos\/id\/29\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	},
+	{
+		"id": 30,
+		"name": "quos",
+		"price": 9.36,
+		"description": "The three soldiers wandered about in a very poor speaker,' said the Mock Turtle went on. 'We had the dish as its share of the month, and doesn't.",
+		"picture": "https:\/\/picsum.photos\/id\/30\/200\/300",
+		"bakery": {
+			"name": "Erika Okuneva",
+			"address": "62156 Schamberger Common\nMrazview, TN 12256",
+			"profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
+			"phone_number": 753514692,
+			"rating": 2,
+			"status": 0,
+			"delivery_fees": 3.02,
+			"delivery_time": 24
+		},
+		"tag": [],
+		"category": {
+			"id": 7,
+			"name": "bonbons"
+		}
+	}
+]
