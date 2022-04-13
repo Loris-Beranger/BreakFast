@@ -35,59 +35,8 @@ const App = () => {
   }, []);
 
   /* PANIER */
-  
-  const tab =
-    {
-      "id": 1,
-      "name": "autem",
-      "price": 3.43,
-      "description": "How I wonder who will put on your shoes and stockings for you now, dears? I'm sure I don't like it, yer honour, at all, as the Caterpillar took the.",
-      "picture": "https:\/\/picsum.photos\/id\/1\/200\/300",
-      "bakery": {
-        "name": "Erika Okuneva",
-        "address": "62156 Schamberger Common\nMrazview, TN 12256",
-        "profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
-        "phone_number": 753514692,
-        "rating": 2,
-        "status": 0,
-        "delivery_fees": 3.02,
-        "delivery_time": 24
-      },
-      "tag": [],
-      "category": {
-        "id": 7,
-        "name": "bonbons"
-      }
-    }
-  const tab2 = 
-    {
-      "id": 2,
-      "name": "fugiat",
-      "price": 4,
-      "description": "I hadn't to bring but one; Bill's got the other--Bill! fetch it back!' 'And who are THESE?' said the King, 'and don't be nervous, or I'll have you.",
-      "picture": "https:\/\/picsum.photos\/id\/2\/200\/300",
-      "bakery": {
-        "name": "Erika Okuneva",
-        "address": "62156 Schamberger Common\nMrazview, TN 12256",
-        "profile_img": "https:\/\/picsum.photos\/id\/15\/200\/300",
-        "phone_number": 753514692,
-        "rating": 2,
-        "status": 0,
-        "delivery_fees": 3.02,
-        "delivery_time": 24
-      },
-      "tag": [],
-      "category": {
-        "id": 7,
-        "name": "bonbons"
-      }
-    }
-  /* const action = addToBasket(tab);
-  dispatch(action);
-  const action2 = addToBasket(tab2);
-  dispatch(action2); */
  
-    addToBasket(tab)
+  /*   addToBasket(tab) */
   
   
   /* ------- */
