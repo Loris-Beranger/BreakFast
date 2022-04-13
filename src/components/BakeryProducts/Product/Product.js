@@ -19,7 +19,7 @@ const Product = () => {
         <img className="bakery-product_img" src={croissant} alt="croissant" />
         <div className='bakery-product-info'>
           <div>
-            <h2 className="bakery-product_name">Pain au chocolat</h2>
+            <h1 className="bakery-product_name">Pain au chocolat</h1>
             <p className="bakery-product_price">1.10€</p>
           </div>
           <div className='bakery-product-quantity'>{count}

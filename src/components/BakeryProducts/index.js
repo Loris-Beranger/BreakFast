@@ -1,13 +1,24 @@
 // == Import
 import './styles.scss';
 import { NavLink } from "react-router-dom";
-import StarsRating from 'react-stars-rating/build/components/StarsRating';
+import StarRating from 'src/components/StarRating/StarRating';
 import Product from './Product/Product';
-import Heart from 'src/components/Heart/Heart';
 import croissant from './images/croissant.jpg';
+import Heart from './images/like-button-white.png';
+import RedHeart from './images/like-button-red.png';
+import { useState } from 'react';
+
+
 import { BiSearch } from "react-icons/bi";
 
+
 const BakeryProducts = () => {
+
+  const [coeur, setcoeur] = useState(false);
+
+  const HeartToggle = () => {
+    setcoeur(!coeur)
+  }
 
   return (
 
@@ -20,11 +31,12 @@ const BakeryProducts = () => {
             <img className="bakery-img" src={croissant} alt="croissant" />
             <div className='bakery-right-side'>
             <h2 className="bakery-name">O'Lyon</h2>
-            <StarsRating className='bakery-rating' />
+            <StarRating className='bakery-rating' />
 
             <div>
-            <Heart className='bakery-like'/>
+            <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
             </div>
+            <div className='bakery-address'> Ici l'address de la boulangerie</div>
             </div>
              
         </div>
@@ -33,7 +45,6 @@ const BakeryProducts = () => {
       <div className='bakery-all-products'>
         <div className='bakery-search'>
       <h2 className="bakery-products">Nos produits</h2>
-      <BiSearch className="bakery-location"/>
       </div>
         <ul className='bakery-products-list'>
           <Product />
