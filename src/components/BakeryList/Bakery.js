@@ -7,7 +7,9 @@ const Bakery = ({ img, time, name, delivery_fees, rating }) => {
     console.log(rating);
 
     return (
-        <div className="bakery-list-bakery">
+        <div  className="bakery-list-bakery" onClick={() => {
+            console.log('test')
+          }}>
             <img className="bakery-list-bakery__img" src={img} alt="croissant" />
             <p className="bakery-list-bakery-deliverytime">{time} min</p>
             <div className="bakery-list-bakery-infos">

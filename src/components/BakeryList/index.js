@@ -23,8 +23,6 @@ const BakeryList = () => {
   const currentAdress = useSelector((state) => state.currentAdress);
   /* const bakeryList = useSelector((state) => state.bakeryList); */
   const dataFilter = bakeryList.filter(word => word.address === currentAdress);
-  
-
 
 
   return (
@@ -74,14 +72,16 @@ const BakeryList = () => {
           <div className="bakery-list-bakeries">
             <ul className="bakery-list-column">
               {dataFilter.map((item) => (
-                <Bakery
-                  key={item.id}
-                  img={item.profile_img}
-                  time={item.delivery_time}
-                  name={item.name}
-                  delivery_fees={item.delivery_fees}
-                  rating={item.rating}
-                />
+                <NavLink to='/bakery/list/products' className='navlink-bakery'>
+                  <Bakery  
+                    key={item.id}
+                    img={item.profile_img}
+                    time={item.delivery_time}
+                    name={item.name}
+                    delivery_fees={item.delivery_fees}
+                    rating={item.rating}
+                  />
+                </NavLink>
               ))}
             </ul>
           </div>
