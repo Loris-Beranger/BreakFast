@@ -26,6 +26,15 @@
             width: 45px;
             height: 45px;  
           }
+          .bakery-icone:active{
+            position: absolute;
+            flex-direction: column;
+            top: 110px;
+            right: 2%;
+            float: right;
+            width: 43px;
+            height: 43px;  
+          }
 
           .bakery-address{
             padding-top: 2em;
@@ -193,6 +202,15 @@
           float: right;
           width: 50px;
           height: 50px;  
+        }
+        .bakery-icone:active{
+          position: absolute;
+          flex-direction: column;
+          top: 230px;
+          right: 15%;
+          float: right;
+          width: 48px;
+          height: 48px;  
         }
 
         .bakery-address{
