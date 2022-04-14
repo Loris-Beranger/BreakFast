@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Bakery from './Bakery';
 /* import { bakeryList } from '../../data/data'; */
 import { NavLink } from 'react-router-dom';
-import { setAdress } from '../../actions/actions';
+import { setAdress, setCurrentBakery } from '../../actions/actions';
 
 import croissant from './Images/croissant.PNG';
 
@@ -73,8 +73,11 @@ const BakeryList = () => {
           <div className="bakery-list-bakeries">
             <ul className="bakery-list-column">
               {dataFilter.map((item) => (
-                <NavLink to='/bakery/list/products' className='navlink-bakery'>
-                  <Bakery  
+                <NavLink to='/bakery/list/products' className='navlink-bakery' onClick={() => {
+                  const action = setCurrentBakery(item);
+                  dispatch(action);
+                }}>
+                  <Bakery
                     key={Math.random().toString(36).substr(2, 9)}
                     img={item.profile_img}
                     time={item.delivery_time}

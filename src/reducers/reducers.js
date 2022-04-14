@@ -4,11 +4,13 @@ import {
   SET_ADRESS,
   SET_BAKERY_LIST,
   REFRESH_BASKET,
+  SET_CURRENT_BAKERY,
 } from '../actions/actions';
 
 const initialState = {
   inputAdress: '',
   currentAdress: '',
+  currentBakery: '',
   sidebar: false,
   bakeryList: [],
   shoppingBasket: [],
@@ -43,6 +45,11 @@ const inputReducer = (state = initialState, action = {}) => {
       ...state,
       shoppingBasket: action.value,
     };
+    case SET_CURRENT_BAKERY:
+      return {
+        ...state,
+        currentBakery: action.value,
+      };
 
     default:
       return state;
