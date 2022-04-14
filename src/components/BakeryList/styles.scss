@@ -98,6 +98,9 @@
     .bakery-list-tags {
       display: flex;
       justify-content: center;
+      
+      .bakery-list-filtres{
+
 
       .bakery-list-title-tags {
         font-size: 1.2em;
@@ -108,9 +111,7 @@
         font-size: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-left: 1em;
-        width: 80%;
+        width: 70%;
 
         .bakery-list-tag_label {
           padding: 0.5em;
@@ -126,6 +127,7 @@
           cursor: pointer;
         }
       }
+    }
     }
 
     .bakery-list-bakeries {
@@ -375,7 +377,6 @@
 
       .bakery-list-filtres{
         width: 100%;
-
       
       .bakery-list-title-tags {
         font-size: 1em;
