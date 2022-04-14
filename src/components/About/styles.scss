@@ -3,6 +3,9 @@
 
 .about {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   h1 {
     color: black;
     font-size: 1.6em;
@@ -12,6 +15,17 @@
   }
 }
 
+
+
+
+.Personne{
+display: flex;
+align-items: center;
+}
+
+img{
+  width: 200px;
+}
 
 
 
