@@ -416,6 +416,12 @@
         position: relative;
         display: flex;
         flex-direction: column;
+
+        &:hover {
+          color: #212121;
+          transition: transform .3s;
+          transform: scale(1.05);
+        }
       }
 
       .bakery-list-bakery {
