@@ -28,28 +28,10 @@ const Product = ({ id, img, name, price, notify }) => {
     laClasseBtn = "bakery-add-to-basket"
   }
 
-<<<<<<< HEAD
-      <li className="bakery-product">
-        <img className="bakery-product_img" src={croissant} alt="croissant" />
-        <div className='bakery-product-info'>
-          <div>
-            <h1 className="bakery-product_name">Pain au chocolat</h1>
-            <p className="bakery-product_price">1.10€</p>
-          </div>
-          <div className='bakery-product-quantity'>{count}
-        <div className='bakery-math'>
-                <img onClick={() => setCount(count - 1)} className='less' src={less} alt="signe moins" />
-                <img onClick={() => setCount(count + 1)} className='plus' src={plus} alt="signe plus" />
-              </div>
-        </div>
-        </div>
-        
-=======
   return (
     <li className="bakery-product">
       <img className="bakery-product_img" src={img} alt="croissant" />
       <div className="bakery-product-info">
->>>>>>> dynaproduct
         <div>
           <h2 className="bakery-product_name">{name}</h2>
           <p className="bakery-product_price">{price}€</p>

@@ -13,6 +13,7 @@ import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import StarsRating from 'react-stars-rating/build/components/StarsRating';
 
 
 const BakeryProducts = () => {
@@ -51,13 +52,8 @@ const BakeryProducts = () => {
           
             <img className="bakery-img" src={croissant} alt="croissant" />
             <div className='bakery-right-side'>
-<<<<<<< HEAD
-            <h2 className="bakery-name">O'Lyon</h2>
-            <StarRating className='bakery-rating' />
-=======
             <h2 className="bakery-name">{productBakery15.name}</h2>
             <StarsRating className='bakery-rating' />
->>>>>>> dynaproduct
 
             <div>
             <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
