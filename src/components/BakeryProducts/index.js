@@ -51,13 +51,8 @@ const BakeryProducts = () => {
           
             <img className="bakery-img" src={croissant} alt="croissant" />
             <div className='bakery-right-side'>
-<<<<<<< HEAD
-            <h2 className="bakery-name">O'Lyon</h2>
-            <StarRating className='bakery-rating' />
-=======
             <h2 className="bakery-name">{productBakery15.name}</h2>
             <StarsRating className='bakery-rating' />
->>>>>>> dynaproduct
 
             <div>
             <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
