@@ -50,7 +50,7 @@ const BakeryProducts = () => {
       <div className='bakery-bakery'>
         <div className='bakery-infos'>
           
-            <img className="bakery-img" src={croissant} alt="croissant" />
+            <img className="bakery-img" src="https://static.actu.fr/uploads/2021/12/25697-211214185946977-1.jpg" alt="croissant" />
             <div className='bakery-right-side'>
             <h2 className="bakery-name">{productBakery15.name}</h2>
             <StarsRating className='bakery-rating' />
