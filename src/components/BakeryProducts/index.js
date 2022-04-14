@@ -13,7 +13,6 @@ import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import StarsRating from 'react-stars-rating/build/components/StarsRating';
 
 
 const BakeryProducts = () => {
@@ -53,9 +52,8 @@ const BakeryProducts = () => {
             <img className="bakery-img" src="https://static.actu.fr/uploads/2021/12/25697-211214185946977-1.jpg" alt="croissant" />
             <div className='bakery-right-side'>
             <h2 className="bakery-name">{productBakery15.name}</h2>
-            <StarsRating className='bakery-rating' />
-
-            <div>
+            <div className='bakery-ligne-star-coeur'>
+            <StarRating className='bakery-rating' />
             <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
             </div>
             <div className='bakery-address'> Ici l'address de la boulangerie</div>
