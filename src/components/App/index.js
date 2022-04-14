@@ -17,7 +17,7 @@ import Formules from '../Formules';
 import Log from 'src/components/Log';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToBasket, getBasket } from '../../basketFunctions';
-import { refreshBasket } from '../../actions/actions';
+import { refreshBasket, setBakeryList } from '../../actions/actions';
 
 
 
@@ -32,44 +32,18 @@ const App = () => {
     console.log('ajout du panier local storage au reducer')
     const basket = getBasket();
     dispatch(refreshBasket(basket));
-  }, []);
 
-  /* PANIER */
- 
-  /*   addToBasket(tab) */
-  
-  
-  /* ------- */
-
-  useEffect(() => {
-    /* axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
+    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery')
     .then(function (response) {
-     console.log(response);
+     console.log(response.data);
      const action = setBakeryList(response.data);
      dispatch(action);
     })
     .catch(function (error) {
       // handle error
       console.log(error);
-    }) */
-
-    /* axios
-      .post("http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/login_check", {
-        headers:{
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "username": "admin@breakfast.com",
-	          "password": "admin"
-          })
-      })
-      .then((response) => {
-        console.log(response); // ici l'api me répond directement un object contenant le jeton dans une propriété token
-      }); */
-      
-   
-  }, [])
+    })
+  }, []);
 
   return (
     <div className={!sidebar ? "app" : "app menu-active"}>

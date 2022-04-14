@@ -7,13 +7,34 @@ import Heart from 'src/components/Heart/Heart';
 import croissant from './images/croissant.jpg';
 import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BakeryProducts = () => {
   console.log(productBakery15)
+  const notifySuccess = () => toast.success('Produit ajouté au panier !', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
 
   return (
     <div className='bakery-page' >
-
+      <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
       <div className='bakery-bakery'>
         <div className='bakery-infos'>
           
@@ -38,10 +59,12 @@ const BakeryProducts = () => {
         <ul className='bakery-products-list'>
           {productBakery15.map((item) => (
             <Product
-              key={item.id}
+              key={Math.random().toString(36).substr(2, 9)}
+              id={item.id}
               img={item.picture}
               name={item.name}
               price={item.price}
+              notify={notifySuccess}
             />
           ))}
         </ul>

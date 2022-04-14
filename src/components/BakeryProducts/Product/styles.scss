@@ -28,12 +28,19 @@
       }
     }
 
+    .bakery-add-to-basket-0 {
+      padding: 0.5em;
+      background-color: #444242;
+      color: white;
+      border-radius: 20px;
+      font-size: 80%;    
+    }
     .bakery-add-to-basket {
       padding: 0.5em;
       background-color: #996a23;
       color: white;
       border-radius: 20px;
-      font-size: 80%;    
+      font-size: 80%;   
     }
 
     .bakery-product-quantity {
@@ -95,7 +102,15 @@
     }
   }
 
+  .bakery-add-to-basket-0 {
+    border: none;
+    padding: 0.5em;
+    background-color: #444242;
+    color: white;
+    border-radius: 20px;
+  }
   .bakery-add-to-basket {
+    border: none;
     padding: 0.5em;
     background-color: #996a23;
     color: white;
@@ -132,3 +147,11 @@
 
 }
 
+.Toastify__toast-container--top-center {
+  --toastify-color-success: #626962;
+  
+}
+
+:root {
+  --toastify-color-success: #626962;
+}
