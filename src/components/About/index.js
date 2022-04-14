@@ -1,12 +1,12 @@
 // == Import
 import './styles.scss';
 
-import flash from 'src/components/About/images/flash.jpg'
+import sly from 'src/components/About/images/ratonlaveur.png'
 import superman from 'src/components/About/images/Superman.jpg'
 import batman from 'src/components/About/images/batman.jpg'
 import harley from 'src/components/About/images/harley.jpg'
 import wonder from 'src/components/About/images/wonderWoman.jpg'
-
+import deadpool from 'src/components/About/images/deadpool.jpg'
 
 
 
@@ -21,12 +21,12 @@ const About = () => (
         <p>role</p>
       </div>
       <div className='Personne' >
-        <img  src={superman}  alt='pp'/>
+        <img  src={deadpool} style={{'width':'100px','margin-left':'50px','margin-right':'50px'}} alt='pp'/>
         <p>Loris Beranger</p>
         <p>role</p>
       </div>
       <div className='Personne' >
-        <img  src={flash}  alt='pp'/>
+        <img  src={sly}  alt='idk'/>
         <p>Mathys Vitiello</p>
         <p>role</p>
         </div>

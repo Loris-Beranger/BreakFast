@@ -16,12 +16,16 @@ const StarRating = ({value}) => {
       {[...Array(5)].map((star, i) => {
         const ratingValue = i++;
         //console.log(ratingValue);
+        const test = Math.random().toString(36).substr(2, 9)
+        console.log(test)
 
         return (
           <label>
             <input
+            
               type="radio"
               name="rating"
+              key={test}
               // TODO key="test", faire boucle dans l'index
               value={ratingValue}
               /* onClick={() => setRating(ratingValue)} */
