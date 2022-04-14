@@ -13,6 +13,7 @@ import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import StarsRating from 'react-stars-rating/build/components/StarsRating';
 
 
 const BakeryProducts = () => {
