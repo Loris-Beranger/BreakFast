@@ -17,7 +17,7 @@ const About = () => (
     <h1>Team Front :</h1>
       <div className='Personne' >
         <img  src={wonder}  alt='pp'/>
-        <p>Karen Bomer</p>
+        <p>Karen Maciel</p>
         <p>role</p>
       </div>
       <div className='Personne' >

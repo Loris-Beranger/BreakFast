@@ -13,19 +13,21 @@
     font-family: Gravity;
     font-weight: 600;
   }
+  .Personne{
+    display: flex;
+    align-items: center;
+
+    
+    img{
+      width: 200px;
+    }
+    }
 }
 
 
 
 
-.Personne{
-display: flex;
-align-items: center;
-}
 
-img{
-  width: 200px;
-}
 
 
 
