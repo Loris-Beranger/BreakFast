@@ -3,6 +3,7 @@
   .bakery-page {
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
 
     .bakery-bakery {
       width: 100%;
@@ -86,6 +87,7 @@
           font-style: white;
           padding: 1em 2em;
         }
+      
       }
 
       
@@ -99,6 +101,7 @@
 .bakery-page {
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 
   .bakery-bakery {
     width: 100%;
@@ -181,6 +184,7 @@
         font-style: white;
         padding: 1em 2em;
       }
+      
     }
   }
 }

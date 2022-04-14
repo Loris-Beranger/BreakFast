@@ -31,15 +31,36 @@ export const removeFromBasket = (product) => {
     let basket = getBasket();
     let foundProduct = basket.find(p => p.id == product.id);
     if (foundProduct != undefined) {
-        if (foundProduct.quantity != 0) {
+        if (foundProduct.quantity > 0) {
             foundProduct.quantity--;
         }
         else {
             basket = basket.filter(p => p.id != product.id);
+            console.log(basket)
         }
     }
     saveBasket(basket)   
 
+}
+
+export const changeQuantityBasket = (product, quantity) => {
+    let basket = getBasket();
+    let foundProduct = basket.find(p => p.id == product.id);
+    if (foundProduct != undefined) {
+        if (quantity == 0) {
+            basket = basket.filter(p => p.id != product.id);
+        }
+        else {
+            foundProduct.quantity = quantity;
+        }
+    }
+    else{
+        product["quantity"] = quantity;
+        console.log(product);
+        basket.push(product);
+    }
+    
+    saveBasket(basket);
 }
 
 export const findProduct = (productId) => {

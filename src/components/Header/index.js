@@ -3,6 +3,7 @@ import './styles.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleSidebar } from 'src/actions/actions';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 // Images
 import BreakFastLogo from './images/breakfast-logo-light.png'
 import ShoppingBasket from './images/painier-original-color-breakfast.png'
@@ -14,7 +15,26 @@ import NavBarMobile from './NavBarMobile';
 const Header = () => {
   // Récupère état side menu
   const sidebar = useSelector((state) => state.sidebar);
+  const shoppingBasketList = useSelector((state) => state.shoppingBasket)
+  console.log(shoppingBasketList.length)
   const dispatch = useDispatch();
+
+
+  const [pastille, setpastille] = useState(false);
+
+
+
+  if ( shoppingBasketList.length === 0 ){
+    if (pastille != false){
+      setpastille(false);
+    }
+    
+  }
+  else {
+    if (pastille != true){
+      setpastille(true);
+    }
+  }
 
   return (
     <header className="header">
@@ -29,8 +49,9 @@ const Header = () => {
           </div>
           <NavLink to='/' className="box-img"></NavLink>
           <div className="box-img">
-            <NavLink to='/basket'>
+            <NavLink to='/basket' className='wrapper-basket-icon'>
               <i className="shopping basket icon btn-basket"></i>
+              <span className={pastille ? 'pastille-basket-mobile' : 'no-pastille-basket-mobile'}>{shoppingBasketList.length}</span>
             </NavLink>
             </div>
         </div>
@@ -47,7 +68,10 @@ const Header = () => {
           </div>
           <div className="buttons-basket-log">
             <NavLink to='/basket' className="box-button-header nav-link">
-              <img src={ShoppingBasket} className="buttons-header icon-basket" />
+              <div className='wrapper-basket-icon'>
+                <img src={ShoppingBasket} className="buttons-header icon-basket" />
+                <span className={pastille ? 'pastille-basket' : 'no-pastille-basket'}>{shoppingBasketList.length}</span>
+              </div>
               <span className="span-btn">Panier</span>
             </NavLink>
             <NavLink to='/login' className="box-button-header nav-link">

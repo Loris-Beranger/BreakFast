@@ -10,9 +10,22 @@ import { useState } from 'react';
 
 
 import { BiSearch } from "react-icons/bi";
+import { productBakery15 } from '../../data/data';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const BakeryProducts = () => {
+  console.log(productBakery15)
+  const notifySuccess = () => toast.success('Produit ajouté au panier !', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
 
   const [coeur, setcoeur] = useState(false);
 
@@ -21,17 +34,30 @@ const BakeryProducts = () => {
   }
 
   return (
-
-
     <div className='bakery-page' >
-
+      <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
       <div className='bakery-bakery'>
         <div className='bakery-infos'>
           
             <img className="bakery-img" src={croissant} alt="croissant" />
             <div className='bakery-right-side'>
+<<<<<<< HEAD
             <h2 className="bakery-name">O'Lyon</h2>
             <StarRating className='bakery-rating' />
+=======
+            <h2 className="bakery-name">{productBakery15.name}</h2>
+            <StarsRating className='bakery-rating' />
+>>>>>>> dynaproduct
 
             <div>
             <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
@@ -47,18 +73,16 @@ const BakeryProducts = () => {
       <h2 className="bakery-products">Nos produits</h2>
       </div>
         <ul className='bakery-products-list'>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          {productBakery15.map((item) => (
+            <Product
+              key={Math.random().toString(36).substr(2, 9)}
+              id={item.id}
+              img={item.picture}
+              name={item.name}
+              price={item.price}
+              notify={notifySuccess}
+            />
+          ))}
         </ul>
         <div className='basket-access' >
           <NavLink to="/basket" className='bakery-btn-to-basket'>Accéder au panier</NavLink>

@@ -17,14 +17,13 @@ import { setAdress } from '../../actions/actions';
 import croissant from './Images/croissant.PNG';
 
 const BakeryList = () => {
-
-  
   const dispatch = useDispatch();
   const currentAdress = useSelector((state) => state.currentAdress);
-  /* const bakeryList = useSelector((state) => state.bakeryList); */
+  console.log(currentAdress)
+  /* const bakeryList = useSelector((state) => state.bakeryList);
+  console.log(bakeryList) */
+ /*  const dataFilter = bakeryList.filter(word => word.user.name === currentAdress); */
   const dataFilter = bakeryList.filter(word => word.address === currentAdress);
-  
-
 
 
   return (
@@ -74,14 +73,16 @@ const BakeryList = () => {
           <div className="bakery-list-bakeries">
             <ul className="bakery-list-column">
               {dataFilter.map((item) => (
-                <Bakery
-                  key={item.id}
-                  img={item.profile_img}
-                  time={item.delivery_time}
-                  name={item.name}
-                  delivery_fees={item.delivery_fees}
-                  rating={item.rating}
-                />
+                <NavLink to='/bakery/list/products' className='navlink-bakery'>
+                  <Bakery  
+                    key={item.id}
+                    img={item.profile_img}
+                    time={item.delivery_time}
+                    name={item.name}
+                    delivery_fees={item.delivery_fees}
+                    rating={item.rating}
+                  />
+                </NavLink>
               ))}
             </ul>
           </div>
