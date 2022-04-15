@@ -15,6 +15,7 @@ import About from '../About';
 import Blog from '../Blog';
 import Formules from '../Formules';
 import Log from 'src/components/Log';
+import Page404 from 'src/components/Page404';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToBasket, getBasket } from '../../basketFunctions';
 import { refreshBasket, setBakeryList } from '../../actions/actions';
@@ -59,6 +60,11 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/bakery/list" element={<BakeryList />} /> */}
         <Route path="/bakery/list/products" element={<BakeryProducts />} />
+
+
+        <Route path="*" element={<Page404 />} />
+
+
       </Routes>
     </div>
   );

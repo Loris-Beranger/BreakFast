@@ -4,6 +4,7 @@ export const SET_ADRESS = 'SET_ADRESS';
 export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';
 export const SET_BAKERY_LIST = 'SET_BAKERY_LIST';
 export const REFRESH_BASKET = 'REFRESH_BASKET';
+export const SET_CURRENT_BAKERY = 'SET_CURRENT_BAKERY';
 
 export const changeInputValue = (newValue) => ({
   type: CHANGE_INPUT_VALUE,
@@ -27,6 +28,11 @@ export const setBakeryList = (newValue) => ({
 
 export const refreshBasket = (newValue) => ({
   type: REFRESH_BASKET,
+  value: newValue,
+});
+
+export const setCurrentBakery = (newValue) => ({
+  type: SET_CURRENT_BAKERY,
   value: newValue,
 });
 

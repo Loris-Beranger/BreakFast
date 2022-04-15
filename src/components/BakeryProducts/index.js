@@ -6,17 +6,38 @@ import Product from './Product/Product';
 import croissant from './images/croissant.jpg';
 import Heart from './images/like-button-white.png';
 import RedHeart from './images/like-button-red.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useSelector } from 'react-redux';
 
 
 const BakeryProducts = () => {
-  console.log(productBakery15)
+  const axios = require('axios');
+  const currentBakery = useSelector((state) => state.currentBakery);
+  console.log(currentBakery);
+
+  const [productsList, setProductsList] = useState([]);
+
+
+  useEffect(() => {
+    axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery/${currentBakery.id}/products`)
+    .then(function (response) {
+     console.log(response.data);
+     setProductsList(response.data);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+  }, [])
+  
+
+  
   const notifySuccess = () => toast.success('Produit ajouté au panier !', {
     position: "top-center",
     autoClose: 5000,
@@ -49,14 +70,14 @@ const BakeryProducts = () => {
       <div className='bakery-bakery'>
         <div className='bakery-infos'>
           
-            <img className="bakery-img" src="https://static.actu.fr/uploads/2021/12/25697-211214185946977-1.jpg" alt="croissant" />
+            <img className="bakery-img" src={currentBakery.profile_img} alt="croissant" />
             <div className='bakery-right-side'>
-            <h2 className="bakery-name">{productBakery15.name}</h2>
+            <h2 className="bakery-name">{currentBakery.name}</h2>
             <div className='bakery-ligne-star-coeur'>
             <StarRating className='bakery-rating' />
             <img className="bakery-icone" onClick={HeartToggle} src={`${coeur ? Heart : RedHeart}`} alt="heart" />
             </div>
-            <div className='bakery-address'> Ici l'address de la boulangerie</div>
+            <div className='bakery-address'>{currentBakery.address}</div>
             </div>
              
         </div>
@@ -67,7 +88,7 @@ const BakeryProducts = () => {
       <h2 className="bakery-products">Nos produits</h2>
       </div>
         <ul className='bakery-products-list'>
-          {productBakery15.map((item) => (
+          {productsList.map((item) => (
             <Product
               key={Math.random().toString(36).substr(2, 9)}
               id={item.id}

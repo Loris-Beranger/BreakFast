@@ -10,9 +10,9 @@ import { TiLocation } from "react-icons/ti";
 
 import { useSelector, useDispatch } from 'react-redux';
 import Bakery from './Bakery';
-import { bakeryList } from '../../data/data';
+/* import { bakeryList } from '../../data/data'; */
 import { NavLink } from 'react-router-dom';
-import { setAdress } from '../../actions/actions';
+import { setAdress, setCurrentBakery } from '../../actions/actions';
 
 import croissant from './Images/croissant.PNG';
 
@@ -20,8 +20,8 @@ const BakeryList = () => {
   const dispatch = useDispatch();
   const currentAdress = useSelector((state) => state.currentAdress);
   console.log(currentAdress)
-  /* const bakeryList = useSelector((state) => state.bakeryList);
-  console.log(bakeryList) */
+  const bakeryList = useSelector((state) => state.bakeryList);
+  console.log(bakeryList)
  /*  const dataFilter = bakeryList.filter(word => word.user.name === currentAdress); */
   const dataFilter = bakeryList.filter(word => word.address === currentAdress);
 
@@ -73,9 +73,12 @@ const BakeryList = () => {
           <div className="bakery-list-bakeries">
             <ul className="bakery-list-column">
               {dataFilter.map((item) => (
-                <NavLink to='/bakery/list/products' className='navlink-bakery'>
-                  <Bakery  
-                    key={item.id}
+                <NavLink to='/bakery/list/products' className='navlink-bakery' onClick={() => {
+                  const action = setCurrentBakery(item);
+                  dispatch(action);
+                }}>
+                  <Bakery
+                    key={Math.random().toString(36).substr(2, 9)}
                     img={item.profile_img}
                     time={item.delivery_time}
                     name={item.name}
