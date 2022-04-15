@@ -61,7 +61,6 @@ const Product = ({ id, img, name, price, notify }) => {
           changeQuantityBasket(currentProduct, count);
           let basket = getBasket();
           dispatch(refreshBasket(basket));
-          console.log('test')
           notify();
         }}>
           Ajouter au panier

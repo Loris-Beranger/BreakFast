@@ -46,7 +46,7 @@ const CheckoutBasket = () => {
                   <div className="Basket-ligne">
                     <div className="Basket-productName">{item.name}</div>
                     <div className="Basket-productPrice">
-                      {item.price * item.quantity}
+                      {Math.round((item.price * item.quantity) * 100) / 100}
                     </div>
                   </div>
                 ))}

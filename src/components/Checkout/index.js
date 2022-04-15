@@ -23,6 +23,9 @@ const Checkout = () => {
   }
   
 
+  const shoppingBasketList = useSelector((state) => state.shoppingBasket);
+  console.log(shoppingBasketList);
+
   let totalProduit = 30;
   let shipping = 3.50;
   let totalCommande = totalProduit + shipping;
