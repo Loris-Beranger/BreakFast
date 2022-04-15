@@ -5,6 +5,7 @@ import {
   SET_BAKERY_LIST,
   REFRESH_BASKET,
   SET_CURRENT_BAKERY,
+  SET_PRODUCTS_LIST,
 } from '../actions/actions';
 
 const initialState = {
@@ -13,6 +14,7 @@ const initialState = {
   currentBakery: '',
   sidebar: false,
   bakeryList: [],
+  productsList: [],
   shoppingBasket: [],
 };
 
@@ -50,6 +52,11 @@ const inputReducer = (state = initialState, action = {}) => {
         ...state,
         currentBakery: action.value,
       };
+    case SET_PRODUCTS_LIST:
+    return {
+      ...state,
+      productsList: action.value,
+    };
 
     default:
       return state;

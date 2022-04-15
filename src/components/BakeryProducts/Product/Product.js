@@ -14,9 +14,10 @@ import 'react-toastify/dist/ReactToastify.css';
 const Product = ({ id, img, name, price, notify }) => {
   const shoppingBasketList = useSelector((state) => state.shoppingBasket)
   console.log(shoppingBasketList)
+  const productsList = useSelector((state) => state.productsList);
 
   const dispatch = useDispatch();
-  const currentProduct = findProduct(id);
+  const currentProduct = findProduct(id, productsList);
 
   const [count, setCount] = useState(0);
   if (count < 0) {
