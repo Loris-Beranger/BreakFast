@@ -13,22 +13,24 @@ import { BiSearch } from "react-icons/bi";
 import { productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setProductsList } from '../../actions/actions';
 
 
 const BakeryProducts = () => {
+  const dispatch = useDispatch();
   const axios = require('axios');
   const currentBakery = useSelector((state) => state.currentBakery);
   console.log(currentBakery);
-
-  const [productsList, setProductsList] = useState([]);
+  const productsList = useSelector((state) => state.productsList);
 
 
   useEffect(() => {
     axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery/${currentBakery.id}/products`)
     .then(function (response) {
      console.log(response.data);
-     setProductsList(response.data);
+     const action = setProductsList(response.data);
+     dispatch(action);
     })
     .catch(function (error) {
       // handle error

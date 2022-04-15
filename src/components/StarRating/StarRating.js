@@ -5,7 +5,6 @@ import './styles.scss';
 
 const StarRating = ({value}) => {
   const [rating, setRating] = useState(null);
-  console.log(value)
   
   useEffect(() => {
     setRating(value)
@@ -17,7 +16,6 @@ const StarRating = ({value}) => {
         const ratingValue = i++;
         //console.log(ratingValue);
         const test = Math.random().toString(36).substr(2, 9)
-        console.log(test)
 
         return (
           <label>
@@ -30,7 +28,7 @@ const StarRating = ({value}) => {
               value={ratingValue}
               /* onClick={() => setRating(ratingValue)} */
             />
-            <FaStar className="star" color={ratingValue <= rating ? "#402218" : "#C68B59"} />
+            <FaStar className="star" color={ratingValue <= rating ? "#C68B59" : "#402218"} />
           </label>
         );
       })}

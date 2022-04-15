@@ -19,9 +19,7 @@ import croissant from './Images/croissant.PNG';
 const BakeryList = () => {
   const dispatch = useDispatch();
   const currentAdress = useSelector((state) => state.currentAdress);
-  console.log(currentAdress)
   const bakeryList = useSelector((state) => state.bakeryList);
-  console.log(bakeryList)
  /*  const dataFilter = bakeryList.filter(word => word.user.name === currentAdress); */
   const dataFilter = bakeryList.filter(word => word.address === currentAdress);
 

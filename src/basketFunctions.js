@@ -63,6 +63,6 @@ export const changeQuantityBasket = (product, quantity) => {
     saveBasket(basket);
 }
 
-export const findProduct = (productId) => {
-    return productBakery15.find(p => p.id == productId);
+export const findProduct = (productId, productsList) => {
+    return productsList.find(p => p.id == productId);
 }

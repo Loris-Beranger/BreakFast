@@ -13,10 +13,11 @@ import { addToBasket, findProduct, getBasket, removeFromBasket } from '../../bas
 // == Composant
 const IndividualProduct = ({id, img,  name, prix, count}) => {
   const dispatch = useDispatch();
+  const productsList = useSelector((state) => state.productsList);
 
   let TotalIndividuel = Math.round((count * prix) * 100) / 100;
 
-  const currentProduct = findProduct(id);
+  const currentProduct = findProduct(id, productsList);
   console.log(count)
 
   return (
