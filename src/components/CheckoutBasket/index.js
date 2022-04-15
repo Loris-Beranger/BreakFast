@@ -25,7 +25,7 @@ const CheckoutBasket = () => {
           <NavLink to='/' className='basket-empty-to-home'>Retourner à l'accueil</NavLink>
         </div>
       ) : (
-        <div>
+        <div className='oui'>
           <div className="Basket-products">
             {shoppingBasketList.map((item) => (
               <IndividualProduct
