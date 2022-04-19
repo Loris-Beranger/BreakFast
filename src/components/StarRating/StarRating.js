@@ -18,7 +18,7 @@ const StarRating = ({value}) => {
         const test = Math.random().toString(36).substr(2, 9)
 
         return (
-          <label>
+          <label className="stare" >
             <input
             
               type="radio"

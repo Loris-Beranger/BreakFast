@@ -26,11 +26,12 @@ const BakeryProducts = () => {
 
 
   useEffect(() => {
-    axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery/${currentBakery.id}/products`)
+    axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery/${currentBakery.id}/products`)
     .then(function (response) {
      console.log(response.data);
      const action = setProductsList(response.data);
      dispatch(action);
+     localStorage.setItem('productsList', JSON.stringify(response.data));
     })
     .catch(function (error) {
       // handle error

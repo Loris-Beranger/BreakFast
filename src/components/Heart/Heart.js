@@ -5,7 +5,7 @@ import './styles.scss';
 const Heart = () => {
 
   return (
-    <div>
+    <div className="heart" >
       <label>
         <input
           type="radio"

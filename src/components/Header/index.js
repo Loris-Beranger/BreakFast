@@ -7,13 +7,16 @@ import { useState } from 'react';
 // Images
 import BreakFastLogo from './images/breakfast-logo-light.png'
 import ShoppingBasket from './images/painier-original-color-breakfast.png'
-import CupLog from './images/cup-empty-notconnected.png'
+import CupNotConnected from './images/cup-empty-notconnected.png'
+import CupConnected from './images/cup-full-connected.png'
 // Composants
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
 
 const Header = () => {
   // Récupère état side menu
+  const userIsConnected = useSelector((state) => state.userIsConnected);
+  console.log(userIsConnected);
   const sidebar = useSelector((state) => state.sidebar);
   const shoppingBasketList = useSelector((state) => state.shoppingBasket)
   console.log(shoppingBasketList.length)
@@ -75,8 +78,8 @@ const Header = () => {
               <span className="span-btn">Panier</span>
             </NavLink>
             <NavLink to='/login' className="box-button-header nav-link">
-              <img src={CupLog} className="buttons-header icon-cuplog" />
-              <span className="span-btn">Connexion</span>
+              <img src={userIsConnected ? CupConnected : CupNotConnected} className="buttons-header icon-cuplog" />
+              {userIsConnected ? <span className="span-btn">Déconnexion</span> : <span className="span-btn">Connexion</span>}
             </NavLink>
           </div>
         </div>
