@@ -71,20 +71,18 @@ const BakeryList = () => {
           <div className="bakery-list-bakeries">
             <ul className="bakery-list-column">
               {dataFilter.map((item) => (
-                <NavLink to='/bakery/list/products' className='navlink-bakery' onClick={() => {
-                  const action = setCurrentBakery(item);
-                  dispatch(action);
-                  localStorage.setItem('currentBakery', JSON.stringify(item));
-                }}>
+                <div className='navlink-bakery'>
                   <Bakery
                     key={Math.random().toString(36).substr(2, 9)}
+                    id={item.id}
                     img={item.profile_img}
                     time={item.delivery_time}
                     name={item.name}
                     delivery_fees={item.delivery_fees}
                     rating={item.rating}
+                    bakery={item}
                   />
-                </NavLink>
+                </div>
               ))}
             </ul>
           </div>
