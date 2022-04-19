@@ -4,11 +4,7 @@ import './styles.scss';
 import IndividualProduct from 'src/components/IndividualProduct'
 import { NavLink } from "react-router-dom";
 //import React, {useEffect} from 'react';
-import { productData } from 'src/data/data';
-import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { getBasket } from '../../basketFunctions';
-import { useEffect } from 'react';
 import { refreshBasket, setOrder } from '../../actions/actions';
 
 
@@ -87,6 +83,3 @@ const CheckoutBasket = () => {
 // == Export
 export default CheckoutBasket;
 
-
-
-//Mathys
