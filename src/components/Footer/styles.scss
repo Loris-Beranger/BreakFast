@@ -11,51 +11,67 @@
         font-size: 1em;
         color: vars.$second-color;
 
+        &:visited {
+            background-color: vars.$principal-color;
+            color: vars.$second-color;
+        }
+
         .footer-navbar {
             display: flex;
             justify-content: space-between;
             margin: 3% 5% 0% 5%;
 
+
         }
     }
 }
 
-    .socials-icons {
-        display: flex;
-        justify-content: space-between;
-        margin: 1% 5% 5% 5%;
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 5% 5% 5%;
 
-        .socials {
-            width: 15%;
-            display: flex;
-            justify-content: space-around;
+    .socials {
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        background-color: vars.$principal-color;
+        width: 100vw;
+
+        .footer-links {
+            font-size: 1em;
+            color: vars.$second-color;
+
+            &:visited {
+                background-color: vars.$principal-color;
+                color: vars.$second-color;
+            }
+
+            .footer-navbar .ul {
+                display: flex;
+                justify-content: center;
+
+            }
         }
     }
 
-    @media screen and (min-width: 1024px) {
-        .footer {
-            background-color: vars.$principal-color;
-            width: 100vw;
-        
-            .footer-links {
-                font-size: 1em;
-                color: vars.$second-color;
-        
-                .footer-navbar .ul {
-                    display: flex;
-                    justify-content: center;
+    .socials-icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5% 5% 2% 5%;
 
-                }
-                }
-                }
-                
-                .socials-icons {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 0.5% 5% 2% 5%;
-                
-                    .socials {
-                        width: 5%;
-                    }
-                }
-                }
+        .socials {
+            width: 5%;
+
+            &:visited {
+                background-color: vars.$principal-color;
+                color: vars.$second-color;
+            }
+        }
+    }
+}
