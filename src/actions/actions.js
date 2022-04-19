@@ -7,6 +7,7 @@ export const REFRESH_BASKET = 'REFRESH_BASKET';
 export const SET_CURRENT_BAKERY = 'SET_CURRENT_BAKERY';
 export const SET_PRODUCTS_LIST = 'SET_PRODUCTS_LIST';
 export const SET_ORDER = 'SET_ORDER';
+export const SET_USER_IS_CONNECTED = 'SET_USER_IS_CONNECTED';
 
 export const changeInputValue = (newValue) => ({
   type: CHANGE_INPUT_VALUE,
@@ -47,3 +48,8 @@ export const setOrder = (newValue) => ({
   type: SET_ORDER,
   value: newValue,
 });
+export const setUserIsConnected = (newValue) => ({
+  type: SET_USER_IS_CONNECTED,
+  value: newValue,
+});
+
