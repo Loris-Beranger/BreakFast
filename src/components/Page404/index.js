@@ -1,7 +1,6 @@
 // == Import
 import { NavLink } from 'react-router-dom';
 import './styles.scss';
-import Footer from '../Footer';
 import img404 from 'src/components/Page404/404.jpg'
 
 // == Composant
@@ -15,7 +14,6 @@ return (
       <h1 className='title-404'>4</h1>
     </div>
     <NavLink to='/' className='btn-home-404'>Retourner à l'accueil</NavLink>
-    <Footer />
   </div>
        
 );
