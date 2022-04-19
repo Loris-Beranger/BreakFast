@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import "./styles.scss";
+import { deliveryTime } from "../../basketFunctions";
 
 // == Composant
 const Checkout = () => {
@@ -16,7 +17,8 @@ const Checkout = () => {
     console.log("test");
     window.location.replace("/basket");
   }
-
+  const time = deliveryTime(order.currentBakery.delivery_time)
+  console.log(time)
   const shoppingBasketList = useSelector((state) => state.shoppingBasket);
   console.log(shoppingBasketList);
 
@@ -32,6 +34,17 @@ const Checkout = () => {
         <div className="Checkout-ville">{currentBakery.address}</div>
 
         <input type='text' />
+
+        <div className="Checkout-commande" >
+          {order.productsList.map((item) => (
+
+            <p>{item.quantity} x {item.name}</p>
+
+          ))}
+        </div>
+
+
+
       </div>
 
       <div className="Checkout-droite">
@@ -46,8 +59,8 @@ const Checkout = () => {
 
         <div className="Checkout-Totaux">
           <div className="Checkout-ligne">{order.totalPrice}€</div>
-          <div className="Checkout-ligne">3.50€</div>
-          <div className="Checkout-Finalprice">80€</div>
+          <div className="Checkout-ligne">{order.currentBakery.delivery_fees}€</div>
+          <div className="Checkout-Finalprice">{order.totalPrice + order.currentBakery.delivery_fees}€</div>
         </div>
       </div>
 
@@ -64,7 +77,7 @@ const Checkout = () => {
             <img className="Checkout-icone" src={verifie} alt="verifie" />
           </div>
           <div className="Checkout-heure">commande prête pour :</div>
-          {/* <div className='Checkout-time' >{heure} : {minutes} h</div> */}
+          <div className='Checkout-time' >{time}</div>
         </div>
       </div>
     </div>

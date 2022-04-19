@@ -71,9 +71,15 @@ export const deliveryTime = (time) => {
     let now = new Date();
     let heure = now.getHours();
     let minutes = now.getMinutes() + time;
-    if (minutes > 60) {
+    if (minutes > 59) {
       heure = heure + 1;
-      minutes = time + now.getMinutes() - 60;
+      if(heure < 10){
+        heure = '0' + heure;
     }
-    return `${heure} h ${minutes}`
+      minutes = time + now.getMinutes() - 59;
+      if(minutes < 10){
+          minutes = '0' + minutes;
+      }
+    }
+    return `${heure}h${minutes}`
 }
