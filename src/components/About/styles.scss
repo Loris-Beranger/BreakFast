@@ -1,11 +1,11 @@
 @use 'src/styles/vars.scss';
 
-
 .about {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
+
   h1 {
     color: black;
     font-size: 1.6em;
@@ -13,23 +13,18 @@
     font-family: Gravity;
     font-weight: 600;
   }
-  .Personne{
-    display: flex;
-    align-items: center;
 
-    
-    img{
+  h2 {
+    font-weight: bolder;
+  }
+
+  .Personne {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    img {
       width: 200px;
     }
-    }
+  }
 }
-
-
-
-
-
-
-
-
-
-

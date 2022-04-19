@@ -4,6 +4,8 @@
 .footer {
     background-color: vars.$principal-color;
     width: 100vw;
+    border-top: 2px;
+    border-color: vars.$second-color;
 
     .footer-links {
         font-size: 1em;
