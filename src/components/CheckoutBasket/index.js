@@ -25,6 +25,7 @@ const CheckoutBasket = () => {
     total += Math.round((element.price * element.quantity) * 100) / 100
   });
 
+
   return (
     <div className="Basket-Basket">
       {shoppingBasketList.length == 0 ? (
