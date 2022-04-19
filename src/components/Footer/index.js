@@ -13,19 +13,19 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-links">
 
-                <ul className="footer-navbar">
-                    <li><NavLink to='/legals' className="nav-link nav-link-legals" onClick={() => {
-                    }}><p className="icon-sidebar" />Mentions Légales</NavLink></li>
+                <div className="footer-navbar">
+                    <NavLink to='/legals' className="nav-link nav-link-legals" onClick={() => {
+                    }}><p className="icon-footer" />Mentions Légales</NavLink>
 
-                    <li><NavLink to='/blog' className="nav-link nav-link-blog" onClick={() => {
-                    }}><p className="icon-footer" />Blog</NavLink></li>
+                    <NavLink to='/blog' className="nav-link nav-link-blog" onClick={() => {
+                    }}><p className="icon-footer" />Blog</NavLink>
 
-                    <li><NavLink to='/help' className="nav-link nav-link-help" onClick={() => {
-                    }}><p className="icon-footer" />Aide</NavLink></li>
+                    <NavLink to='/help' className="nav-link nav-link-help" onClick={() => {
+                    }}><p className="icon-footer" />Aide</NavLink>
 
-                    <li><NavLink to='/about' className="nav-link nav-link-about" onClick={() => {
-                    }}><p className="icon-footer" />A propos</NavLink></li>
-                </ul>
+                    <NavLink to='/about' className="nav-link nav-link-about" onClick={() => {
+                    }}><p className="icon-footer" />A propos</NavLink>
+                </div>
 
                 <div className='socials-icons'>
                     <div className='socials'>
@@ -37,7 +37,6 @@ const Footer = () => {
                     <p>© 2022 Break'Fast - <NavLink to='/about'>Team</NavLink></p>
                     </div>
                 </div>
-
             </div>
         </footer>
     );

@@ -70,7 +70,7 @@ const App = () => {
         <Route path="/bakery/list/products" element={<BakeryProducts />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 }
