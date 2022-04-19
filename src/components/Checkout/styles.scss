@@ -63,7 +63,7 @@
     .Checkout-commande{
       display: flex;
       flex-direction: column;
-      margin-top: 20%;
+      margin-top: 10%;
       margin-bottom: 10%;
       font-weight: 300;
     }
@@ -71,6 +71,8 @@
  
  
   .lapopup{
+    display: flex;
+    justify-content: center;
 
     .nopopup{
       display: none;
@@ -105,7 +107,7 @@
         cursor: pointer;
         font-size: 30px;
         position: absolute;
-        margin-left: 95%;
+        margin-left: 93%;
         margin-top: 1%;
       }
     }
@@ -114,6 +116,7 @@
   .Checkout-droite{
     background-color: #4022181a; 
     padding-top: 5%;
+    font-size: 18px;
 
     .Checkout-Total{
       position: absolute;
@@ -145,7 +148,6 @@
       }
 
       .Checkout-Finalprice{
-
         text-align: left;
         display: flex;
         padding-bottom: 1em;
@@ -162,7 +164,7 @@
 .Checkout-btnPayer{
   background-color: #865439;
   padding: 1em;
-  margin: 30% 35% 0em 35%;
+  margin: 10em 35% 1em 35%;
 }
 .Checkout-btnPayer:hover{
 background-color: #4b3223bd;
