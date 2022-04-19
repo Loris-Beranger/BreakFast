@@ -88,6 +88,7 @@
   }
 }
 
+
 @media screen and (min-width: 1024px) {
 
 .Checkout-Checkout{
@@ -109,7 +110,13 @@
     .Checkout-checkbox{
       padding-bottom: 2em;
     }
+
+    .Checkout-commande{
+      padding-top: 2em;
+      text-align: left;
+    }
   }
+
 
   .Checkout-droite{
     margin-left: 10%;

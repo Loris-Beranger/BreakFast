@@ -74,6 +74,7 @@ const BakeryList = () => {
                 <NavLink to='/bakery/list/products' className='navlink-bakery' onClick={() => {
                   const action = setCurrentBakery(item);
                   dispatch(action);
+                  localStorage.setItem('currentBakery', JSON.stringify(item));
                 }}>
                   <Bakery
                     key={Math.random().toString(36).substr(2, 9)}

@@ -66,3 +66,20 @@ export const changeQuantityBasket = (product, quantity) => {
 export const findProduct = (productId, productsList) => {
     return productsList.find(p => p.id == productId);
 }
+
+export const deliveryTime = (time) => {
+    let now = new Date();
+    let heure = now.getHours();
+    let minutes = now.getMinutes() + time;
+    if (minutes > 59) {
+      heure = heure + 1;
+      if(heure < 10){
+        heure = '0' + heure;
+    }
+      minutes = time + now.getMinutes() - 59;
+      if(minutes < 10){
+          minutes = '0' + minutes;
+      }
+    }
+    return `${heure}h${minutes}`
+}

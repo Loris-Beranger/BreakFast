@@ -1,6 +1,5 @@
 // == Import
 import './styles.scss';
-import Field from 'src/components/Field';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
@@ -11,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // == Composant
 const Log = () => {  
-  const url = 'http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php';
+  const url = 'http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public';
   const axios = require('axios');
   const notifySuccess = () => toast.success('Vous êtes maintenant inscrit !', {
     position: "top-center",
