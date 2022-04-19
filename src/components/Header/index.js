@@ -14,6 +14,8 @@ import NavBarMobile from './NavBarMobile';
 
 const Header = () => {
   // Récupère état side menu
+  const userIsConnected = useSelector((state) => state.userIsConnected);
+  console.log(userIsConnected);
   const sidebar = useSelector((state) => state.sidebar);
   const shoppingBasketList = useSelector((state) => state.shoppingBasket)
   console.log(shoppingBasketList.length)
@@ -76,7 +78,7 @@ const Header = () => {
             </NavLink>
             <NavLink to='/login' className="box-button-header nav-link">
               <img src={CupLog} className="buttons-header icon-cuplog" />
-              <span className="span-btn">Connexion</span>
+              {userIsConnected ? <span className="span-btn">Déconnection</span> : <span className="span-btn">Connexion</span>}
             </NavLink>
           </div>
         </div>

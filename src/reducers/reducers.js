@@ -6,6 +6,7 @@ import {
   REFRESH_BASKET,
   SET_CURRENT_BAKERY,
   SET_PRODUCTS_LIST,
+  SET_USER_IS_CONNECTED,
 } from '../actions/actions';
 
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
   bakeryList: [],
   productsList: [],
   shoppingBasket: [],
+  userIsConnected: false,
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -56,6 +58,11 @@ const inputReducer = (state = initialState, action = {}) => {
     return {
       ...state,
       productsList: action.value,
+    };
+    case SET_USER_IS_CONNECTED:
+    return {
+      ...state,
+      userIsConnected: action.value,
     };
 
     default:

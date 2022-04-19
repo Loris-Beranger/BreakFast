@@ -7,10 +7,12 @@ import { useQuery } from 'react-query';
 import { signup } from './requete';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { setUserIsConnected } from '../../actions/actions';
 
 
 // == Composant
 const Log = () => {  
+  const dispatch = useDispatch();
   const url = 'http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php';
   const axios = require('axios');
   const notifySuccess = () => toast.success('Vous êtes maintenant inscrit !', {
@@ -22,7 +24,25 @@ const Log = () => {
     draggable: true,
     progress: undefined,
     });
+    const notifySuccessLogin = () => toast.success('Vous êtes maintenant connecté !', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
   const notifyError = () => toast.error("L'inscription a échouée", {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });  
+  const notifyErrorLogin = () => toast.error("La connexion a échouée", {
     position: "top-center",
     autoClose: 5000,
     hideProgressBar: false,
@@ -47,6 +67,30 @@ const Log = () => {
 
   const handleSubmitLogin = (event) => {
     event.preventDefault();
+    axios.post(url + "/api/login_check",
+      {
+        username: emailLogin,
+        password: passwordLogin,
+      },
+      {
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    )
+    .then(function (response) {
+      // handle success
+      console.log(response);
+      notifySuccessLogin();
+      sessionStorage.setItem('token', response.data.token)
+      dispatch(setUserIsConnected(true))
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+      notifyErrorLogin();
+    });
   }
 
   const handleSubmit = (event) => {
@@ -167,7 +211,7 @@ return (
         <span className='error-text'>{errorMessage}</span>
       </form>
 
-      <form className="signin">
+      <form className="signin" onSubmit={handleSubmitLogin}>
         <h3>Connexion</h3>
         <p>Connectez vous à votre compte</p>
         <div className="wrapper-input">
