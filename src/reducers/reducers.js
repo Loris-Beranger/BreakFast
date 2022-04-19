@@ -6,6 +6,7 @@ import {
   REFRESH_BASKET,
   SET_CURRENT_BAKERY,
   SET_PRODUCTS_LIST,
+  SET_ORDER,
 } from '../actions/actions';
 
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
   bakeryList: [],
   productsList: [],
   shoppingBasket: [],
+  order: [],
 };
 
 const inputReducer = (state = initialState, action = {}) => {
@@ -38,25 +40,30 @@ const inputReducer = (state = initialState, action = {}) => {
         sidebar: action.value,
       };
     case SET_BAKERY_LIST:
-    return {
-      ...state,
-      bakeryList: action.value,
-    };
+      return {
+        ...state,
+        bakeryList: action.value,
+      };
     case REFRESH_BASKET:
-    return {
-      ...state,
-      shoppingBasket: action.value,
-    };
+      return {
+        ...state,
+        shoppingBasket: action.value,
+      };
     case SET_CURRENT_BAKERY:
       return {
         ...state,
         currentBakery: action.value,
       };
     case SET_PRODUCTS_LIST:
-    return {
-      ...state,
-      productsList: action.value,
-    };
+      return {
+        ...state,
+        productsList: action.value,
+      };
+    case SET_ORDER:
+      return {
+        ...state,
+        order: action.value,
+      };
 
     default:
       return state;

@@ -34,7 +34,7 @@ const App = () => {
     const basket = getBasket();
     dispatch(refreshBasket(basket));
 
-    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery')
+    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
     .then(function (response) {
      console.log(response.data);
      const action = setBakeryList(response.data);
