@@ -34,7 +34,7 @@ const Footer = () => {
                     <BsFacebook className='social'></BsFacebook>
                     </div>
                     <div className='copyright'>
-                    <p>© 2022 Break'Fast</p>
+                    <p>© 2022 Break'Fast - <NavLink to='/about'>Team</NavLink></p>
                     </div>
                 </div>
 

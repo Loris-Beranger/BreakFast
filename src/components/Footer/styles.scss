@@ -4,8 +4,6 @@
 .footer {
     background-color: vars.$principal-color;
     width: 100vw;
-    position: fixed;
-    bottom: 0%;
 
     .footer-links {
         font-size: 1em;
@@ -14,7 +12,7 @@
         .footer-navbar {
             display: flex;
             justify-content: space-between;
-            margin: 5% 5% 0% 5%;
+            margin: 3% 5% 0% 5%;
 
         }
     }
@@ -23,7 +21,7 @@
     .socials-icons {
         display: flex;
         justify-content: space-between;
-        margin: 2% 5% 5% 5%;
+        margin: 1% 5% 5% 5%;
 
         .socials {
             width: 15%;
@@ -33,5 +31,29 @@
     }
 
     @media screen and (min-width: 1024px) {
+        .footer {
+            background-color: vars.$principal-color;
+            width: 100vw;
+        
+            .footer-links {
+                font-size: 1em;
+                color: vars.$second-color;
+        
+                .footer-navbar .ul {
+                    display: flex;
+                    justify-content: center;
 
-    }
+                }
+                }
+                }
+                
+                .socials-icons {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0.5% 5% 2% 5%;
+                
+                    .socials {
+                        width: 5%;
+                    }
+                }
+                }
