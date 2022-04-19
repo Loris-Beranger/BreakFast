@@ -34,8 +34,8 @@
       .icon-close {
         position: absolute;
         right: 10px;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         color: vars.$second-color;
       }
     }
@@ -45,22 +45,24 @@
       font-family: Gravity;
       font-weight: 600;
       letter-spacing: 2px;
-      color: vars.$second-color
+      color: vars.$second-color;
+      text-transform: uppercase;
     }
 
     .list-navbar {
-      height: 60%;
+      height: 70%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
       text-align: left;
+      line-height: 2em;
       
 
       li {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: Gravity;
         color: vars.$principal-color;
         width: 100%;
+        text-transform: uppercase;
 
         &:hover {
           
@@ -69,7 +71,7 @@
 
       .nav-link {
         display: inline-block;
-        padding: 30px;
+        padding: 20px;
         width: 100%;
 
         &:hover {

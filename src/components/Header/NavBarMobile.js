@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleSidebar } from 'src/actions/actions';
 import * as BsIcons from "react-icons/bs";
+import BurgerCakeIcon from './images/pancakes-icon-vector-newcolor-layers-no.png'
 
 // == Composant
 const NavBarMobile = () => {
@@ -15,7 +16,7 @@ const NavBarMobile = () => {
     <nav className={sidebar ? 'navbar navbar-mobile active' : 'navbar navbar-mobile'}>
       <div className="wrapper-menu">
         <h2 className="title-side-menu">BreakFast</h2>
-        <BsIcons.BsXLg className="icon-close" onClick={() => {
+        <img src={BurgerCakeIcon} className="icon-close" onClick={() => {
           // Ferme le menu au clic sur la croix
           const action  = toggleSidebar(!sidebar);
           dispatch(action);

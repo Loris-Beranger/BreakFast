@@ -2,6 +2,7 @@
 import './styles.scss';
 
 import Header from '../Header';
+import Footer from '../Footer';
 import { Routes, Route, Link } from 'react-router-dom';
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
@@ -67,12 +68,9 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/bakery/list" element={<BakeryList />} /> */}
         <Route path="/bakery/list/products" element={<BakeryProducts />} />
-
-
         <Route path="*" element={<Page404 />} />
-
-
       </Routes>
+      <Footer />
     </div>
   );
 }
