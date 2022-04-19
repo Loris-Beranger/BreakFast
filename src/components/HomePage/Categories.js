@@ -21,7 +21,6 @@ const Categories = () => {
 
   return (
     <div className="categories">
-      <h2 className="title-category">Catégories</h2>
       <ul className="list-categories">
         <li className="category" onClick={scrollToTop}>
           <div className="background-div">

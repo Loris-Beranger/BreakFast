@@ -2,6 +2,7 @@
 import './styles.scss';
 
 import Header from '../Header';
+import Footer from '../Footer';
 import { Routes, Route, Link } from 'react-router-dom';
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
@@ -66,6 +67,7 @@ const App = () => {
 
 
       </Routes>
+      <Footer />
     </div>
   );
 }

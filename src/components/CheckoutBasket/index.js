@@ -16,6 +16,7 @@ const CheckoutBasket = () => {
   const shoppingBasketList = useSelector((state) => state.shoppingBasket);
   console.log(shoppingBasketList);
 
+
   return (
     <div className="Basket-Basket">
       {shoppingBasketList.length == 0 ? (
@@ -55,7 +56,7 @@ const CheckoutBasket = () => {
                 <NavLink to="/checkout" className="Basket-btnPayer">
                   PAYER
                 </NavLink>
-                <div className="Basket-totalPrice">30€</div>
+                <div className="Basket-totalPrice">1€</div>
               </div>
             </div>
           </div>
