@@ -6,15 +6,24 @@ import { NavLink } from "react-router-dom";
 //import React, {useEffect} from 'react';
 import { productData } from 'src/data/data';
 import axios from 'axios';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getBasket } from '../../basketFunctions';
+import { useEffect } from 'react';
+import { refreshBasket, setOrder } from '../../actions/actions';
 
 
 
 // == Composant
 const CheckoutBasket = () => {
+  const dispatch = useDispatch();
   const shoppingBasketList = useSelector((state) => state.shoppingBasket);
   console.log(shoppingBasketList);
+  const currentBakery = JSON.parse(localStorage.getItem('currentBakery'));
+  let total = 0;
+  shoppingBasketList.forEach(element => {
+    console.log(element);   
+    total += Math.round((element.price * element.quantity) * 100) / 100
+  });
 
 
   return (
@@ -47,16 +56,24 @@ const CheckoutBasket = () => {
                   <div className="Basket-ligne">
                     <div className="Basket-productName">{item.name}</div>
                     <div className="Basket-productPrice">
-                      {Math.round((item.price * item.quantity) * 100) / 100}
+                      {Math.round((item.price * item.quantity) * 100) / 100}€
                     </div>
                   </div>
                 ))}
               </div>
               <div className="Basket-paye">
-                <NavLink to="/checkout" className="Basket-btnPayer">
+                <NavLink to="/checkout" className="Basket-btnPayer" onClick={() => {
+                  const order = {
+                    'productsList': shoppingBasketList,
+                    'currentBakery': currentBakery,
+                    'totalPrice': total,
+                  }
+                  const action = setOrder(order)
+                  dispatch(action);
+                }}>
                   PAYER
                 </NavLink>
-                <div className="Basket-totalPrice">1€</div>
+                <div className="Basket-totalPrice">{total}€</div>
               </div>
             </div>
           </div>

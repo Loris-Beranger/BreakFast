@@ -19,7 +19,7 @@ import Log from 'src/components/Log';
 import Page404 from 'src/components/Page404';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToBasket, getBasket } from '../../basketFunctions';
-import { refreshBasket, setBakeryList } from '../../actions/actions';
+import { refreshBasket, setBakeryList, setUserIsConnected } from '../../actions/actions';
 
 
 
@@ -34,8 +34,15 @@ const App = () => {
     console.log('ajout du panier local storage au reducer')
     const basket = getBasket();
     dispatch(refreshBasket(basket));
+    const token = sessionStorage.getItem('token');
+    if(token){
+      dispatch(setUserIsConnected(true))
+    }
+    else {
+      dispatch(setUserIsConnected(false))
+    }
 
-    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/api/bakery')
+    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
     .then(function (response) {
      console.log(response.data);
      const action = setBakeryList(response.data);
@@ -61,11 +68,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/bakery/list" element={<BakeryList />} /> */}
         <Route path="/bakery/list/products" element={<BakeryProducts />} />
-
-
         <Route path="*" element={<Page404 />} />
-
-
       </Routes>
       <Footer />
     </div>
