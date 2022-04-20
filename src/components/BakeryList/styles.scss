@@ -162,8 +162,8 @@
   
           .bakery-list-bakery-deliverytime {
             position: absolute;
-            bottom: 22%;
-            right: 5%;
+            bottom: 7em;
+            right: 2em;
             padding: 0.5em;
             border-radius: 20px;
             background-color: #865439;
@@ -172,7 +172,7 @@
           }
   
           .bakery-list-bakery-infos {
-            width: 98%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
   
@@ -196,7 +196,7 @@
             }
             .bakery-list-icone{
               display: flex;
-              margin-top: 1em;
+              margin-top: 1.5em;
               height: 30px; 
             }
   
@@ -448,7 +448,7 @@
 
         .bakery-list-bakery-deliverytime {
           position: absolute;
-          bottom: 22%;
+          bottom: 7em;
           right: 15px;
           padding: 0.5em;
           border-radius: 20px;
