@@ -5,10 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toggleSidebar } from 'src/actions/actions';
 import * as BsIcons from "react-icons/bs";
 import BurgerCakeIcon from './images/pancakes-icon-vector-newcolor-layers-no.png'
+import { setUserIsConnected } from '../../actions/actions';
 
 // == Composant
 const NavBarMobile = () => {
   // Récupère état side menu
+  const userIsConnected = useSelector((state) => state.userIsConnected);
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
 
@@ -57,7 +59,12 @@ const NavBarMobile = () => {
         }}>
           <BsIcons.BsPersonCircle className="icon-account"/>
         </NavLink>
-        <BsIcons.BsBoxArrowRight className="icon-logout"/>
+        {/* {userIsConnected && <span className='username'>test</span>} */}
+        {userIsConnected && <BsIcons.BsBoxArrowRight className="icon-logout" onClick={() => {
+                sessionStorage.removeItem('token');
+                dispatch(setUserIsConnected(false));
+              }}/>}
+       
       </div>
     </nav>
   );

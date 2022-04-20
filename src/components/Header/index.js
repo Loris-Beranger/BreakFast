@@ -12,6 +12,7 @@ import CupConnected from './images/cup-full-connected.png'
 // Composants
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
+import { setUserIsConnected } from '../../actions/actions';
 
 const Header = () => {
   // Récupère état side menu
@@ -45,18 +46,33 @@ const Header = () => {
         <NavBarMobile />
         <div className="header-buttons">
           <div className="box-img">
-          <i className={sidebar ? 'bars icon btn-menu-burger active' : 'bars icon btn-menu-burger'} onClick={() => {
-            const action  = toggleSidebar(!sidebar);
-            dispatch(action);
-          }}></i>
+            <i
+              className={
+                sidebar
+                  ? "bars icon btn-menu-burger active"
+                  : "bars icon btn-menu-burger"
+              }
+              onClick={() => {
+                const action = toggleSidebar(!sidebar);
+                dispatch(action);
+              }}
+            ></i>
           </div>
-          <NavLink to='/' className="box-img"></NavLink>
+          <NavLink to="/" className="box-img"></NavLink>
           <div className="box-img">
-            <NavLink to='/basket' className='wrapper-basket-icon'>
+            <NavLink to="/basket" className="wrapper-basket-icon">
               <i className="shopping basket icon btn-basket"></i>
-              <span className={pastille ? 'pastille-basket-mobile' : 'no-pastille-basket-mobile'}>{shoppingBasketList.length}</span>
+              <span
+                className={
+                  pastille
+                    ? "pastille-basket-mobile"
+                    : "no-pastille-basket-mobile"
+                }
+              >
+                {shoppingBasketList.length}
+              </span>
             </NavLink>
-            </div>
+          </div>
         </div>
         <h1 className="slogan">Votre petit dej en un clic</h1>
       </div>
@@ -64,27 +80,51 @@ const Header = () => {
       <div className="header-laptop">
         <div className="header-buttons">
           <div className="box-logo-slogan">
-            <NavLink to='/'>
-              <img src={BreakFastLogo} className="logo-breakfast"/>
+            <NavLink to="/">
+              <img src={BreakFastLogo} className="logo-breakfast" />
             </NavLink>
             <h1 className="slogan">Votre petit dej en un clic</h1>
           </div>
           <div className="buttons-basket-log">
-            <NavLink to='/basket' className="box-button-header nav-link">
-              <div className='wrapper-basket-icon'>
-                <img src={ShoppingBasket} className="buttons-header icon-basket" />
-                <span className={pastille ? 'pastille-basket' : 'no-pastille-basket'}>{shoppingBasketList.length}</span>
+            <NavLink to="/basket" className="box-button-header nav-link">
+              <div className="wrapper-basket-icon">
+                <img
+                  src={ShoppingBasket}
+                  className="buttons-header icon-basket"
+                />
+                <span
+                  className={
+                    pastille ? "pastille-basket" : "no-pastille-basket"
+                  }
+                >
+                  {shoppingBasketList.length}
+                </span>
               </div>
               <span className="span-btn">Panier</span>
             </NavLink>
-            <NavLink to='/login' className="box-button-header nav-link">
-              <img src={userIsConnected ? CupConnected : CupNotConnected} className="buttons-header icon-cuplog" />
-              {userIsConnected ? <span className="span-btn">Déconnexion</span> : <span className="span-btn">Connexion</span>}
-            </NavLink>
+            {userIsConnected ? (
+              <button className="box-button-header button-logout" onClick={() => {
+                sessionStorage.removeItem('token');
+                dispatch(setUserIsConnected(false));
+              }}>
+                <img
+                  src={CupConnected}
+                  className="buttons-header icon-cuplog"
+                />
+                <span className="span-btn">Déconnexion</span>
+              </button>
+            ) : (
+              <NavLink to="/login" className="box-button-header nav-link">
+                <img
+                  src={CupNotConnected}
+                  className="buttons-header icon-cuplog"
+                />
+                <span className="span-btn">Connexion</span>
+              </NavLink>
+            )}
           </div>
         </div>
         <NavBarDesktop />
-        
       </div>
     </header>
   );
