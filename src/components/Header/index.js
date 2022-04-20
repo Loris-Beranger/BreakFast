@@ -15,7 +15,7 @@ import grandPancake from './images/pancakes-icon-vector-newcolor-layers-no.png'
 // Composants
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
-import { setUserIsConnected } from '../../actions/actions';
+import { setAdress, setUserIsConnected } from '../../actions/actions';
 
 const Header = () => {
   // Récupère état side menu
@@ -92,7 +92,10 @@ const Header = () => {
         <div className="header-buttons">
           <div className="box-logo-slogan">
             <NavLink to="/">
-              <img src={BreakFastLogo} className="logo-breakfast" />
+              <img src={BreakFastLogo} className="logo-breakfast"  onClick={() => {
+              const action = setAdress('');
+              dispatch(action);
+            }}/>
             </NavLink>
             <h1 className="slogan">Votre petit dej en un clic</h1>
           </div>
