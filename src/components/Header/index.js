@@ -9,6 +9,9 @@ import BreakFastLogo from './images/breakfast-logo-light.png'
 import ShoppingBasket from './images/painier-original-color-breakfast.png'
 import CupNotConnected from './images/cup-empty-notconnected.png'
 import CupConnected from './images/cup-full-connected.png'
+import petitPancake from './images/pancakes-icon-vector-newcolor-no.png'
+import grandPancake from './images/pancakes-icon-vector-newcolor-layers-no.png'
+
 // Composants
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
@@ -40,28 +43,36 @@ const Header = () => {
     }
   }
 
+
+  const [pancake, setPancake] = useState(false);
+
+  const classToggle = () => {
+    setPancake(!pancake)
+  }
   return (
     <header className="header">
       <div className="header-mobile">
         <NavBarMobile />
         <div className="header-buttons">
           <div className="box-img">
-            <i
-              className={
-                sidebar
-                  ? "bars icon btn-menu-burger active"
-                  : "bars icon btn-menu-burger"
-              }
+            <img src={`${pancake ? grandPancake : petitPancake}`}
+              // className={
+              //   sidebar
+              //     ? "bars icon btn-menu-burger active"
+              //     : "bars icon btn-menu-burger"
+              // }
               onClick={() => {
+                classToggle();
                 const action = toggleSidebar(!sidebar);
                 dispatch(action);
               }}
-            ></i>
+            >
+            </img>
           </div>
           <NavLink to="/" className="box-img"></NavLink>
           <div className="box-img">
             <NavLink to="/basket" className="wrapper-basket-icon">
-              <i className="shopping basket icon btn-basket"></i>
+              <img src={ShoppingBasket}></img>
               <span
                 className={
                   pastille

@@ -247,7 +247,6 @@
         padding: 10% 10%;
         display: flex;
         justify-content: center;
-
         
         .signup {
           display: none;
@@ -277,7 +276,6 @@
         width: 100%;
         padding: 10% 10%;
         display: flex;
-        justify-content: center;
     
         .signin {
           display: none;
@@ -287,6 +285,8 @@
           height: 100%;
           display: flex;
           flex-direction: column;
+          align-items: center;
+
         }
       }
     }

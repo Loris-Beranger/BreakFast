@@ -1,10 +1,6 @@
 // == Import
 import './styles.scss';
-import ImgAmoureux from './images/categories/amoureux.jpg'
-import ImgAnniversaire from './images/categories/anniversaire.jpg'
-import ImgBio from './images/categories/bio.jpg'
-import ImgVegan from './images/categories/vegan.jpg'
-import ImgEntreprise from './images/categories/entreprise.jpg'
+
 
 // == Composant
 const Categories = () => {
