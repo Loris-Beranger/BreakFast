@@ -230,6 +230,12 @@
               text-transform: uppercase;
               text-align: center;
             }
+            .span-btn-déco {
+              font-family: Montserrat,sans-serif;
+              color: #D7B19D;
+              text-transform: uppercase;
+              text-align: center;
+            }
           }
           display: flex;
           justify-content: center;
@@ -245,6 +251,10 @@
           .icon-cuplog {
             width: 45px;
             margin-bottom: 5px;
+          }
+          .icon-cuplog-déco {
+            width: 45px;
+            margin-bottom: 2px;
           }
 
           
