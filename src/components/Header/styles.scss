@@ -102,6 +102,14 @@
       height: 40px;
       color: vars.$second-color;
     }
+
+    .username {
+      transform: translate(-80px, 2px);
+      color: #c88a5b;
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+
     .icon-logout {
       width: 30px;
       height: 30px;
@@ -203,6 +211,11 @@
 
         }
         .buttons-basket-log {
+
+          .box-button-header.button-logout {
+            background-color: transparent;
+            border: none;
+          }
 
           .box-button-header {
             display: flex;
