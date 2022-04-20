@@ -448,17 +448,21 @@
         display: flex;
         flex-direction: column;
 
+        .link-image {
+          height: 250px;
+        }
+
         .bakery-list-bakery__img {
           width: 100%;
-          height: 80%;
+          height: 100%;
           padding-bottom: 0.5em;
           object-fit: cover;    
         }
 
         .bakery-list-bakery-deliverytime {
           position: absolute;
-          bottom: 20%;
-          right: 10px;
+          bottom: 22%;
+          right: 15px;
           padding: 0.5em;
           border-radius: 20px;
           background-color: #996a23;
@@ -467,7 +471,7 @@
         }
 
         .bakery-list-bakery-infos {
-          width: 70%;
+          width: 98%;
           display: flex;
           justify-content: space-between;
 
@@ -492,6 +496,15 @@
 
           .bakery-list-like {
             justify-content: space-between;
+          }
+
+          .bakery-fav {
+            height: 100%;
+            
+          }
+          .bakery-fav-fill {
+              color: red;
+              height: 100%;
           }
         }
       }
