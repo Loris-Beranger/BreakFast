@@ -1,13 +1,13 @@
 // == Import
 import './styles.scss';
-import Heart from 'src/components/Heart/Heart';
 import StarRating from 'src/components/StarRating/StarRating';
 import { NavLink } from 'react-router-dom';
 import { setCurrentBakery } from '../../actions/actions';
 import { useDispatch } from 'react-redux';
 import { addDelFavoris, getFavoris } from '../../favorisFunctions';
-import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useState } from 'react';
+import WhiteHeart from './images/like-button-white.png';
+import RedHeart from './images/like-button-red.png';
 // == Composant
 const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
     console.log(id);
@@ -16,6 +16,12 @@ const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
 
     const [isFav, setIsFav] = useState(favorisList.find(i => i == id) ? true : false);  
 
+    const [coeur, setcoeur] = useState(false);
+
+    const HeartToggle = () => {
+      setcoeur(!coeur)
+    }
+    
     return (
       <div className="bakery-list-bakery">
         <NavLink
@@ -41,22 +47,24 @@ const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
             </div>
           </div>
           {isFav == false ? (
-            <BsSuitHeart
-              className="bakery-fav"
+            <img
+              className="bakery-list-icone"
               onClick={() => {
-                console.log(id);
+                HeartToggle()
                 addDelFavoris(id);
                 setIsFav(true);
               }}
+              src={WhiteHeart}
             />
           ) : (
-            <BsSuitHeartFill
-              className="bakery-fav-fill"
+            <img
+              className="bakery-list-icone"
               onClick={() => {
-                console.log(id);
+                HeartToggle()
                 addDelFavoris(id);
                 setIsFav(false);
               }}
+              src={RedHeart}
             />
           )}
         </div>
