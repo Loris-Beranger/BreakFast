@@ -14,7 +14,7 @@
     z-index: 3;
     display: none;
     position: fixed;
-    background-color: vars.$second-color;
+    background-color: vars.$third-color;
     height: 100vh;
     width: 60%;
     /* padding-top: 20px; */
@@ -71,7 +71,6 @@
         display: inline-block;
         padding: 20px;
         width: 100%;
-        text-shadow: 10px 1px 5px black;
 
 
         &:hover {
