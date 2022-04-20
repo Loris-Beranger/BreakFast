@@ -109,9 +109,9 @@ const Header = () => {
               }}>
                 <img
                   src={CupConnected}
-                  className="buttons-header icon-cuplog-déco"
+                  className="buttons-header icon-cuplog"
                 />
-                <span className="span-btn-déco">Déconnexion</span>
+                <span className="span-btn">Déconnexion</span>
               </button>
             ) : (
               <NavLink to="/login" className="box-button-header nav-link">

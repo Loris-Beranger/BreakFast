@@ -6,6 +6,9 @@ import { toggleSidebar } from 'src/actions/actions';
 import * as BsIcons from "react-icons/bs";
 import BurgerCakeIcon from './images/pancakes-icon-vector-newcolor-layers-no.png'
 import { setUserIsConnected } from '../../actions/actions';
+import CupConnected from './images/cup-full-connected.png'
+import CupNotConnected from './images/cup-empty-notconnected.png'
+
 
 // == Composant
 const NavBarMobile = () => {
@@ -52,18 +55,32 @@ const NavBarMobile = () => {
         }}><BsIcons.BsEnvelopeFill  className="icon-sidebar"/>Contact</NavLink></li>
       </ul>
       <div className="box-account">
+      {userIsConnected ? (
         <NavLink to='/login'  onClick={() => {
           // Ferme le menu au clic sur le lien
           const action  = toggleSidebar(!sidebar);
           dispatch(action);
-        }}>
-          <BsIcons.BsPersonCircle className="icon-account"/>
-        </NavLink>
-        {/* {userIsConnected && <span className='username'>test</span>} */}
-        {userIsConnected && <BsIcons.BsBoxArrowRight className="icon-logout" onClick={() => {
-                sessionStorage.removeItem('token');
+          sessionStorage.removeItem('token');
                 dispatch(setUserIsConnected(false));
-              }}/>}
+        }}>
+          <img src={CupConnected} className="icon-account" />
+           <span className="text-btn-déco">Déconnexion</span>
+
+
+
+          </NavLink>
+
+          ) : (
+            <NavLink to='/login'  onClick={() => {
+              // Ferme le menu au clic sur le lien
+              const action  = toggleSidebar(!sidebar);
+              dispatch(action);
+            }}>
+              <img src={CupNotConnected} className="icon-account"/>
+              <span className="text-btn-co">Connexion</span>
+              </NavLink>
+          )}
+        
        
       </div>
     </nav>
