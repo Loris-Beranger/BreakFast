@@ -58,7 +58,7 @@ const NavBarMobile = () => {
         }}>
           <BsIcons.BsPersonCircle className="icon-account"/>
         </NavLink>
-        {userIsConnected && <span className='username'>test</span>}
+        {/* {userIsConnected && <span className='username'>test</span>} */}
         {userIsConnected && <BsIcons.BsBoxArrowRight className="icon-logout" onClick={() => {
                 sessionStorage.removeItem('token');
                 dispatch(setUserIsConnected(false));
