@@ -84,6 +84,18 @@ const Log = () => {
       notifySuccessLogin();
       sessionStorage.setItem('token', response.data.token)
       dispatch(setUserIsConnected(true))
+
+      axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/user`)
+        .then(function (response) {
+          console.log(response.data);
+          const userInfo = response.data.find(i => i.email == emailLogin);
+          sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        });
+      
     })
     .catch(function (error) {
       // handle error

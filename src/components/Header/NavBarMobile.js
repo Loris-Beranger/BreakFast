@@ -30,7 +30,7 @@ const NavBarMobile = () => {
           const action  = toggleSidebar(!sidebar);
           dispatch(action);
         }}><BsIcons.BsFillHouseDoorFill  className="icon-sidebar"/>Accueil</NavLink></li>
-        <li><NavLink to='/formulas' className="nav-link nav-link-formulas" onClick={() => {
+        <li><NavLink to='/formules' className="nav-link nav-link-formulas" onClick={() => {
           // Ferme le menu au clic sur le lien
           const action  = toggleSidebar(!sidebar);
           dispatch(action);

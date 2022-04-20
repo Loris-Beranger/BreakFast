@@ -1,3 +1,5 @@
+@use 'src/styles/vars.scss';
+
 .Checkout-Checkout{
   font-size: 22px;
 }
@@ -11,10 +13,14 @@
   width: 100%;
   height: 100%;
   padding: 5%;
+  background-image: url('./images/background1.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: white;
   
   .Checkout-infoPerso{
     background-color: #4022181a; 
-    border-bottom: solid black 1px;
+    border-bottom: solid rgb(255, 255, 255) 1px;
     display: flex;
     flex-direction: column;
 
@@ -24,18 +30,18 @@
     input[type="radio"].demo2 + label {
       padding: 0.5rem 1rem;
       line-height: 1.5;
-      color: rgb(0, 0, 0);
+      color: white;
       border: 1px solid transparent;
       transition: all 0.1s ease-in-out;
       margin: 0em 20%;
     }
     input[type="radio"].demo2.demoyes:hover + label {
-      background-color: #4b3223bd;
+      background-color: white;
       border-color: #4b3223bd;
       color: aliceblue;
     }
     input[type="radio"].demo2.demoyes:checked + label {
-      background-color: #865439;
+      background-color: white;
       border-color: #865439;
     }
     input[type="radio"].demo2.demono:hover + label {
@@ -65,7 +71,11 @@
       flex-direction: column;
       margin-top: 10%;
       margin-bottom: 10%;
-      font-weight: 300;
+      
+      li {
+        color: white;
+        font-size: 0.8em;
+      }
     }
   }
  
@@ -181,66 +191,92 @@ color: aliceblue;
   width: 100%;
   height: 100%;
   padding: 5%;
-  
-  .Checkout-infoPerso{
-    width: 50%;
-    background-color: #4022181a; 
-    border-right: solid black 1px;
+  background-image: url('./images/background1.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+  font-family: Gravity;
+  overflow-y: hidden;
+
+  .wrapper-checkout {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    background-color: #402218cf; 
 
-    input[type="radio"].demo2 {
-      display: none;
-    }
-    input[type="radio"].demo2 + label {
-      padding: 0.5rem 1rem;
-      line-height: 1.5;
-      color: rgb(0, 0, 0);
-      border: 1px solid transparent;
-      transition: all 0.1s ease-in-out;
-      margin: 0em 20%;
-    }
-    input[type="radio"].demo2.demoyes:hover + label {
-      background-color: #4b3223bd;
-      border-color: #4b3223bd;
-      color: aliceblue;
-    }
-    input[type="radio"].demo2.demoyes:checked + label {
-      background-color: #865439;
-      border-color: #865439;
-    }
-    input[type="radio"].demo2.demono:hover + label {
-      background-color: #4b3223bd;
-      border-color: #4b3223bd;
-      color: aliceblue;
-    }
-    input[type="radio"].demo2.demono:checked + label {
-      background-color: #865439;
-      border-color: #865439;
-    }
-
-    .Checkout-verif{
-      padding: 2em 2em 1em 2em;
-
-    }
-    .Checkout-ville{
-      padding-bottom: 2em;
-    }
-
-    .Checkout-checkbox{
-      padding-bottom: 2em;
-    }
-
-    .Checkout-commande{
-      text-align: left;
+    .Checkout-infoPerso{
+      width: 50%;
+      
+      border-right: solid rgb(255, 255, 255) 1px;
       display: flex;
       flex-direction: column;
-      margin-top: 20%;
-      margin-bottom: 10%;
-      padding-left: 10%;
-      font-weight: 300;
+  
+      input[type="radio"].demo2 {
+        display: none;
+      }
+      input[type="radio"].demo2 + label {
+        padding: 0.5rem 1rem;
+        line-height: 1.5;
+        color: rgb(255, 255, 255);
+        border: 1px solid transparent;
+        transition: all 0.1s ease-in-out;
+        margin: 0em 20%;
+      }
+      input[type="radio"].demo2.demoyes:hover + label {
+        background-color: rgba(255, 255, 255, 0.651);
+        border-color: #4b3223bd;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demoyes:checked + label {
+        background-color: white;
+        border-color: #865439;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demono:hover + label {
+        background-color: rgba(255, 255, 255, 0.651);
+        border-color: #4b3223bd;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demono:checked + label {
+        background-color: white;
+        border-color: #865439;
+        color: vars.$principal-color;
+      }
+  
+      .Checkout-verif{
+        padding: 2em 2em 1em 2em;
+  
+      }
+      .Checkout-ville{
+        padding-bottom: 2em;
+      }
+  
+      .Checkout-checkbox{
+        padding-bottom: 2em;
+      }
+  
+      .Checkout-commande{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        padding-left: 10%;
+        width: 80%;
+  
+        li.element-list-products {
+          margin-bottom: 5px;
+          font-weight: 300;
+          font-size: 0.9em;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
     }
   }
+  
+  
  
  
   .lapopup{
@@ -287,19 +323,22 @@ color: aliceblue;
   }
 
   .Checkout-droite{
-    background-color: #4022181a; 
     width: 50%;
     padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .wrapper-total {
+      display: flex;
+    }
 
     .Checkout-Total{
-      
-      padding-left: 6%;
-      position: absolute;
+    
 
     }
     .Checkout-Totaux{
-      width: 50%;
-      margin-left: 55%;
 
     }
 
@@ -309,13 +348,28 @@ color: aliceblue;
   }
 }
 .Checkout-btnPayer{
-  background-color: #865439;
-  padding: 1em;
-  margin: 30% 35% 0em 35%;
+    border: none;
+    width: 150px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: vars.$principal-color;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
 }
-.Checkout-btnPayer:hover{
-background-color: #4b3223bd;
-color: aliceblue;
+li.element-list-products {
+  span {
+    font-weight: 300;
+  }
 }
 }
 

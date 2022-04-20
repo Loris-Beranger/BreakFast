@@ -29,38 +29,43 @@ const Checkout = () => {
 
   return (
     <div className="Checkout-Checkout">
-      <div className="Checkout-infoPerso">
-        <div className="Checkout-verif">vérification d'adresse :</div>
-        <div className="Checkout-ville">{currentBakery.address}</div>
-
+      <div className="wrapper-checkout">
+        <div className="Checkout-infoPerso">
+          <div className="Checkout-verif">vérification d'adresse :</div>
+          <div className="Checkout-ville">{currentBakery.address}</div>
         
-          <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a" checked/>
-          <label for="demo2-a">Click and Collect</label>
-          <input type="radio" name="demo2" class="demo2 demono" id="demo2-b" />
-          <label for="demo2-b">Livraison à domicile</label>
+            <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a" checked/>
+            <label for="demo2-a">Click and Collect</label>
+            <input type="radio" name="demo2" class="demo2 demono" id="demo2-b" />
+            <label for="demo2-b">Livraison à domicile</label>
         
-
-        <div className="Checkout-commande" >
-          {order.productsList.map((item) => (
-            <p>{item.quantity} x {item.name}</p>
-          ))}
+          <ul className="Checkout-commande" >
+            {order.productsList.map((item) => (
+              <li className="element-list-products">
+                <span>{item.quantity} x {item.name}</span>
+                <span>{item.quantity * item.price} €</span>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
-
-      <div className="Checkout-droite">
-        <div className="Checkout-Total">
-          <div className="Checkout-ligne">Commande</div>
-          <div className="Checkout-ligne">Frais de livraison</div>
-          <div className="Checkout-Finalprice">Total</div>
-        </div>
-
-        <div className="Checkout-Totaux">
-          <div className="Checkout-ligne">{order.totalPrice}€</div>
-          <div className="Checkout-ligne">{order.currentBakery.delivery_fees}€</div>
-          <div className="Checkout-Finalprice">{order.totalPrice + order.currentBakery.delivery_fees}€</div>
-        </div>
-        <div className="Checkout-btnPayer" onClick={() => setpopUp("popup")}>
-          PAYER
+        <div className="Checkout-droite">
+          <div className="wrapper-total">
+            <div className="Checkout-Total">
+              <div className="Checkout-ligne">Commande</div>
+              <div className="Checkout-ligne">Frais de livraison</div>
+              <div className="Checkout-Finalprice">Total</div>
+            </div>
+            <div className="Checkout-Totaux">
+              <div className="Checkout-ligne">{order.totalPrice}€</div>
+              <div className="Checkout-ligne">{order.currentBakery.delivery_fees}€</div>
+              <div className="Checkout-Finalprice">{order.totalPrice + order.currentBakery.delivery_fees}€</div>
+            </div>
+          </div>
+          <button className="Checkout-btnPayer" onClick={() => {
+            setpopUp("popup")
+            }}>
+            PAYER
+          </button>
         </div>
       </div>
         

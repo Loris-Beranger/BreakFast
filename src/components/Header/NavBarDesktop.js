@@ -12,7 +12,7 @@ const NavBarDesktop = () => {
         <li><NavLink to='/' className="nav-link">Accueil</NavLink></li>
         <li className="link-formulas">
           <div>
-            <NavLink to="/formulas" className="nav-link link-component-formulas">Formules</NavLink>
+            <NavLink to="/formules" className="nav-link link-component-formulas">Formules</NavLink>
             <div className="dropdown-content">
               <ul>
                 <li><NavLink to='/formulas/lover' className="link-component">P'tit dej en amoureux</NavLink></li>
