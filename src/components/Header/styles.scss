@@ -56,6 +56,7 @@
       flex-direction: column;
       text-align: left;
       line-height: 2em;
+      justify-content: space-around;
       
 
       li {
@@ -70,6 +71,8 @@
         display: inline-block;
         padding: 20px;
         width: 100%;
+        text-shadow: 10px 1px 5px black;
+
 
         &:hover {
           background-color: vars.$principal-color;
@@ -87,7 +90,7 @@
     .box-account {
       background-color: vars.$principal-color;
       width: 100%;
-      height: 70px;
+      height: 90px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -148,16 +151,14 @@
       color: vars.$second-color;
       transform: scale(2);
     }
-    .btn-menu-burger.active {
-      display: none;
-    }
+
   }
 
   .header-buttons .box-img:nth-child(1) {
     width: 20%;
 
     img {
-      width: 28px;
+      width: 50px;
     }
   }
   .header-buttons .box-img:nth-child(2) {
@@ -172,7 +173,7 @@
     width: 20%;
 
     img {
-      width: 25px;
+      width: 50px;
     }
   }
   
@@ -368,7 +369,6 @@
     font-weight: 600;
     position: absolute;
     right: -10px;
-    top: -13px;
     padding: 2px 0;
     width: 18px;
     height: 18px;

@@ -38,6 +38,10 @@
       width: 90%;
       margin: 150px 0;
 
+      h2{
+        margin-bottom: 0.5em;
+      }
+
       .form-title {
         font-size: 1.2em;
         text-transform: uppercase;
@@ -139,6 +143,7 @@
             font-family: Gravity;
             font-size: 1.5em;
             letter-spacing: 2px;
+            text-shadow: 1px 1px 5px black;
           }
         }
 

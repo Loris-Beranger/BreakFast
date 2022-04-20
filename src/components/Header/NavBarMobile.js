@@ -21,11 +21,7 @@ const NavBarMobile = () => {
     <nav className={sidebar ? 'navbar navbar-mobile active' : 'navbar navbar-mobile'}>
       <div className="wrapper-menu">
         <h2 className="title-side-menu">BreakFast</h2>
-        <img src={BurgerCakeIcon} className="icon-close" onClick={() => {
-          // Ferme le menu au clic sur la croix
-          const action  = toggleSidebar(!sidebar);
-          dispatch(action);
-        }}/>
+        
       </div>
       <ul className="list-navbar">
         <li><NavLink to='/' className="nav-link nav-link-home" onClick={() => {
