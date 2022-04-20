@@ -21,7 +21,7 @@ const NavBarDesktop = () => {
               </ul>
               </div>
           </div></li>
-        <li ><NavLink to='/blog' className="nav-link">Blog</NavLink></li>
+        <li><NavLink to='/blog' className="nav-link">Blog</NavLink></li>
         <li><NavLink to='/about' className="nav-link">A propos</NavLink></li>
         <li><NavLink to='/contact' className="nav-link">Contact</NavLink></li>
       </ul>
