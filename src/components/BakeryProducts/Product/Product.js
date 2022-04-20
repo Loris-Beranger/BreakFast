@@ -31,7 +31,7 @@ const Product = ({ id, img, name, price, notify }) => {
 
   return (
     <li className="bakery-product">
-      <img className="bakery-product_img" src={img} alt="croissant" />
+      <img className="bakery-product_img" src={img} />
       <div className="bakery-product-info">
         <div>
           <h2 className="bakery-product_name">{name}</h2>

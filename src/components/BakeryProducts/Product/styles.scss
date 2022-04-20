@@ -10,9 +10,10 @@
     width: 50%;
     margin-top: 2em;
 
-
     .bakery-product_img {
+      border-radius: 5px;
       width: 80%;
+      height: 50%;
       object-fit: cover;
     }
 
@@ -29,18 +30,27 @@
     }
 
     .bakery-add-to-basket-0 {
-      padding: 0.5em;
-      background-color: #444242;
-      color: white;
-      border-radius: 20px;
-      font-size: 80%;    
+      border: none;
+      border-radius: 25px;
+      color: #402218;
+      font-size: .7em;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 15px 20px;
+      text-align: center;
+      text-transform: uppercase;  
     }
     .bakery-add-to-basket {
-      padding: 0.5em;
-      background-color: #996a23;
-      color: white;
-      border-radius: 20px;
-      font-size: 80%;   
+      border: none;
+      border-radius: 25px;
+      color: #ffffff;
+      background-color: #865439;
+      font-size: .7em;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 15px 20px;
+      text-align: center;
+      text-transform: uppercase;
     }
 
     .bakery-product-quantity {
@@ -88,6 +98,8 @@
     width: 250px;
     height: 250px;
     object-fit: cover;
+    border-radius: 5px;
+    
   }
 
   .bakery-product-info {
@@ -105,17 +117,26 @@
 
   .bakery-add-to-basket-0 {
     border: none;
-    padding: 0.5em;
-    background-color: #444242;
-    color: white;
-    border-radius: 20px;
+  border-radius: 25px;
+  color: #402218;
+  font-size: .7em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;  
   }
   .bakery-add-to-basket {
     border: none;
-    padding: 0.5em;
-    background-color: #996a23;
-    color: white;
-    border-radius: 20px;
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: #865439;
+  font-size: .7em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
   }
 
   .bakery-product-quantity {
@@ -156,3 +177,4 @@
 :root {
   --toastify-color-success: #626962;
 }
+
