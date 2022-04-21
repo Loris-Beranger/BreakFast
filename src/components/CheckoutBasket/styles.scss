@@ -1,3 +1,5 @@
+@use 'src/styles/vars.scss';
+
 .Basket-btnPayer:hover{
   background-color: #4b3223bd;
   color: aliceblue;
@@ -7,7 +9,7 @@
 .Basket-Basket{
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 
   .page-basket-empty {
     display: flex;
@@ -135,7 +137,11 @@
     display: flex;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    background-image: url('./images/background1.jpg');
+    background-size: cover;
+    background-position: center ;
+    padding: 50px;
 
     .page-basket-empty {
       display: flex;
@@ -171,24 +177,28 @@
     }
   }
 
-    .oui{
-      width: 55%;
-
+    .page-checkout-basket{
+      width: 100vw;
+      background-color: #402218cf;
+      display: flex;
+      overflow: hidden;
+      padding: 50px;
     
     .Basket-products{
       display: flex;
+      justify-content: space-around;
       float: right;
       flex-wrap: wrap;
-      margin-top: 3em;
-      padding:  2em 0em 0em 2em;
-      width: 100%;
-      border-right: 1px solid black;
+      width: 50%;
+      overflow-y: scroll;
 
       .Basket-product{
-        width: 260px;
-        height: 350px;
-        //flex-direction: column;
-        //justify-content: center;
+        width: 200px;
+        height: 300px;
+
+        .Basket-info {
+          color: rgba(255, 255, 255, 0.699);
+        }
 
         .Basket-individual-product-total-price{
           display: none;
@@ -197,8 +207,9 @@
 
       .Basket-quantity{
         padding: 1em;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 20px;  
+        color: rgba(255, 255, 255, 0.699);
 
         .math{
           display: flex;
@@ -208,12 +219,22 @@
             padding: 0.1em;
             height: 30px;
             width: 30px;
+            color: rgba(255, 255, 255, 0.76);
+
+            &:hover {
+              cursor: pointer;
+            }
           }
           .less{
             margin: 0em 0.5em;
             padding: 0.1em;
             height: 30px;
             width: 30px;
+            color: rgba(255, 255, 255, 0.808);
+
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -224,48 +245,73 @@
         object-fit: cover;    
         height: 180px;
         width: 180px;
+        opacity: 0.9;
       }
     }
   }
 
   .Basket-PriceListe{
     display: flex;
-    position: absolute;
+    flex-direction: column;
     align-items: center;
-    margin-left: 62%;
-    margin-top: 8em;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.808);
+    padding-left: 40px;
+
+    .Basket-trait {
+      width: 100%;
+      /* padding: 40px; */
+      box-shadow: 5px 5px 15px 1px black;
 
     .Basket-ligne{
       display: flex;
-      justify-content: flex-start;
-      padding: 0.6em;
-      font-size: 18px;
-      text-align:left;
+      justify-content: space-between;
+      font-size: 1.1em;
+      text-align: left;    
+      padding: 10px 10px;
+      color: rgba(255, 255, 255, 0.808);
+      /* background-color: rgba(0, 0, 0, 0.185); */
 
-      .Basket-productPrice{
-        position: absolute;
-        margin-left: 100%;
+        .Basket-productPrice{
+        }
+        .Basket-productName{
+          margin-right: 100px;
+        }
       }
-      .Basket-productName{
-        margin-right: 100px;
-      }
+
+      
     }
 
     .Basket-paye{
       display: flex;
+      width: 100%;
+      padding: 0 40px;
+      justify-content: space-between;
+      align-items: center;
 
       .Basket-btnPayer{
-        background-color: #865439;
-        padding: 1em 2em;
-        margin-bottom: 2em;
-        margin-top: 1em;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: vars.$principal-color;
+        background-color: white;
+        text-align: center;
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        margin-left: 30%;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 10px white;
+        }
       }
 
       .Basket-totalPrice{
-        position: absolute;
-        margin-left: 100%;
         font-size: 23px;
-        padding-top: 1.5em;
       }
     }
 

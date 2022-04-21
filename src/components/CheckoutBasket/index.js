@@ -31,7 +31,7 @@ const CheckoutBasket = () => {
           <NavLink to='/' className='basket-empty-to-home'>Retourner à l'accueil</NavLink>
         </div>
       ) : (
-        <div className='oui'>
+        <div className='page-checkout-basket'>
           <div className="Basket-products">
             {shoppingBasketList.map((item) => (
               <IndividualProduct
@@ -46,17 +46,16 @@ const CheckoutBasket = () => {
           </div>
 
           <div className="Basket-PriceListe">
-            <div>
-              <div className="Basket-trait">
+              <ul className="Basket-trait">
                 {shoppingBasketList.map((item) => (
-                  <div className="Basket-ligne">
-                    <div className="Basket-productName">{item.name}</div>
-                    <div className="Basket-productPrice">
-                      {Math.round((item.price * item.quantity) * 100) / 100}€
-                    </div>
-                  </div>
+                  <li className="Basket-ligne">
+                    <span className="Basket-productName">{item.name}</span>
+                    <span className="Basket-productPrice">
+                      {Math.round((item.price * item.quantity) * 100) / 100} €
+                    </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
               <div className="Basket-paye">
                 <NavLink to="/checkout" className="Basket-btnPayer" onClick={() => {
                   const order = {
@@ -69,9 +68,8 @@ const CheckoutBasket = () => {
                 }}>
                   PAYER
                 </NavLink>
-                <div className="Basket-totalPrice">{total}€</div>
+                <div className="Basket-totalPrice"><span>Total:</span> <span>{total}€</span></div>
               </div>
-            </div>
           </div>
         </div>
       )}
