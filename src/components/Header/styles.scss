@@ -9,10 +9,16 @@
   .header-laptop {
     display: none;
   }
+  .navbar-mobile.active {
+    display: flex;
+    transform: translateX(-100%);
+    height: 100%;
 
+  }
   .navbar-mobile {
     z-index: 3;
-    display: none;
+    transform: translateX(-100%);
+    transition: 2s;
     position: fixed;
     background-color: vars.$third-color;
     height: 100vh;
@@ -21,9 +27,8 @@
     flex-direction: column;
     justify-content: space-between;
     /* transform: translateX(-100%); */
-    transition: 700ms;
     border-right: 1px solid vars.$principal-color;
-    
+
 
     .wrapper-menu {
       display: flex;
@@ -32,12 +37,14 @@
       background-color: vars.$principal-color;
       padding: 30px;
 
+
       .icon-close {
         position: absolute;
         right: 10px;
         width: 40px;
         height: 40px;
         color: vars.$second-color;
+
       }
     }
 
@@ -50,8 +57,9 @@
       text-transform: uppercase;
     }
 
+
     .list-navbar {
-      height: 70%;
+      height: 81.6%;
       display: flex;
       flex-direction: column;
       text-align: left;
@@ -122,12 +130,7 @@
     }
   }
 
-  .navbar-mobile.active {
-    display: flex;
-    transform: translateX(-99%);
-    transition: 300ms;
-    
-  }
+  
 
   .header-buttons {
     display: flex;

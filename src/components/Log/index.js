@@ -103,7 +103,6 @@ const Log = () => {
       notifyErrorLogin();
     });
   }
-
   const handleSubmit = (event) => {
     setErrorMessage('');
     event.preventDefault();
