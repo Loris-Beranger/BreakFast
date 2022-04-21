@@ -1,10 +1,13 @@
 // == Import
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
 // == Composant
 const NavBarDesktop = () => {
   
+  const userIsConnected = useSelector((state) => state.userIsConnected);
+
 
   return (
     <nav className="navbar navbar-desktop">
@@ -24,6 +27,11 @@ const NavBarDesktop = () => {
         <li><NavLink to='/blog' className="nav-link">Blog</NavLink></li>
         <li><NavLink to='/about' className="nav-link">A propos</NavLink></li>
         <li><NavLink to='/contact' className="nav-link">Contact</NavLink></li>
+
+        {userIsConnected ? (
+              <li><a href='http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/backoffice' className='nav-link'>BackOffice</a></li>
+            ) : (<p className='rien-dedans' ></p>)}
+
       </ul>
     </nav>
   );

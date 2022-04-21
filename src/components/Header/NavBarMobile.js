@@ -49,6 +49,9 @@ const NavBarMobile = () => {
           const action  = toggleSidebar(!sidebar);
           dispatch(action);
         }}><BsIcons.BsEnvelopeFill  className="icon-sidebar"/>Contact</NavLink></li>
+        {userIsConnected ? (
+              <li><a href='http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/index.php/backoffice' className='nav-link'>BackOffice</a></li>
+            ) : (<p className='rien-dedans' ></p>)}
       </ul>
       <div className="box-account">
       {userIsConnected ? (
