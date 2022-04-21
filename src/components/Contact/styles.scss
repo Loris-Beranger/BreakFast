@@ -3,13 +3,46 @@
 
 .contact {
   height: 100%;
-  h1 {
-    color: black;
-    font-size: 1.6em;
-    margin-top: 30px;
-    font-family: Gravity;
-    font-weight: 600;
+  width: 100%;
+  background-color: #c88a5b73;
+
+  .contact-ameliorer{
+    padding: 2em;
+    .p{
+      padding-bottom: 2em;
+    }
   }
+  .contact-problemes{
+    padding: 2em;
+    .p{
+      padding-bottom: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .contact-ameliorer{
+    padding: 2em;
+    .p{
+      padding-bottom: 1em;
+    }
+    textarea{
+      width: 80%;
+    }
+  
+  }
+  .contact-problemes{
+    padding: 2em;
+    .p{
+      padding-bottom: 1em;
+    }
+    textarea{
+      width: 80%;
+    }
+  }
+
 }
 
 
