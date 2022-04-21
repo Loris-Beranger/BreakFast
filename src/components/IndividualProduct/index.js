@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeCountBasket, refreshBasket } from '../../actions/actions';
 import { addToBasket, findProduct, getBasket, removeFromBasket } from '../../basketFunctions';
-
+import { BsPlusCircle, BsDashCircle } from "react-icons/bs";
 
 
 // == Composant
@@ -34,7 +34,7 @@ const IndividualProduct = ({id, img,  name, prix, count}) => {
       <div className="Basket-quantity">
         {count}
         <div className="math">
-          <img
+          <BsDashCircle
             onClick={() => {
               removeFromBasket(currentProduct);
               let basket = getBasket();
@@ -44,7 +44,7 @@ const IndividualProduct = ({id, img,  name, prix, count}) => {
             src={less}
             alt="signe moins"
           />
-          <img
+          <BsPlusCircle
             onClick={() => {
               addToBasket(currentProduct);
               let basket = getBasket();
@@ -54,6 +54,7 @@ const IndividualProduct = ({id, img,  name, prix, count}) => {
             src={plus}
             alt="signe plus"
           />
+          
         </div>
       </div>
     </div>
