@@ -1,5 +1,6 @@
 @use 'src/styles/vars.scss';
 
+
 @media screen and (min-width: 1024px) {
 
   .bakery-list-tags {
@@ -29,6 +30,7 @@
   }
 
   .bakery-list-page-bakery {
+    background-color: #c88a5b73;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
@@ -197,7 +199,7 @@
             .bakery-list-icone{
               display: flex;
               margin-top: 1.5em;
-              height: 30px; 
+              height: 40px; 
             }
   
             .bakery-list-like {
@@ -316,6 +318,7 @@
     }
   
   .bakery-list-page-bakery {
+    background-color: #c88a5b73;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
@@ -483,7 +486,7 @@
           .bakery-list-icone{
             display: flex;
             margin-top: 1em;
-            height: 30px; 
+            height: 40px; 
           }
 
           .bakery-list-like {
