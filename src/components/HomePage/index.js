@@ -2,13 +2,13 @@
 import FormAdress from './FormAdress';
 import './styles.scss';
 import Categories from './Categories';
-import Carrousel from 'src/components/Carrousel';
+import Carrousel from './Carrousel';
 
 // == Composant
 const HomePage = () => (
   <div className="homepage">
-    <Carrousel />
     <div className="section-form-adress">
+      <Carrousel />
       <FormAdress />
     </div>
     <Categories />
