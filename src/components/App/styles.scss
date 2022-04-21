@@ -22,7 +22,15 @@ body{
   align-items: center;
 }
 
-.app.menu-active {
-  transform: translateX(59%);
-}
 
+.app.menu-active {
+  display: flex;
+  transform: translateX(60%);
+
+  
+}
+.app {
+  z-index: 3;
+  transform: translateX(0%);
+  transition: 1.2s;
+}
