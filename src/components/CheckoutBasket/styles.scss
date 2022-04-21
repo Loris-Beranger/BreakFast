@@ -9,7 +9,11 @@
 .Basket-Basket{
   width: 100%;
   height: 100%;
-  /* overflow-y: scroll; */
+  background-image: url('./images/background1.jpg');
+  background-size: cover;
+  background-position: center ;
+  padding: 5% 5% ;
+  overflow-y: scroll;
 
   .page-basket-empty {
     display: flex;
@@ -46,88 +50,118 @@
   }
 }
 
-.Basket-product{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.page-checkout-basket {
+  background-color: #402218cf;
 
-  
-  .Basket-individual-product-total-price{
-    padding-top: 1em;
-  }
-  
-  .Basket-info{
+  .Basket-product{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .Basket-imgProduit{
-    padding: 1em;
-    border-radius: 40px;
-    object-fit: cover;    
-    height: 180px;
-    width: 180px;
-  }
-
-  .Basket-quantity{
-    padding: 0.5em 0.3em 0.5em 0.3em;
-    margin-right: 0.2em;
-    height: 20%;
-    font-weight: 600;
-    font-size: 30px; 
-
-    .math{
-      display: flex;
-      .plus{
-        padding: 0.3em;
-        height: 40px;
-        width: 40px;
-      }
-      .less{
-        padding: 0.3em;
-        height: 40px;
-        width: 40px;
-      }
-    }
-  }
-}
-.Basket-trait{
-  border-bottom: 1px rgb(0, 0, 0) solid;
-  padding-bottom: 1em;
-  padding-left: 10%;
-
-  .Basket-ligne{
-
-    display: flex;
-    padding: 0.6em;
-    font-size: 18px;
-    width: 80%;
+    align-items: center;
     justify-content: space-between;
-
-  }
+    
   
-    .Basket-productName{
-      margin-left: 10px;
-      margin-right: 80px;
+    
+    .Basket-individual-product-total-price{
+      padding-top: 1em;
     }
     
+    .Basket-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  
+    .Basket-imgProduit{
+      padding: 1em;
+      border-radius: 40px;
+      object-fit: cover;    
+      height: 180px;
+      width: 180px;
+      opacity: 0.8;
+    }
+  
+    .Basket-quantity{
+      padding: 0.5em 0.3em 0.5em 0.3em;
+      margin-right: 0.2em;
+      height: 20%;
+      font-weight: 500;
+      font-size: 25px; 
+      color: rgba(255, 255, 255, 0.9);
+  
+      .math{
+        display: flex;
+        .plus{
+          padding: 0.3em;
+          height: 40px;
+          width: 40px;
+        }
+        .less{
+          padding: 0.3em;
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
 }
+
+.Basket-PriceListe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Basket-trait{
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding-bottom: 1em;
+    box-shadow: 5px 5px 15px 1px black;
+    width: 80%;
+  
+    .Basket-ligne{
+      display: flex;
+      padding: 0.6em;
+      font-size: 18px;
+      width: 100%;
+      text-align: left;    
+      justify-content: space-between;
+      color: rgba(255, 255, 255, 0.8);  
+    }
+    
+      .Basket-productName{
+        margin-left: 10px;
+      }
+      
+  }
+}
+
   .Basket-paye{
     display: flex;
     justify-content: center;
     padding-top: 2em;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
 
     .Basket-totalPrice{
-      font-size: 23px;
-      padding-top: 0.5em;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.8);
     }
-    .Basket-btnPayer{
-      background-color: #865439;
-      padding: 0.7em 1em;
-      margin-bottom: 2em;
-      margin-left: 10px;
+    .Basket-btnPayer {
+      background-color: white;
+      border-radius: 25px;
+      width: 150px;
+      text-align: center;
+      padding: 10px;
+      color: vars.$principal-color;
+      font-weight: 700;
+      font-size: 0.8em;
+      letter-spacing: 1px;
+    
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px white;
+      }
     }
   }
 }
@@ -141,7 +175,7 @@
     background-image: url('./images/background1.jpg');
     background-size: cover;
     background-position: center ;
-    padding: 50px;
+    padding: 3% 15% ;
 
     .page-basket-empty {
       display: flex;
@@ -277,7 +311,7 @@
         .Basket-productPrice{
         }
         .Basket-productName{
-          margin-right: 100px;
+          
         }
       }
 

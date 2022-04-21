@@ -42,7 +42,7 @@ const About = () => (
       </div>
       <div className='Personne' >
         <img  src={batman} className='batman' style={{'margin-bottom':'-20px'}} alt='pp'/>
-        <h2>Anthony Ouzhènes</h2>
+        <h2>Anthony Ouzhene</h2>
         <h3>Product Owner</h3>
       </div>
     </div>

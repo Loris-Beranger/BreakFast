@@ -51,7 +51,7 @@ const CheckoutBasket = () => {
                   <li className="Basket-ligne">
                     <span className="Basket-productName">{item.name}</span>
                     <span className="Basket-productPrice">
-                      {Math.round((item.price * item.quantity) * 100) / 100} €
+                      {(item.price * item.quantity).toFixed(2)} €
                     </span>
                   </li>
                 ))}
@@ -66,9 +66,9 @@ const CheckoutBasket = () => {
                   const action = setOrder(order)
                   dispatch(action);
                 }}>
-                  PAYER
+                  COMMANDER
                 </NavLink>
-                <div className="Basket-totalPrice"><span>Total:</span> <span>{total}€</span></div>
+                <div className="Basket-totalPrice"><span>Total:</span> <span>{(total).toFixed(2)}€</span></div>
               </div>
           </div>
         </div>

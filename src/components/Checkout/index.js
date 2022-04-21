@@ -4,7 +4,7 @@ import remove from "./images/remove.png";
 import verifie from "./images/verifie.png";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+import { BsArrowLeft } from "react-icons/bs";
 import "./styles.scss";
 import { deliveryTime } from "../../basketFunctions";
 
@@ -30,6 +30,10 @@ const Checkout = () => {
   return (
     <div className="Checkout-Checkout">
       <div className="wrapper-checkout">
+        <NavLink to='/basket'>
+          <BsArrowLeft className="btn-back"/>
+        </NavLink>
+        
         <div className="Checkout-infoPerso">
           <div className="Checkout-verif">vérification d'adresse :</div>
           <div className="Checkout-ville">{currentBakery.address}</div>
@@ -43,7 +47,7 @@ const Checkout = () => {
             {order.productsList.map((item) => (
               <li className="element-list-products">
                 <span>{item.quantity} x {item.name}</span>
-                <span>{item.quantity * item.price} €</span>
+                <span>{(item.quantity * item.price).toFixed(2)} €</span>
               </li>
             ))}
           </ul>
@@ -56,9 +60,9 @@ const Checkout = () => {
               <div className="Checkout-Finalprice">Total</div>
             </div>
             <div className="Checkout-Totaux">
-              <div className="Checkout-ligne">{order.totalPrice}€</div>
-              <div className="Checkout-ligne">{order.currentBakery.delivery_fees}€</div>
-              <div className="Checkout-Finalprice">{order.totalPrice + order.currentBakery.delivery_fees}€</div>
+              <div className="Checkout-ligne">{(order.totalPrice).toFixed(2)}€</div>
+              <div className="Checkout-ligne">{(order.currentBakery.delivery_fees).toFixed(2)}€</div>
+              <div className="Checkout-Finalprice">{(order.totalPrice + order.currentBakery.delivery_fees).toFixed(2)}€</div>
             </div>
           </div>
           <button className="Checkout-btnPayer" onClick={() => {
