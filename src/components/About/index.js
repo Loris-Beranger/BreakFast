@@ -7,6 +7,7 @@ import batman from 'src/components/About/images/batman.jpg'
 import harley from 'src/components/About/images/harley.png'
 import wonder from 'src/components/About/images/wonderWoman.jpg'
 import deadpool from 'src/components/About/images/deadpool.jpg'
+import flash from 'src/components/About/images/flash.jpg'
 
 
 
@@ -21,12 +22,12 @@ const About = () => (
         <h3>Référent Technique</h3>
       </div>
       <div className='Personne' >
-        <img  src={deadpool} className='deadpool' style={{'width':'100px','margin-left':'50px','margin-right':'50px'}} alt='pp'/>
+        <img  src={superman} className='deadpool' alt='pp'/>
         <h2>Loris Beranger</h2>
         <h3>Lead Dev Front</h3>
       </div>
       <div className='Personne' >
-        <img  src={sly} className='sly' alt='idk'/>
+        <img  src={flash} className='sly' alt='idk'/>
         <h2>Mathys Vitiello</h2>
         <h3>Git Master</h3>
         </div>
