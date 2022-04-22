@@ -16,11 +16,11 @@
   overflow-y: scroll;
 
   .page-basket-empty {
+    background-color: #402218cf;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
     height: 100%;
   .title-basket-empty {
     color: white;
@@ -179,6 +179,7 @@
     padding: 3% 15% ;
 
     .page-basket-empty {
+      background-color: #402218cf;
       display: flex;
       justify-content: center;
       align-items: center;
