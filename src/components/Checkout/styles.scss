@@ -100,7 +100,6 @@
       margin-top: 10%;
       margin-bottom: 10%;
       overflow-y: scroll;
-      border-bottom: 1px solid vars.$principal-color;
 
       &::-webkit-scrollbar {
         display: none;
@@ -360,7 +359,7 @@ color: aliceblue;
     
   .popup{
     position: absolute;
-    height: 50%;
+    height: 60%;
     width: 50%;
     top: 30%;   
     left: 25%;   
