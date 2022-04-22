@@ -8,9 +8,10 @@ import Categories from './Categories';
 // == Composant
 const HomePage = () => (
   <div className="homepage">
-    <Slider />
+    
     <div className="section-form-adress">
-      <FormAdress />
+    <Slider />
+    <FormAdress />
     </div>
     <Categories />
   </div>

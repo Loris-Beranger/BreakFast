@@ -1,5 +1,6 @@
 // == Import
 import './styles.scss';
+import Slider from '../Slider/Slider';
 
 // == Composant
 const Blog = () => (
