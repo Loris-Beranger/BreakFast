@@ -158,6 +158,7 @@ return (
       pauseOnFocusLoss
       draggable
       pauseOnHover
+      limit={1}
     />
 
     <div className={`${connexion ? 'Inscription' : 'Connexion'}`} >
