@@ -7,6 +7,7 @@ import { signup } from './requete';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUserIsConnected } from '../../actions/actions';
+import { Redirect, Route, NavLink } from "react-router-dom";
 
 
 // == Composant
@@ -80,11 +81,13 @@ const Log = () => {
     )
     .then(function (response) {
       // handle success
+      window.location.href = '/'
+
       console.log(response);
       notifySuccessLogin();
-      sessionStorage.setItem('token', response.data.token)
-      dispatch(setUserIsConnected(true))
-
+      sessionStorage.setItem('token', response.data.token);
+      dispatch(setUserIsConnected(true));
+    
       axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/user`)
         .then(function (response) {
           console.log(response.data);
@@ -95,6 +98,7 @@ const Log = () => {
           // handle error
           console.log(error);
         });
+
       
     })
     .catch(function (error) {
@@ -222,7 +226,11 @@ return (
         <span className='error-text'>{errorMessage}</span>
       </form>
 
+
+              
+
       <form className="signin" onSubmit={handleSubmitLogin}>
+
         <h3>Connexion</h3>
         <p>Connectez vous à votre compte</p>
         <div className="wrapper-input">
@@ -243,13 +251,18 @@ return (
             }}
           />
         </div>
+
+
         <input
           type="submit"
           value="Se connecter"
           className="btn-form"
         />
+
         <span className='error-text-login'>{errorMessageLogin}</span>
+
       </form>
+
     </div>
     </div>
   </div>

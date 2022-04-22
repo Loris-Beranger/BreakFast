@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 //import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { refreshBasket, setOrder } from '../../actions/actions';
-
+import panier from "./images/panizer.PNG"
 
 
 // == Composant
@@ -27,7 +27,7 @@ const CheckoutBasket = () => {
       {shoppingBasketList.length == 0 ? (
         <div className='page-basket-empty'>
           <h2 className='title-basket-empty'>Votre panier est vide</h2>
-          <img src='https://us.123rf.com/450wm/rudnijvlad/rudnijvlad1612/rudnijvlad161200024/68896821-panier-en-osier-ic%C3%B4ne-symbole-de-vecteur-vide-osier-illustration-illustration-vectorielle-isol%C3%A9-sur-.jpg?ver=6' className='img-basket'/>
+          <img src={panier} className='img-basket'/>
           <NavLink to='/' className='basket-empty-to-home'>Retourner à l'accueil</NavLink>
         </div>
       ) : (
