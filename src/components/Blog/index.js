@@ -1,12 +1,15 @@
 // == Import
 import './styles.scss';
 
-// == Composant
-const Blog = () => (
-  <div className="blog">
+
+const Blog = () => {
+
+  return (
+    <div className="blog">
     <h1>Blog</h1>
   </div>
-);
+  );
+}
 
 // == Export
 export default Blog;
