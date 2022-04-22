@@ -390,6 +390,12 @@ color: aliceblue;
         position: absolute;
         margin-left: 95%;
         margin-top: 1%;
+
+        .active:hover {
+          color: white;
+        }
+
+       
       }
     }
   }
