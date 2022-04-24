@@ -1,11 +1,19 @@
 // == Import
 import './styles.scss';
-// == Composant
-const Formules = () => (
-  <div className="formules">
-    <h1>Formules</h1>
-  </div>
-);
+
+
+const Formules = () => {
+
+  return (
+    <div class="formules">
+      
+      <h1 id="formules-page__title">Formules</h1>
+
+          <h2 class="formules-title">Formules disponibles bientôt</h2>
+
+    </div>
+  );
+}
 
 // == Export
 export default Formules;

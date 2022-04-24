@@ -6,8 +6,8 @@ import { setCurrentBakery } from '../../actions/actions';
 import { useDispatch } from 'react-redux';
 import { addDelFavoris, getFavoris } from '../../favorisFunctions';
 import { useState } from 'react';
-import WhiteHeart from './images/like-button-white.png';
-import RedHeart from './images/like-button-red.png';
+import WhiteHeart from './Images/like-button-white.png';
+import RedHeart from './Images/like-button-red.png';
 // == Composant
 const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
     console.log(id);
