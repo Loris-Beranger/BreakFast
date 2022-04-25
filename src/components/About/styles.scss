@@ -5,11 +5,12 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  overflow-y: scroll;
 
   h1 {
     color: black;
     font-size: 1.6em;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: Gravity;
     font-weight: 600;
   }
@@ -21,7 +22,6 @@
   .Personne {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10%;
     align-items: center;
 
     img {
