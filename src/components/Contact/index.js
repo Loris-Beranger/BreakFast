@@ -1,28 +1,35 @@
 // == Import
 import './styles.scss';
 
-// == Composant
-const Contact = () => (
-  <div className="contact">
 
-    <p className='contact-ameliorer'>
-       <p className='p' for="ameliorer">
-       Comment pensez-vous que nous puissions améliorer notre site ?
-       </p>       
-       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
-       </textarea>       
-   </p>
+const Contact = () => {
 
-   <p className='contact-problemes'>
-       <p className='p' for="problemes">
-       Avez-vous remarqué des bugs sur le site ? 
-       </p>       
-       <textarea name="problemes" id="problemes" rows="10" cols="50">
-       </textarea>       
-   </p>
+  return (
+    <div class="contact">
+      <h1 id="contact-page__title">Contact</h1>
 
-  </div>
-);
+      <div class ="contact-form">
+        <form class="contact-form__container">
+          <label class="contact-form__label">
+            Nom
+            <input class="form-input" type="text" name="name" />
+          </label>
+          <label class="contact-form__label">
+            Email
+            <input class="form-input" type="text" name="name" />
+          </label>
+          <label class="contact-form__label" for="message">
+            Message
+            <textarea id="message" type="text" name="message"></textarea>
+          </label>
+          <input id="submit-form__button" type="submit" value="Envoyer" />
+        </form>
+      </div>
+      
+
+    </div>
+  );
+}
 
 // == Export
 export default Contact;
