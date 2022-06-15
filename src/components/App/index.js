@@ -20,6 +20,7 @@ import Page404 from 'src/components/Page404';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToBasket, getBasket } from '../../basketFunctions';
 import { refreshBasket, setBakeryList, setUserIsConnected } from '../../actions/actions';
+import { apiUrl } from '../../data/data';
 
 
 
@@ -42,7 +43,7 @@ const App = () => {
       dispatch(setUserIsConnected(false))
     }
 
-    axios.get('http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery')
+    axios.get(apiUrl + '/bakery')
     .then(function (response) {
      console.log(response.data);
      const action = setBakeryList(response.data);

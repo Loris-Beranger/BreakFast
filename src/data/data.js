@@ -2,7 +2,7 @@ import croissant from "./images/croissant.jpg";
 import pain from "./images/pain.jpg";
 import cupcake from "./images/cupcake.jpg";
 
-
+export const apiUrl = 'http://localhost:8888/api';
 
 export const productData = [
   {

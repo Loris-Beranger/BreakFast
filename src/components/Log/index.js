@@ -8,12 +8,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUserIsConnected } from '../../actions/actions';
 import { Redirect, Route, NavLink } from "react-router-dom";
+import { apiUrl } from '../../data/data';
 
 
 // == Composant
 const Log = () => {  
   const dispatch = useDispatch();
-  const url = 'http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public';
   const axios = require('axios');
   const notifySuccess = () => toast.success('Vous êtes maintenant inscrit !', {
     position: "top-center",
@@ -67,7 +67,7 @@ const Log = () => {
 
   const handleSubmitLogin = (event) => {
     event.preventDefault();
-    axios.post(url + "/api/login_check",
+    axios.post(apiUrl + "/login_check",
       {
         username: emailLogin,
         password: passwordLogin,
@@ -88,7 +88,7 @@ const Log = () => {
       sessionStorage.setItem('token', response.data.token);
       dispatch(setUserIsConnected(true));
     
-      axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/user`)
+      axios.get(apiUrl + '/user')
         .then(function (response) {
           console.log(response.data);
           const userInfo = response.data.find(i => i.email == emailLogin);
@@ -122,7 +122,7 @@ const Log = () => {
     
     else{
       console.log('envoie requete inscription')
-      axios.post(url + '/api/user', JSON.stringify(
+      axios.post(apiUrl + '/user', JSON.stringify(
         {
             "name": name,
             "email": email,

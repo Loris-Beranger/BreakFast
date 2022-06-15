@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 import { BiSearch } from "react-icons/bi";
-import { productBakery15 } from '../../data/data';
+import { apiUrl, productBakery15 } from '../../data/data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,7 +26,7 @@ const BakeryProducts = () => {
 
 
   useEffect(() => {
-    axios.get(`http://anthonyouzhene-server.eddi.cloud/projet-04-break-fast-back/public/api/bakery/${currentBakery.id}/products`)
+    axios.get(`${apiUrl}/bakery/${currentBakery.id}/products`)
     .then(function (response) {
      console.log(response.data);
      const action = setProductsList(response.data);
