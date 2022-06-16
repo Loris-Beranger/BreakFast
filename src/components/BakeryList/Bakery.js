@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { setCurrentBakery } from '../../actions/actions';
 import { useDispatch } from 'react-redux';
 import { addDelFavoris, getFavoris } from '../../favorisFunctions';
+import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useState } from 'react';
 import WhiteHeart from './Images/like-button-white.png';
 import RedHeart from './Images/like-button-red.png';
@@ -34,10 +35,10 @@ const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
           }}
         >
           <img className="bakery-list-bakery__img" src={img} alt="croissant" />
+          <p className="bakery-list-bakery-deliverytime">{time} min</p>
         </NavLink>
-        <p className="bakery-list-bakery-deliverytime">{time} min</p>
         <div className="bakery-list-bakery-infos">
-          <div>
+          <div className='bakery-info-text'>
             <h2 className="bakery-list-bakery-name">{name}</h2>
             <p className="bakery-list-bakery-deliverycost">
               Frais de livraison : {delivery_fees}€
@@ -47,24 +48,22 @@ const Bakery = ({ id, img, time, name, delivery_fees, rating, bakery }) => {
             </div>
           </div>
           {isFav == false ? (
-            <img
+            <BsSuitHeart
               className="bakery-list-icone"
               onClick={() => {
                 HeartToggle()
                 addDelFavoris(id);
                 setIsFav(true);
               }}
-              src={WhiteHeart}
             />
           ) : (
-            <img
-              className="bakery-list-icone"
+            <BsSuitHeartFill
+              className="bakery-list-icone heart-fill"
               onClick={() => {
                 HeartToggle()
                 addDelFavoris(id);
                 setIsFav(false);
               }}
-              src={RedHeart}
             />
           )}
         </div>

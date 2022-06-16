@@ -48,28 +48,27 @@ const BakeryList = () => {
           <div className="bakery-list-tags">
             <div className='bakery-list-filtres' >
               <h1 className='bakery-list-title-tags'>Filtrer par diététique</h1>
-              <div className="bakery-list-tag">
-                <div className="bakery-list-tag_label">
+              <ul className="bakery-list-tag">
+                <li className="bakery-list-tag_label">
                   <TiHeartFullOutline />
                   <h2>Vegan</h2>
-                </div>
-                <div className="bakery-list-tag_label">
+                </li>
+                <li className="bakery-list-tag_label">
                   <GiWheat/>
                   <h2>Sans gluten</h2>
-                </div> 
-                <div className="bakery-list-tag_label">
+                </li> 
+                <li className="bakery-list-tag_label">
                   <SiLeaflet />
                   <h2>Bio</h2>
-                </div>
-                <div className="bakery-list-tag_label">
+                </li>
+                <li className="bakery-list-tag_label">
                   <RiLeafLine />
                   <h2>Végétarien</h2>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="bakery-list-bakeries">
-            <ul className="bakery-list-column">
+            <ul className="bakery-list">
               {dataFilter.map((item) => (
                 <div className='navlink-bakery'>
                   <Bakery
@@ -85,7 +84,6 @@ const BakeryList = () => {
                 </div>
               ))}
             </ul>
-          </div>
         </div>
       </div>
       :
